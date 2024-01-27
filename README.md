@@ -1,6 +1,6 @@
 # Sigma Web Dev Course 2024
 Day 1 
-** What is Scripting language? **
+### What is Scripting language? ###
 All scripting languages are programming languages.
 The scripting language is basically a language where instructions are written for a run time environment.
 They do not require the compilation step and are rather interpreted.
