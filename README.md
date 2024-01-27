@@ -31,10 +31,17 @@ Javascript File link
 `<script src="script.js"></script>`
 
 Extension Must be  Install  In Vs code
+
 1.Vscode icons
+
 2.Prettier
+
 3.Material Theme
+
 4.Live Server
+
 5.Live Preview
+
 6.Jellyfish Theme
+
 7.React ES7
