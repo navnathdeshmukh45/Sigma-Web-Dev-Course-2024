@@ -23,5 +23,7 @@ It is an interpreted programming language with object-oriented capabilities.
 
 # Day 2
 Css File link
-
 `<link rel="stylesheet" href="style.css">`
+
+Javascript File link
+`<script src="script.js"></script>`
