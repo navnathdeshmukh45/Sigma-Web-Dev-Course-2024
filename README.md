@@ -1,5 +1,5 @@
 # Sigma Web Dev Course 2024
-# Day 1 [Markdown Guide](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day1)
+# [Day 1](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day1)
 ### What is Scripting language? ###
 All scripting languages are programming languages.
 The scripting language is basically a language where instructions are written for a run time environment.
