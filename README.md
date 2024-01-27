@@ -16,4 +16,6 @@ JavaScript was initially created to “make web pages alive”.
 JavaScript is a dynamic Computer programming language.
 It is lightweight and most commonly used as a part of web pages.
 It is an interpreted programming language with object-oriented capabilities.
+
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day1/client%20side.jpg)
+(https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day1/server%20side.jpg)
