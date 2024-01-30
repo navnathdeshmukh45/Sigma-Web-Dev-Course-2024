@@ -65,18 +65,30 @@ Image
 
 Table
 `<table>
+
         <tr>
+
             <th>Name</th>
+
             <th>Department</th>
+
             <th>Time</th>
+
         </tr>
+
         <tr>
+
             <td>Priya</td>
+
             <td>Programmer</td>
+
             <td>09:30 TO 05:30</td>
+
         </tr>
+        
     </table>
 `
+
 List
  <!-- list -->
     
