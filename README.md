@@ -57,3 +57,35 @@ Extension Must be  Install  In Vs code
 2.Paragraph
 
 3.Links [anchor tag]
+
+# [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
+Image
+
+`<img src="pexels-bella-white-635279.jpg" alt="pexels-bella-white-635279" width="150px" height="150px">`
+
+Table
+`<table>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Programmer</td>
+            <td>09:30 TO 05:30</td>
+        </tr>
+    </table>
+`
+List
+ <!-- list -->
+    <!-- order list -->
+   `<ol style="list-style-type:circle">
+        <li>One</li>
+        <li>Two</li>
+    </ol>`
+    <!-- unorder -->
+    `<ul style="list-style-type:square" >
+        <li>Tea</li>
+        <li>Cofee</li>
+    </ul>`
