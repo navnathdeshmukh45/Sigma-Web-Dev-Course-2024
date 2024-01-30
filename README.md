@@ -24,11 +24,15 @@ It is an interpreted programming language with object-oriented capabilities.
 # [Day 2](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day2)
 Css File link
 
-`<link rel="stylesheet" href="style.css">`
+```
+<link rel="stylesheet" href="style.css">
+```
 
 Javascript File link
 
-`<script src="script.js"></script>`
+``` 
+<script src="script.js"></script>
+```
 
 Extension Must be  Install  In Vs code
 
@@ -61,8 +65,7 @@ Extension Must be  Install  In Vs code
 # [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 Image
 
-`
-    
+``` 
     <
     img 
 
@@ -71,10 +74,11 @@ Image
     alt="pexels-bella-white-635279"
 
     width="150px" height="150px">
-`
+```
 
 Table
-`<table>
+```
+<table>
 
         <tr>
 
@@ -97,11 +101,11 @@ Table
         </tr>
 
     </table>
-`
+```
 
 List
  <!-- list -->
-    <table>
+```  <table>
     <ol style="list-style-type:square">
 
         <li>One</li>
@@ -121,3 +125,4 @@ List
     </ul>
 
     </table>
+``` 
