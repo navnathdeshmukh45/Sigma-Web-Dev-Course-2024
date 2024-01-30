@@ -62,14 +62,14 @@ Extension Must be  Install  In Vs code
 Image
 
 `
- <
- img 
+    <
+    img 
 
- src="pexels-bella-white-635279.jpg" 
+    src="pexels-bella-white-635279.jpg" 
 
- alt="pexels-bella-white-635279"
+    alt="pexels-bella-white-635279"
 
- width="150px" height="150px">
+    width="150px" height="150px">
 `
 
 Table
