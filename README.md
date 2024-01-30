@@ -92,7 +92,7 @@ Table
 List
  <!-- list -->
     <table>
-   <ol style="list-style-type:circle">
+    <ol style="list-style-type:square">
 
         <li>One</li>
 
@@ -102,12 +102,12 @@ List
 
     <!-- unorder -->
 
-<ul style="list-style-type:square" >
+    <ul style="list-style-type:square" >
 
         <li>Tea</li>
 
         <li>Cofee</li>
 
     </ul>
-    
+
       </table>
