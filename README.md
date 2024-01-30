@@ -85,19 +85,29 @@ Table
             <td>09:30 TO 05:30</td>
 
         </tr>
-        
+
     </table>
 `
 
 List
  <!-- list -->
-    
+    <table>
    <ol style="list-style-type:circle">
+
         <li>One</li>
+
         <li>Two</li>
+
     </ol>
+
     <!-- unorder -->
+
 <ul style="list-style-type:square" >
+
         <li>Tea</li>
+
         <li>Cofee</li>
+
     </ul>
+    
+      </table>
