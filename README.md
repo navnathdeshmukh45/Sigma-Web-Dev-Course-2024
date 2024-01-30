@@ -61,7 +61,16 @@ Extension Must be  Install  In Vs code
 # [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 Image
 
-`<img src="pexels-bella-white-635279.jpg" alt="pexels-bella-white-635279" width="150px" height="150px">`
+`
+ <
+ img 
+
+ src="pexels-bella-white-635279.jpg" 
+
+ alt="pexels-bella-white-635279"
+
+ width="150px" height="150px">
+`
 
 Table
 `<table>
