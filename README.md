@@ -126,7 +126,7 @@ List
 
     </table>
 ``` 
-# [Day6]()
+# [Day6](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day6)
 # <h1>What is SEO</h1>
         <p>SEO stands for Search Engine Optimization. It's a set of processes that improve a website's visibility in search engines.</p>    
 
