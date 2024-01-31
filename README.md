@@ -126,3 +126,16 @@ List
 
     </table>
 ``` 
+# [Day6]()
+# <h1>What is SEO</h1>
+        <p>SEO stands for Search Engine Optimization. It's a set of processes that improve a website's visibility in search engines.</p>    
+
+#   <h1>What is CLS?</h1>
+        Cumulative Layout Shift (CLS)
+        CLS is a measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.
+
+#   <h1>Largest Contentful Paint (LCP)</h1>
+        The Largest Contentful Paint (LCP) metric reports the render time of the largest image or text block visible within the viewport, relative to when the user first navigated to the page.
+
+#  <h1>First Input Delay (FID)</h1>
+       FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
