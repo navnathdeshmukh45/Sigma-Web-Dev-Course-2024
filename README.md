@@ -139,3 +139,17 @@ List
 
 #  <h1>First Input Delay (FID)</h1>
        FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+
+# [Day7](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day7)
+
+#   <h1>Registration form</h1>
+
+# [Day8](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day8)
+# Inline and Block Elements
+# Block Elements (Most Commonly Used First) :A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+# Inline Elements (Most Commonly Used First):inline element only takes up as much width as necessary.
+
+# [Day9](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day9)
+
+# ID and Classes in HTML
