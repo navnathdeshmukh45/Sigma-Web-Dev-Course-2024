@@ -155,3 +155,4 @@ List
 # ID and Classes in HTML
  1. class can be applied to multiple elements on a page
  2. ID attribute is used to uniquely identify a single HTML element on a page
+
