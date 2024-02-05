@@ -156,3 +156,16 @@ List
  1. class can be applied to multiple elements on a page
  2. ID attribute is used to uniquely identify a single HTML element on a page
 
+# [Day10]()
+
+```
+    <!-- Video -->
+    <video src="video.mp4" height="255"  width="255" controls></video>
+   
+    <!-- audio -->
+     <audio src="sachin.mp3" height="255"  width="255" controls></audio>
+
+     <!-- iframe -->
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/Li1xQVMdgZ4?si=lByuhtPALwOfkBMA&amp;controls=0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+```
