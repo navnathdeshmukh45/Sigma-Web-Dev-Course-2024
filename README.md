@@ -156,7 +156,7 @@ List
  1. class can be applied to multiple elements on a page
  2. ID attribute is used to uniquely identify a single HTML element on a page
 
-# [Day10]()
+# [Day10](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day10)
 
 ```
     <!-- Video -->
@@ -169,3 +169,25 @@ List
      <iframe width="560" height="315" src="https://www.youtube.com/embed/Li1xQVMdgZ4?si=lByuhtPALwOfkBMA&amp;controls=0&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ```
+# [Day11](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day11)
+```
+ <header>
+        <Nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </Nav>
+    </header>
+
+    <Main>
+        <h1>What are SEmantic Tags</h1>
+        <img src="semantic-tags.png" alt="semantic-tags" >
+    </Main>
+    <footer>
+        Copyright Programmer Navnath |All rights reserved
+    </footer>
+```
+# [Day12] (https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
+ HTML revision
