@@ -189,5 +189,5 @@ List
         Copyright Programmer Navnath |All rights reserved
     </footer>
 ```
-# [Day12] (https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
+#  [Day12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
  HTML revision
