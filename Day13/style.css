@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(153, 209, 96);
+    font-family: 'Times New Roman';
+}
+footer{
+    position: absolute;
+    bottom: 2%
+}
