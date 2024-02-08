@@ -189,5 +189,32 @@ List
         Copyright Programmer Navnath |All rights reserved
     </footer>
 ```
-#  [Day12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
+# [Day12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
  HTML revision
+
+# [Day13]()
+```
+    <h1>Reserved Characters</h1>
+    <p>The price is 10 &lt; 20.</p>
+
+    <h1>  Displaying Special Symbols</h1>
+    <p>Copyright &copy; 2024.</p>
+
+    <h1>Creating Non-Breaking Spaces</h1>
+    <p>This is an example&nbsp;text.</p>
+
+
+    <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+```
