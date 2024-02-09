@@ -218,3 +218,18 @@ List
         &lt;/html&gt;
     </code></pre>
 ```
+# [Day14]()
+Itroduction TO Css
+
+
+CSS Stands For Cascading Style sheet
+```
+body{
+    background-color: cornflowerblue;
+}
+div{
+    color:rgb(72, 255, 0);
+    background-color: rgb(0, 0, 0);
+    
+}
+```
