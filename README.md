@@ -218,7 +218,7 @@ List
         &lt;/html&gt;
     </code></pre>
 ```
-# [Day14]()
+# [Day14](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day14)
 Itroduction TO Css
 
 
@@ -233,3 +233,4 @@ div{
     
 }
 ```
+# [Day15](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day15)
