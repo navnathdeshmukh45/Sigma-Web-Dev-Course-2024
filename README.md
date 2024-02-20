@@ -237,20 +237,19 @@ div{
 # [Day15](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day15)
 Three ways to add CSS to HTML
 <li>Inline CSS</li>
-` <h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1> `
+<h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1> 
 <li>Internal CSS</li>
-```<style>
+<style>
       h1{
             background-color: red;
             color: yellow;
         }
 
 </style>
-```
 <li>External CSS</li>
-```
+
     <link rel="stylesheet" href="style.css">
-```
+
 
 # [Day16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
   ```
