@@ -493,3 +493,148 @@ h1 {
     </style>
 
 ```
+# [Day22](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day22)
+```
+        <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+
+        <!-- Expand this to see that this container will adjust its height lorem999 -->
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        font-size: 12px;
+    }
+
+    .box {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+    }
+
+    .container {
+        box-sizing: border-box;
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        font-size: 18px;
+        background-color: aquamarine;
+    }
+    .container > div{
+        font-size: 2em; 
+        border: 2px solid red;
+        width: 50%;
+    }
+
+    .container > div > div{
+        border: 2px solid blue;
+        width: 50%;
+    }
+
+    .mycont{ 
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin: 23px auto;
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        /* width: 100vmin; */
+        width: 80vw;
+    }
+    </style>
+```
+# [Day23](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day23)
+```
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        border: 2px solid blue;
+        display: inline-block;
+        width: 344px;
+        padding:45px;
+        margin: 34px; 
+    }
+
+    .box1{
+        display: none; 
+        visibility: hidden; 
+    }
+    </style>
+```
+# [Day24](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day24)
+```
+ <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </p>
+    <style>
+    .box{
+    border: 2px solid black;
+    padding:34px;
+    box-shadow:  5px 15px 5px #70a711;
+    }
+    .text-element { 
+    text-shadow: 10px 5px 3px #e695f7
+    }
+    <style>
+```
+# [Day25](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day25)
+```
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <style>
+    nav ul li{
+    list-style: devanagari;
+    list-style-type: "🔥";
+    /* background-color: yellow; */
+    /* list-style-position: inside; */
+    /* border: 2px solid black; */
+    /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+    }
+    </style>
+```
