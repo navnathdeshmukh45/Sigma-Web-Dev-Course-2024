@@ -347,3 +347,149 @@ p:first-child{
 }
  ```
 # [Day18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
+
+```
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+```
+```
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: aqua;
+}
+.box1{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin:35px;
+    border: 2px solid blue;
+    height: 200px;
+    box-sizing: border-box;
+}
+.box2{
+    color:red;
+    padding: 10px;
+    margin:25px;
+    border: 2px solid black;
+    height: 200px;
+    box-sizing: border-box;
+}
+```
+# [Day19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
+ ```
+ <h1>Lets learn about colors</h1>
+    <p>
+        Color can be represented in:
+        <ol>
+            <li>Color Keywords</li>
+            <li>Hex Color Code</li>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HSL</li>
+        </ol>
+    </p>
+    <div>
+        
+        <h1>Fonts</h1>
+        <h2>about Fonts</h2>
+        <p>This is a video on fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+ <style>
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+h1 {
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-size: 20px; 
+    /* font-style:italic;
+    font-weight: 500;  */
+    
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    /* text-decoration-style: dotted; */
+    text-decoration-thickness: 7px ;
+    /* text-indent: 45px; */
+}
+.lorem{
+    border: 2px solid red;
+    width: 145px;
+    word-break: break-all;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+
+}
+h1 {
+    color:darkred;
+    color: #0BEE0B;
+    color: rgb(76, 125, 59);
+    color: rgba(255, 22, 5, 0.175);
+    color: hsl(130, 61%, 44%);
+    background-color: rgb(76, 125, 59);
+}
+ </style>  
+ ```
+# [Day20] (https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day20)
+```
+  <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+```
+# [Day21](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day21)
+# CSS Specificity
+```
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+
+```
