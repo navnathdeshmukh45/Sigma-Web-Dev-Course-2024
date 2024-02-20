@@ -248,12 +248,15 @@ Three ways to add CSS to HTML
 </style>
 ```
 <li>External CSS</li>
-```<link rel="stylesheet" href="style.css">```
+```
+    <link rel="stylesheet" href="style.css">
+```
 
-# [Day16]()
+# [Day16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
+  ```
   <h1>My Videos and Audios for the Day</h1>
-    <h2>Some Videos for the Day</h2>
-   ``` 
+   <h2>Some Videos for the Day</h2>
+ 
    <div>
         <video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>
     </div>
@@ -261,4 +264,86 @@ Three ways to add CSS to HTML
     <div>
         <audio src="better-day-186374.mp3" controls></audio>      
     </div>
-    ```
+```
+ 
+# [Day17](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day17)
+CSS Selector
+
+```
+    <div>
+    I am Div
+    </div>
+    <br>
+    <div class="div">
+        I am Another div
+    </div>
+    <br>
+    <div id="id">
+        I am third Div
+    </div>
+    <br>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        
+    </div>
+    <br>
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+```
+
+```
+/* element selector */
+div{
+    background-color: red;
+}
+/* class selector */
+.div{
+    background-color:yellow;
+}
+/* id selector */
+#id{
+    background-color: rosybrown;
+
+}
+/* child selector */
+div > p{
+    color:blueviolet;
+    background-color: aqua;
+}
+/* desendant selector */
+div article p{
+    color:blueviolet;
+    background-color: rgb(74, 255, 29);
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Pseudo Selector  */
+a:visited{
+    color: rgb(0, 0, 0)
+}
+
+a:link {
+    color: green;
+}
+
+a:active{
+    background-color: red;
+}
+
+a:hover{
+    background-color: rgb(63, 172, 13);
+}
+
+
+p:first-child{
+    background-color: aqua;
+}
+ ```
+# [Day18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
