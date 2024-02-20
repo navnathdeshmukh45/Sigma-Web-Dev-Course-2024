@@ -250,4 +250,15 @@ Three ways to add CSS to HTML
 <li>External CSS</li>
 ```<link rel="stylesheet" href="style.css">```
 
-# [Day16]
+# [Day16]()
+  <h1>My Videos and Audios for the Day</h1>
+    <h2>Some Videos for the Day</h2>
+   ``` 
+   <div>
+        <video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>
+    </div>
+    <h2>Some Audios for the Day</h2>
+    <div>
+        <audio src="better-day-186374.mp3" controls></audio>      
+    </div>
+    ```
