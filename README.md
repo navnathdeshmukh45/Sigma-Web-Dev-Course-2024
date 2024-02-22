@@ -638,3 +638,23 @@ h1 {
     }
     </style>
 ```
+# [Day26](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day26)
+```
+<div id="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+
+<style>
+    #box{
+        background-color: red;
+        width: 30vw;
+        height: 30vh;
+        border: 2px solid black;
+        /* overflow: auto;
+        overflow-x: hidden;
+        overflow-y: scroll; */
+        overflow: auto hidden;
+        /* white-space: nowrap; */
+        /* text-overflow: ellipsis;  */
+    }
+</style>
+```
+# [Day27]()
