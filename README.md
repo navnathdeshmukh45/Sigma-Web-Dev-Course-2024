@@ -657,4 +657,9 @@ h1 {
     }
 </style>
 ```
-# [Day27]()
+# [Day27](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day27)
+
+Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html
+
+# [Day28]()
+# Day 28 CSS BoxModel
