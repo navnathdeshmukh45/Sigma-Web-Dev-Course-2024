@@ -678,4 +678,4 @@ Write html and css code to style a paragraph inside a div which contains 5 other
 
 # [Day30](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day31)
 # Media Queries!
-[alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day31/mq-animate.gif)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day31/download.png)
