@@ -676,6 +676,8 @@ Write html and css code to style a paragraph inside a div which contains 5 other
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day30/css%20variable.jpeg)
 
-# [Day30](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day31)
+# [Day31](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day31)
 # Media Queries!
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day31/download.png)
+
+# [Day32]
