@@ -682,3 +682,5 @@ Write html and css code to style a paragraph inside a div which contains 5 other
 
 # [Day32](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day32)
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day32/card.png)
+
+# [Day33]()
