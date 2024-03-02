@@ -693,4 +693,57 @@ float:left;
 clear:both;
 ```
 
-# [Day35]()
+# [Day35](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day35)
+More on css
+```
+   .box:first-child{
+            background-color: red;
+        } 
+
+         .box::first-line{
+            color: yellow;
+        } 
+
+         .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        } 
+
+         .box:nth-child(odd){
+            background-color: blue;
+        } 
+
+         .box:nth-last-child(2){
+            background-color: red;
+        } 
+
+        .boxes::before {
+            content: "Harry is good";
+            color: blue;
+        }
+
+        .boxes::after {
+            content: "Sigma course is also good";
+            color: red;
+        }
+
+        ::selection {
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter {
+            color: peru;
+            font-size: 45px;
+        }
+
+        input::placeholder {
+            color: rgb(84, 84, 88);
+        }
+```
+# [Day36](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day36)
+CSS MultiColor Website
