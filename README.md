@@ -747,3 +747,5 @@ More on css
 ```
 # [Day36](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day36)
 CSS MultiColor Website
+
+# [Day37]()
