@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login & Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form signup">
+        <h2>Registration</h2>
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <i class="fa-regular fa-user"></i>
+          <span>UserName</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <i class="fa-regular fa-envelope"></i>
+          <span>Email</span>
+        </div>
+        <div class="inputBox">
+          <input type="password" required="required" />
+          <i class="fa-solid fa-lock"></i>
+          <span>Password</span>
+        </div>
+        <div class="inputBox">
+          <input type="password" required="required" />
+          <i class="fa-solid fa-lock"></i>
+          <span>number</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="submit" />
+        </div>
+        <p><a href="#" class="login">login</a></p>
+      </div>
+
+      <div class="form signin">
+        <h2>login</h2>
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <i class="fa-regular fa-user"></i>
+          <span>UserName</span>
+        </div>
+        <div class="inputBox">
+          <input type="password" required="required" />
+          <i class="fa-solid fa-lock"></i>
+          <span>Password</span>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Login" />
+        </div>
+        <p>
+          forget password ? <a href="#" class="create">create account</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      let login = document.querySelector(".login");
+      let create = document.querySelector(".create");
+      let container = document.querySelector(".container");
+
+      login.onclick = function () {
+        container.classList.add("signinForm");
+      };
+
+      create.onclick = function () {
+        container.classList.remove("signinForm");
+      };
+    </script>
+  </body>
+</html>
