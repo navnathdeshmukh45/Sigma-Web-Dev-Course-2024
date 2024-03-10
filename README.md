@@ -767,6 +767,7 @@ CSS MultiColor Website
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day42/Layout.jpg)
 
 # [Day43](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day43)
-![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day43/indian%20women%200.png)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day43/layout.jpg)
 
-# [Day44]()
+# [Day44](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day44)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day44/44.jpg)
