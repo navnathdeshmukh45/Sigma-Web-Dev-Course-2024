@@ -763,4 +763,5 @@ CSS MultiColor Website
 # [Day41](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day41)
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day41/Target.jpg)
 
-# [Day42]()
+# [Day42](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day42)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day42/Layout.jpg)
