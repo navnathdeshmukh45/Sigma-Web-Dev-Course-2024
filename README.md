@@ -748,4 +748,13 @@ More on css
 # [Day36](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day36)
 CSS MultiColor Website
 
-# [Day37]()
+# [Day37](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day37)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day37/layout.jpg)
+
+# [Day38](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day38)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day38/flexbox.jpg)
+
+# [Day39](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day39)
+[text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day39/CSS%20Grid.jfif)
+
+# [Day40](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day40)
