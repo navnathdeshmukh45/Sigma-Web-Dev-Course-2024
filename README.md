@@ -844,3 +844,18 @@ object-position: 10px 20px;
 object-position: bottom right; 
 object-fit: contain; 
 ```
+# [Day50](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day51)
+# CSS Filters
+```
+.element {
+    filter: blur(5px);
+    filter: brightness(150%);
+    filter: contrast(200%);
+    filter: grayscale(100%);
+    filter: invert(100%);
+    filter: opacity(50%);
+    filter: saturate(200%);
+    filter: sepia(100%);
+    filter: grayscale(50%) blur(2px) brightness(120%);
+}
+```

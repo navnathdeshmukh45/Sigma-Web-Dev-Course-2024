@@ -4,11 +4,7 @@
 
         .img1{
             filter: brightness(122%);
-        }
-
-        .img2{
-            
-        }
+          }
 
         .img3{
             filter: grayscale(20%);
