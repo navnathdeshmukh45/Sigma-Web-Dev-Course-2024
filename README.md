@@ -772,4 +772,59 @@ CSS MultiColor Website
 # [Day44](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day44)
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day44/44.jpg)
 
-# [Day45]()
+# [Day45](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day45)
+# css transitions
+```
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+```
+
+```
+<div class="container">
+    <div class="box translate"></div>
+</div>
+
+.container{
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 40vh;
+}
+
+.box{
+    background-color: aquamarine;
+    width: 5vw;
+    height: 4vh;
+    /* transition-property: background-color, transform;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.22, 0.43, 0, 0.99); */
+    /* transition-delay: 1s; */
+    transition: all 3s cubic-bezier(0.09, 0.5, 0, 0.99) 1s;
+}
+
+.translate{
+    transform: translateX(10vw) translateY(10vh) scale(2);
+    background-color: blue;
+}
+```
+# [Day46] (https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day46)
+# CSS Animations
+```
+animation-name: Animation; 
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(0, 0, 0, 0.96);
+animation-delay: 1s;
+animation-direction: reverse;
+animation-play-state: paused; 
+animation: name duration timing-function delay iteration-count direction fill-mode; 
+animation: Animation 2s ease-in-out 3s 1, 
+               harry2 3s ease-in-out 3s 1;
+```
