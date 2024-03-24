@@ -815,7 +815,7 @@ div:hover {
     background-color: blue;
 }
 ```
-# [Day46] (https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day46)
+# [Day46](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day46)
 # CSS Animations
 ```
 animation-name: Animation; 
@@ -827,5 +827,5 @@ animation-direction: reverse;
 animation-play-state: paused; 
 animation: name duration timing-function delay iteration-count direction fill-mode; 
 animation: Animation 2s ease-in-out 3s 1, 
-               harry2 3s ease-in-out 3s 1;
+           harry2 3s ease-in-out 3s 1;
 ```
