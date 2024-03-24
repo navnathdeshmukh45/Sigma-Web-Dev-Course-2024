@@ -829,3 +829,4 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 animation: Animation 2s ease-in-out 3s 1, 
            harry2 3s ease-in-out 3s 1;
 ```
+# [Day47](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day47)
