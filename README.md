@@ -870,3 +870,76 @@ object-fit: contain;
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day53/Target.jpg)
 
 # [Day54](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day54)
+# JavaScript Introduction
+```
+console.log("Hello Sir");
+```
+# [Day55](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day55)
+# JavaScript Variables
+```
+console.log("Hey this is tutorial 55");
+
+var a = 5;
+// a = a + 1
+let b = 6;
+let c = "Priya";
+let _a = "Shubham";
+// var 55a = "Rohan"; // Not Allowed
+
+// console.log(a +  b + 8);
+// console.log(typeof a, typeof b, typeof c);
+{
+    // let a = 66;
+    console.log(a)
+}
+console.log(a)
+// const a1 = 6;
+// a1 = a1 + 1; // Not Allowed because a1 is constant
+
+
+let x = "Nav bhai";
+let y = 22;
+let z = 3.55;
+const p = true;
+let q = undefined;
+let r = null;
+
+console.log(x, y, z, p, q, r)
+console.log(typeof x, typeof y, typeof z, typeof p, typeof q, typeof r)
+
+
+let o = {
+    "name": "Nav",
+    "job code": 5600,
+    "is_handsome": true
+}
+
+console.log(o);
+o.salary = "100crores";
+console.log(o);
+o.salary = "500crores";
+console.log(o);
+```
+# [Day56](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day56)
+# Condition Javascript
+```
+if (age == 18) {
+    console.log("You can drive");
+}
+
+else if (age == 0) {
+    console.log("Are you kidding?")
+}
+
+else if (age == 1) {
+    console.log("Are you again kidding?")
+}
+
+else {
+    console.log("You cannot drive");
+}
+
+a = 6;
+b = 8;
+let c = a > b ? (a - b) : (b - a);
+```
