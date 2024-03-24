@@ -834,3 +834,13 @@ animation: Animation 2s ease-in-out 3s 1,
 
 # [Day48](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day48)
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day48/Target.jpg)
+
+# [Day49](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day49)
+# CSS object Fit and position
+```
+object-fit: contain;
+object-fit: fill; 
+object-position: 10px 20px;
+object-position: bottom right; 
+object-fit: contain; 
+```
