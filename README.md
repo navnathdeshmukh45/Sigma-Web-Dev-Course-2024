@@ -833,3 +833,4 @@ animation: Animation 2s ease-in-out 3s 1,
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day47/Target.jpg)
 
 # [Day48](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day48)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day48/Target.jpg)
