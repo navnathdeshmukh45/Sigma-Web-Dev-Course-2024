@@ -867,5 +867,6 @@ object-fit: contain;
 
 # [Day53](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day53)
 # Netflix India - Watch TV Shows Online, Watch Movies Online Clone
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day53/Target.jpg)
 
-# [Day54]()
+# [Day54](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day54)
