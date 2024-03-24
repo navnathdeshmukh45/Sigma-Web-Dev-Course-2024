@@ -859,3 +859,13 @@ object-fit: contain;
     filter: grayscale(50%) blur(2px) brightness(120%);
 }
 ```
+# [Day51](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day51)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day42/Layout.jpg)
+
+# [Day52](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day52)
+# Figma SoftWare Basic Level
+
+# [Day53](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day53)
+# Netflix India - Watch TV Shows Online, Watch Movies Online Clone
+
+# [Day54]()
