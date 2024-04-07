@@ -454,8 +454,11 @@ h1 {
         <p>I am also another para</p>
     </div>
 ```
+
 # [Day21](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day21)
+
 # CSS Specificity
+
 ```
     <div>
         <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
@@ -870,12 +873,16 @@ object-fit: contain;
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day53/Target.jpg)
 
 # [Day54](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day54)
+
 # JavaScript Introduction
 ```
 console.log("Hello Sir");
 ```
+
 # [Day55](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day55)
+
 # JavaScript Variables
+
 ```
 console.log("Hey this is tutorial 55");
 
@@ -920,8 +927,11 @@ console.log(o);
 o.salary = "500crores";
 console.log(o);
 ```
+
 # [Day56](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day56)
+
 # Condition Javascript
+
 ```
 if (age == 18) {
     console.log("You can drive");
@@ -943,4 +953,458 @@ a = 6;
 b = 8;
 let c = a > b ? (a - b) : (b - a);
 ```
-# [Day57]()
+
+# [Day57](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day57)
+
+# loops
+
+```
+let i = 10;
+do {
+    console.log(i)
+    i++;
+} while (i<6);
+
+for (let i = 0; i < 100; i++) { 
+    console.log(a + i); 
+}
+
+let obj = {
+    name: "Harry",
+    role: "Programmer",
+    company: "CodeWithHarry AI"
+}
+ 
+for (const key in obj) {  
+        console.log(key)
+}
+
+for (const c of "Harry") {
+    console.log(c)
+}
+
+let i = 0;
+while (i<60000) {
+    console.log(i)
+    i++;
+}
+```
+
+# [Day58](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day58)
+```
+function nice(name) {
+    console.log("Hey " + name + " you are nice!")
+    console.log("Hey " + name + " you are good!")
+    console.log("Hey " + name + " your tshirt is nice!")
+    console.log("Hey " + name + " your course is good too!")
+}
+function sum(a, b, c = 3) {
+    // console.log(a + b)
+    console.log(a, b, c)
+    return a + b + c
+}
+
+result1 = sum(3, 2)
+result2 = sum(7, 5)
+result3 = sum(3, 13, 1)
+console.log("The sum of these numbers is: ", result1)
+console.log("The sum of these numbers is: ", result2)
+console.log("The sum of these numbers is: ", result3)
+```
+
+# [Day59](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day59/HAPPY%20HOLI)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day59/HAPPY%20HOLI/Holi.jpg)
+
+# [Day60](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day60)
+# String Methods
+```
+let a = "Priya";
+console.log(a[0]);;
+// console.log(a[5]);
+console.log(a.length)
+let real_name = "Priya"
+let friend = "Shalini"
+console.log("His name is " + real_name + " and his friends name is " + friend)
+console.log(`His name is ${real_name} and his friends name is ${friend}`)
+let b = "Shivam"
+console.log(b.toUpperCase())
+console.log(b.toLowerCase()) 
+console.log(b.length) 
+console.log(b.slice(1, 5)) 
+console.log(b.slice(1)) 
+console.log(b.replace("Sh", "77"))
+console.log(b.concat(a, "Aishwariya", "Rahul", "Priya"))
+console.log(b)
+```
+
+# [Day61](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day61)
+```
+/* Create a faulty calculator using JavaScript
+This faulty calculator does following:
+1. It takes two numbers as input from the user
+2. It perfoms wrong operations as follows:
++ ---> -
+* ---> +
+- ---> /
+/ ---> **
+It performs wrong operation 10% of the times
+*/
+
+
+let random = Math.random()
+console.log(random)
+let a = prompt("Enter first number")
+let c = prompt("Enter operation")
+let b = prompt("Enter second number")
+
+let obj = {
+    "+": "-",
+    "*": "+",
+    "-": "/",
+    "/": "**",
+}
+
+if (random > 0.1) {
+    // Perform correct calculation
+    console.log(`The result is ${a} ${c} ${b}`)
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)    
+}
+
+else {
+    // Perform wrong calculation
+    c = obj[c]
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`) 
+}
+```
+
+# [Day62](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day62)
+```
+// Three Random business idea 
+
+let rand = Math.random()
+let first, second, third;
+// 0 0.33 0.66 1
+
+// Lets generate the first word
+if(rand<0.33){
+    first = "Crazy"
+}
+else if(rand<0.66 && rand>=0.33){
+    first = "Amazing"
+}
+else{
+    first = "Fire"
+}
+
+// Lets generate the second word
+rand = Math.random()
+if(rand<0.33){
+    second = "Engine"
+}
+else if(rand<0.66 && rand>=0.33){
+    second = "Foods"
+}
+else{
+    second = "Garments"
+}
+
+// Lets generate the third word
+rand = Math.random()
+if(rand<0.33){
+    third = "Bros"
+}
+else if(rand<0.66 && rand>=0.33){
+    third = "Limited"
+}
+else{
+    third = "Hub"
+}
+console.log(`${first} ${second} ${third}`)
+```
+# [Day63](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day63)
+# array 
+```
+let arr = [1, 2, 4, 5, 7]
+//  Index  0, 1, 2, 3, 4
+
+arr[0] = 5666;
+// console.log(arr, typeof arr);
+// console.log(arr.length)
+// console.log(arr[0])
+// console.log(arr[2])
+// console.log(arr[4])
+console.log(arr.toString())
+console.log(arr.join(" and "))
+// let numbers = [1, 2, 3, 4, 5] 
+// numbers.splice(1, 2)    
+// numbers.splice(1, 3)  
+// numbers.splice(1, 3, 222, 333) 
+// (4) [1, 222, 333, 5]
+
+let a = [1, 93, 5, 6, 88]
+
+
+// for (let index = 0; index < a.length; index++) {
+//     const element = a[index];
+//     console.log(element)
+    
+// }
+
+// a.forEach((value, index, arr)=>{
+//     console.log(value, index, arr)
+// })
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
+// for (const key in obj) {
+//     if (Object.hasOwnProperty.call(obj, key)) {
+//         const element = obj[key]; 
+//         console.log(key, element)
+//     }
+// }
+
+for (const value of a) {
+    console.log(value)
+}
+
+// let arr = [1, 13, 5 ,7, 11];
+// let newArr = []
+// for (let index = 0; index < arr.length; index++) {
+//     const element = arr[index];
+//     newArr.push(element**2)
+// }
+
+let newArr = arr.map((e, index, array)=>{
+    return e**2
+})
+
+console.log(newArr)
+const greaterThanSeven = (e)=>{
+    if(e>7){
+        return true
+    }
+    return false
+}
+console.log(arr.filter(greaterThanSeven))
+
+let arr2 = [1,2,3,4,5,6]
+
+const red = (a, b)=>{
+    return a+b
+}
+
+console.log(arr2.reduce(red))
+```
+
+# [Day64](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day64)
+
+# [Day65](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day65)
+ 
+Calculate the Factorial
+
+```
+let num = prompt("Enter the number: ")
+        num = Number.parseInt(num)
+
+//  Using reduce method
+        if(num < 0){
+            console.log("factorial is not defined for negative number !!")
+        }
+        let arr =[]
+        for(let i = 1; i <= num; i++){
+            arr.push(i)
+        }
+        let a = arr.reduce((a, b)=>{
+            return a * b;
+        })
+        console.log("Using reduce method: " + a)
+
+        //  Using for loop
+        if(num < 0){
+            console.log("factorial is not defined for negative number !!")
+        }
+        let fact = 1
+        for(let i1 = 1; i1 <= num; i1++){
+             fact = fact * i1
+        }
+        console.log("Using for loop: " + fact)
+```
+
+# [Day66](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day66)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day66/DOM.jpg)
+
+```
+document.title = "Programmer Navnath"
+console.log(document.title)
+console.log(document.body)
+document.body.style.backgroundColor = "aqua";
+```
+# [Day67](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day67)
+
+```
+<style>
+.box{
+    height: 45px;
+    width: 56px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+</style>
+<body>
+    <div class="container">
+        <!-- this is me  -->
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Navnath</td>
+          <td>20</td>
+        </tr>
+      </table>
+      
+<script>
+        document.body.firstElementChild 
+        document.body.firstElementChild.childNodes 
+        document.body.firstElementChild.children
+</script>
+```
+
+# [Day68](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day68)
+
+Selecting by Ids, Classes, and More
+```
+<style>
+ .box
+{
+    height: 34px;
+    width: 34px;
+    margin: 34px;
+    padding: 34px;
+    border: 2px solid black;
+}
+</style>
+<body> 
+    <div class="div container">
+       <div class="box">box </div>
+       <div class="box">box </div>
+       <div class="box">box </div>
+       <div class="box">box </div>
+       <div class="box">box </div>
+    </div>
+<script>
+    let boxes = document.getElementsByClassName("box")
+    console.log(boxes)
+
+    boxes[2].style.backgroundColor = "red"
+
+    document.getElementById("redbox").style.backgroundColor = "red"
+
+    document.querySelector(".box").style.backgroundColor = "green";
+    console.log(document.querySelectorAll(".box"))
+
+    document.querySelectorAll(".box").forEach(e =>{
+        e.style.backgroundColor = "green";
+    }) 
+</script>
+<body> 
+```
+# [Day69](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day69)
+
+```
+let a = 5;
+
+function factorial(number){
+    let arr = Array.from(Array(number).keys())
+    let c = arr.slice(1,).reduce((a, b)=> a*b)
+    return c
+}
+
+function facFor(number){
+    let fac = 1;
+    for(let index= 1;index <= number; index++){
+        fac =fac * index
+    }
+    return fac
+}
+document.write(factorial(a))
+document.write(" ",facFor(a))
+```
+
+# [Day70](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day70)
+
+Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+
+# [Day71](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day71)
+
+Inserting and Removing Elements
+
+```
+<style>
+.red{
+    color: red;
+}
+</style>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="Programmer_navnath" data-conceptby="Shalini" >Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+<script>
+document.querySelector(".box")
+document.querySelector(".container").innerHTML
+document.querySelector(".container").outerHTML
+document.querySelector(".container").tagName
+document.querySelector(".container").nodeName
+document.querySelector(".container").textContent
+document.querySelector(".conatiner").innerHTML = " Hey I am good Best person for you "
+document.querySelector(".conatiner").hasAttribute("style")
+document.querySelector(".conatiner").getAttribute("style")
+document.querySelector(".conatiner").setAttribute("style","display:inline")
+document.querySelector(".conatiner").attributes
+document.querySelector(".conatiner").removeAttribute("style")
+document.designMode = "on" // To Change the page 
+document.querySelector(".box").dataset 
+document.querySelector(".box").remove()
+document.querySelector(".box").classList
+document.querySelector(".box").className
+document.querySelector(".container").classList.add("Prog")
+document.querySelector(".container").classList.remove("Prog")
+document.querySelector(".container").classList.toggle("Prog")
+
+let div = document.createElement("div");
+div.innerHTML = "I have been inserted <b>by harry</b>"
+div.setAttribute("class", "created");
+document.querySelector(".container").before(div);
+
+let cont = document.querySelector(".container")
+cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+
+let con = document.querySelector(".container")
+con.insertAdjacentHTML("afterend","<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+
+let cont1 = document.querySelector(".container")
+cont1.insertAdjacentHTML("beforebegin","<b> I am under the water. </b>")
+
+let con1 = document.querySelector(".container")
+con1.insertAdjacentHTML("beforeend","<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+</script>
+</body>
+```
+
+# [Day72](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72/Chatbot/chatbot%20%281%29.png)
+
