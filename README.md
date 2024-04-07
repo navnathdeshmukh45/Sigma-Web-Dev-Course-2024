@@ -1406,7 +1406,8 @@ con1.insertAdjacentHTML("beforeend","<b> I am under the water. Please h elp me h
 
 # [Day72](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72)
 
-![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72/Chatbot/chatbot%20%281%29.png)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72/bot.png)
+
 
 # [Day73](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day73)
 
