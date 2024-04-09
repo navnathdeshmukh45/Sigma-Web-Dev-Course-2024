@@ -1412,3 +1412,88 @@ con1.insertAdjacentHTML("beforeend","<b> I am under the water. Please h elp me h
 # [Day73](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day73)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day73/card.png)
+
+# [Day74]()
+
+Events Event Bubbling, setinterval and setTimeout
+
+```
+ <div class="container">
+        <div class="box">Hey I am Box</div>
+    </div>
+    <button id="btn">Change content</button>
+```
+
+```
+let button = document.getElementById("btn")
+button.addEventListener("click",()=>{
+    // alert("I was clicked")
+    document.querySelector(".box").innerHTML ="<b>Yayy you were clicked</b> Enjoy your click!"
+})
+```
+
+# List of all mouse events (https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events)
+
+Event bubbling
+```
+ <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(227, 227, 28);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+<body>
+     <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Child Was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer Was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container Was clicked")
+        })
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 1000);
+        // console.log(a)
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 5000);
+        console.log(a)
+    </script>
+</body>
+```
