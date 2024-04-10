@@ -1497,3 +1497,158 @@ Event bubbling
     </script>
 </body>
 ```
+
+# [Day75]()
+
+Callback Function
+
+A callback function in JavaScript is a function that is passed as an argument to another function and is intended to be called at a later time.
+
+This mechanism allows for functions to be executed asynchronously, after an operation has been completed. 
+
+Callback functions are commonly used in scenarios such as handling events, asynchronous operations like fetching data from a server, or executing code after a timeout.
+
+```
+// Function that takes a callback
+function greet(name, callback) {
+    console.log("Hello, " + name + "!");
+    // Call the callback function
+    callback();
+}
+
+// Callback function definition
+function sayGoodbye() {
+    console.log("Goodbye!");
+}
+
+// Using the greet function with a callback
+greet("Alice", sayGoodbye);
+
+```
+
+
+Error handling in JavaScrip
+
+Error handling in JavaScript involves managing and responding to errors or exceptions that may occur during the execution of your code. 
+
+Handling errors properly is essential for writing robust and reliable JavaScript applications. 
+
+Try...Catch Statement
+
+The try...catch statement is used to handle exceptions or errors that occur within a block of code.
+
+```
+try {
+    // Code that may throw an error
+    let result = someFunction();
+    console.log(result);
+} catch (error) {
+    // Code to handle the error
+    console.error('An error occurred:', error);
+}
+```
+
+Error Object
+
+In JavaScript, errors are represented by objects of the Error class or its subclasses (e.g., SyntaxError, ReferenceError, TypeError). 
+
+These objects contain information about the error, such as the error message and stack trace.
+
+```
+try {
+    // Attempt to access an undefined variable
+    console.log(undefinedVariable);
+} catch (error) {
+    if (error instanceof ReferenceError) {
+        console.error('ReferenceError occurred:', error.message);
+    } else {
+        console.error('An error occurred:', error.message);
+    }
+}
+```
+
+Throw Statement
+
+You can manually throw errors using the throw statement to indicate exceptional conditions in your code.
+
+```
+function divide(x, y) {
+    if (y === 0) {
+        throw new Error('Division by zero is not allowed');
+    }
+    return x / y;
+}
+
+try {
+    let result = divide(10, 0);
+    console.log(result);
+} catch (error) {
+    console.error('Error:', error.message);
+}
+```
+
+Async/Await Error Handling
+
+When using async functions and await expressions, you can use try...catch blocks to handle asynchronous errors.
+
+```
+async function fetchData(url) {
+    try {
+        let response = await fetch(url);
+        let data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error; // rethrowing the error
+    }
+}
+
+fetchData('https://api.example.com/data')
+    .then(data => console.log(data))
+    .catch(error => console.error('Error in fetchData:', error));
+```
+Promises in JavaScript
+
+Promises in JavaScript are a way to handle asynchronous operations. They have three states: pending, fulfilled, and rejected. 
+
+You create a promise using the Promise constructor, and it resolves with a value or rejects with an error. 
+
+Promises are consumed .then () for success and .catch () for errors.
+
+Promises are commonly used for handling asynchronous operations, such as fetching data from an API or reading files, and provide a cleaner alternative to callback-based approaches for managing asynchronous code flow and error handling.
+```
+let promise = new Promise(function (resolve, reject) {
+	const x = "coder";
+	const y = "coder"
+	if (x === y) {
+		resolve();
+	} else {
+		reject();
+	}
+});
+
+promise.
+	then(function () {
+		console.log('Success, You are a Programmer');
+	}).
+	catch(function () {
+		console.log('Some error has occurred');
+	});
+
+```
+
+Promise API in JavaScript
+<!-- 
+JavaScript Promise are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code. 
+
+Multiple callback functions would create callback hell that leads to unmanageable code. 
+
+Promises are used to handle asynchronous operations in JavaScript. -->
+
+```
+
+```
+
+# [Day76]()
