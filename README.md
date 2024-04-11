@@ -1587,26 +1587,6 @@ try {
 }
 ```
 
-Async/Await Error Handling
-
-When using async functions and await expressions, you can use try...catch blocks to handle asynchronous errors.
-
-```
-async function fetchData(url) {
-    try {
-        let response = await fetch(url);
-        let data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-        throw error; // rethrowing the error
-    }
-}
-
-fetchData('https://api.example.com/data')
-    .then(data => console.log(data))
-    .catch(error => console.error('Error in fetchData:', error));
-```
 Promises in JavaScript
 
 Promises in JavaScript are a way to handle asynchronous operations. They have three states: pending, fulfilled, and rejected. 
@@ -1652,3 +1632,66 @@ Promises are used to handle asynchronous operations in JavaScript. -->
 ```
 
 # [Day76]()
+
+
+Async/Await 
+
+When using async functions and await expressions, you can use try...catch blocks to handle asynchronous errors.
+
+```
+//async function getData() {
+// Simulate getting data from a server
+//   return new Promise((Resolve, Reject) => {
+//     setTimeout(() => {
+//       Resolve(455);
+//     }, 3000);
+//   });
+// }
+
+// settle means resolve or reject
+// resolve means promise has settled successfully
+// reject means promise has not settled successfully
+
+async function getData() {
+  // Simulate getting data from a server
+//   let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   console.log(x)
+  //return 455
+  //let data = await x.json()
+ //let data = await x.text()
+  //console.log(data)
+  //return data
+
+  let x = await fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                body: JSON.stringify({
+                    title: 'foo',
+                    body: 'bar',
+                    userId: 1,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })
+    let data = await x.json() 
+    return data
+}
+
+async function main() {
+  console.log("Loading Modules");
+  console.log("Do Something Else");
+  console.log("Load Data");
+  let data = await getData();
+  console.log(data);
+  console.log("Process Data");
+  console.log("Task 2");
+}
+main();
+
+
+// data.then((v)=>{
+//     console.log(data)
+//     console.log("Process Data")
+//     console.log("Task 2")
+// })
+```
