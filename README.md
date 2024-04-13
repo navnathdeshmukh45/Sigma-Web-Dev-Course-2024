@@ -1695,3 +1695,18 @@ main();
 //     console.log("Task 2")
 // })
 ```
+
+# [Day77](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day77)
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day77/screenshot.jpg)
+
+# [Day78]()
+
+Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
+    
+    Initializing Hacking...
+    Reading your Files...
+    Password files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning up...
+
+    The three dots must blink so that it looks like a real terminal
