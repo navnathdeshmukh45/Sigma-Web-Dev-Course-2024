@@ -1699,7 +1699,7 @@ main();
 # [Day77](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day77)
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day77/screenshot.jpg)
 
-# [Day78]()
+# [Day78](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day78)
 
 Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
     
@@ -1710,3 +1710,5 @@ Create a hacking simulator which has green background and it shows these message
     Cleaning up...
 
     The three dots must blink so that it looks like a real terminal
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day78/Day78.png)
