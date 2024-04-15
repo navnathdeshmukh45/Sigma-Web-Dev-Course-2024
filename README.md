@@ -1713,4 +1713,6 @@ Create a hacking simulator which has green background and it shows these message
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day78/Day78.png)
 
-# [Day79] ()
+# [Day79](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day79)
+
+Catch & Error Handling
