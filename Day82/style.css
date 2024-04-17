@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgb(206, 202, 202); */
+  background-color: orange;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.head {
+  position: relative;
+  color: red;
+  font-size: 3rem;
+  font-weight: 700;
+  top: 2rem;
+}
+.container {
+  width: 25rem;
+  height: 25rem;
+  background-color: burlywood;
+  position: relative;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  margin: auto;
+  top: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.chest {
+  width: 15rem;
+  height: 13rem;
+  background-color: #89cff0;
+  position: relative;
+  /* display: flex; */
+  /* margin-bottom: 100%; */
+  /* margin-top: 2rem; */
+  border-radius: 37% 37% 0 0;
+  overflow: hidden;
+  z-index: 2;
+}
+.hair {
+  width: 8rem;
+  height: 9rem;
+  margin-top: 4rem;
+  margin-left: 3.4rem;
+  background-color: rgb(114, 24, 24);
+  border-radius: 40% 40% 50% 50%;
+  position: relative;
+  /* display: flex; */
+}
+.innerLine {
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(53, 6, 6);
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 1.2rem;
+  margin-left: 0.5rem;
+}
+.inHair {
+  width: 1.5rem;
+  height: 1rem;
+  position: absolute;
+  background-color: rgb(53, 6, 6);
+  border-radius: 50%;
+  margin-top: 2rem;
+  margin-left: 3.2rem;
+  z-index: 1;
+}
+.leftForehead {
+  width: 0.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-color: rgb(53, 6, 6);
+  margin-top: 3.1rem;
+  margin-left: 1.2rem;
+  z-index: 1;
+  border-radius: 0 30% 50% 0;
+  transform: rotate(20deg);
+}
+.rightForehead {
+  width: 0.5rem;
+  height: 1.5rem;
+  position: absolute;
+  background-color: rgb(53, 6, 6);
+  margin-top: 3.1rem;
+  margin-left: 6.3rem;
+  z-index: 1;
+  border-radius: 0 30% 0 50%;
+  transform: rotate(-20deg);
+}
+.upperHair {
+  width: 3rem;
+  height: 1.9rem;
+  background-color: rgb(116, 8, 8);
+  position: absolute;
+  margin-top: 2.2rem;
+  margin-left: 5.8rem;
+  border-radius: 50% 50% 0 0;
+}
+.hairBand {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: rgb(239, 208, 35);
+  position: absolute;
+  margin-top: 3.7rem;
+  margin-left: 5.8rem;
+  border-radius: 40%;
+}
+.hairShape {
+  width: 2rem;
+  height: 1rem;
+  position: absolute;
+  background-color: rgb(114, 24, 24);
+  margin-top: 0.7rem;
+  margin-left: 3rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+.neck {
+  width: 5rem;
+  height: 3rem;
+  margin-top: -2rem;
+  background-color: #89cff0;
+  /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
+  clip-path: polygon(26% 62%, 74% 62%, 82% 79%, 100% 100%, 0 100%, 18% 79%);
+  margin-left: 4.9rem;
+}
+.handRight {
+  width: 0.3rem;
+  height: 5.5rem;
+  background-color: #6082b6;
+  border-radius: 50%;
+  margin-left: 12rem;
+  position: absolute;
+  margin-top: 5.4rem;
+  transform: rotate(-5deg);
+}
+.handLeft {
+  width: 0.3rem;
+  height: 5.5rem;
+  background-color: #6082b6;
+  border-radius: 50%;
+  margin-left: 2.8rem;
+  position: absolute;
+  margin-top: 5.3rem;
+  transform: rotate(5deg);
+}
+.face {
+  width: 6rem;
+  height: 6.4rem;
+  margin-left: 1rem;
+  margin-top: 2.8rem;
+  position: absolute;
+  z-index: 1;
+  background-color: #89cff0;
+  border-radius: 40% 40% 50% 50%;
+}
+.leftEar {
+  width: 0.8rem;
+  height: 1.5rem;
+  position: absolute;
+  /* background-color: red; */
+  background-color: #89cff0;
+  border-radius: 40%;
+  margin-top: 5.2rem;
+  margin-left: 0.5rem;
+  z-index: 1;
+}
+.innerLeftEar {
+  width: 0.3rem;
+  height: 0.7rem;
+  position: absolute;
+  /* background-color: red; */
+  border-radius: 50%;
+  background-color: #6082b6;
+  margin-top: 5.6rem;
+  margin-left: 0.8rem;
+  z-index: 2;
+}
+.rightEar {
+  width: 0.8rem;
+  height: 1.5rem;
+  position: absolute;
+  /* background-color: red; */
+  background-color: #89cff0;
+  border-radius: 40%;
+  margin-top: 5.2rem;
+  margin-left: 6.7rem;
+  z-index: 1;
+}
+.innerRightEar {
+  width: 0.3rem;
+  height: 0.7rem;
+  position: absolute;
+  /* background-color: red; */
+  border-radius: 50%;
+  background-color: #6082b6;
+  margin-top: 5.6rem;
+  margin-left: 6.8rem;
+  z-index: 2;
+}
+.leftCircle {
+  width: 1.7rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #89cff0;
+  border-radius: 50%;
+  margin-left: 1.7rem;
+  margin-top: 2.8rem;
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+.rightCircle {
+  width: 1.7rem;
+  height: 1rem;
+  position: absolute;
+  background-color: #89cff0;
+  border-radius: 50%;
+  margin-left: 4.5rem;
+  margin-top: 2.8rem;
+  transform: rotate(30deg);
+  z-index: 2;
+}
+.tilak {
+  position: absolute;
+  margin-left: 2.45rem;
+  margin-top: 0.1rem;
+  color: red;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.leftEyebrow {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: rgb(53, 6, 6);
+  /* background-color: aqua; */
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+.backLeftEye {
+  width: 1.5rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: red; */
+  background-color: #89cff0;
+  margin-left: 2.1rem;
+  margin-top: 4.4rem;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.leftEye {
+  width: 0.35rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: -0.2rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+}
+.rightEyebrow {
+  width: 1.3rem;
+  height: 0.5rem;
+  background-color: rgb(53, 6, 6);
+  /* background-color: aqua; */
+  position: absolute;
+  margin-left: 3.6rem;
+  margin-top: 1.3rem;
+  border-radius: 50%;
+  transform: rotate(10deg);
+}
+.backRightEye {
+  width: 1.5rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  /* background-color: red; */
+  background-color: #89cff0;
+  margin-left: 4.3rem;
+  margin-top: 4.4rem;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+.rightEye {
+  width: 0.4rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  /* margin: auto; */
+  margin-left: -0.1rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+}
+.nose {
+  width: 0.5rem;
+  height: 0.2rem;
+  background-color: #6082b6;
+  margin-top: -2.7rem;
+  margin-left: 7.1rem;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+}
+.lips {
+  width: 1.5rem;
+  height: 0.4rem;
+  background-color: #6082b6;
+  margin-top: -1.9rem;
+  margin-left: 6.6rem;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+}
+.lipsCover {
+  width: 1.3rem;
+  height: 0.2rem;
+  background-color: #89cff0;
+  position: absolute;
+  z-index: 2;
+  margin-left: 6.7rem;
+  margin-top: -1.9rem;
+  border-radius: 50%;
+}
+.rudraksh {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: brown;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+}
+.rudraksh.one {
+  transform: translate(4.5rem, 0rem);
+}
+.rudraksh.two {
+  transform: translate(4.8rem, 0.6rem);
+}
+.rudraksh.three {
+  transform: translate(5.2rem, 1.2rem);
+}
+.rudraksh.four {
+  transform: translate(5.6rem, 1.8rem);
+}
+.rudraksh.five {
+  transform: translate(6.2rem, 2.2rem);
+}
+.rudraksh.six {
+  transform: translate(6.9rem, 2.2rem);
+}
+.rudraksh.seven {
+  transform: translate(7.6rem, 2.2rem);
+}
+.rudraksh.eight {
+  transform: translate(8.3rem, 2rem);
+}
+.rudraksh.nine {
+  transform: translate(8.7rem, 1.4rem);
+}
+.rudraksh.ten {
+  transform: translate(9rem, 0.7rem);
+}
+.rudraksh.eleven {
+  transform: translate(9.2rem, 0rem);
+}
+.rudraksh.twelve {
+  transform: translate(0rem, 6.5rem);
+}
+.rudraksh.thirteen {
+  transform: translate(0.7rem, 6.7rem);
+}
+.rudraksh.fourteen {
+  transform: translate(1.4rem, 6.8rem);
+}
+.rudraksh.fifteen {
+  transform: translate(2.1rem, 6.7rem);
+}
+.rudraksh.sixteen {
+  transform: translate(12.1rem, 6.5rem);
+}
+.rudraksh.seventeen {
+  transform: translate(12.8rem, 6.7rem);
+}
+.rudraksh.eighteen {
+  transform: translate(13.6rem, 6.7rem);
+}
+.rudraksh.nineteen {
+  transform: translate(14.3rem, 6.5rem);
+}
+.dress {
+  width: 3rem;
+  height: 20rem;
+  position: absolute;
+  background-color: red;
+  margin-left: 5.3rem;
+  margin-top: -2rem;
+  transform: rotate(-30deg);
+  /* border-radius: 10% 10% 0 0; */
+  border-radius: 50%;
+  border: 0.3rem solid #f4c430;
+}
+.dressExtend {
+  width: 3rem;
+  height: 10rem;
+  background-color: red;
+  position: absolute;
+  margin-left: 6.8rem;
+  margin-top: 2.3rem;
+  transform: rotate(-40deg);
+  border-radius: 50%;
+  border-right: 0.3rem solid #f4c430;
+}
+.holder {
+  width: 3.5rem;
+  height: 3rem;
+  background-color: rgb(116, 8, 8);
+  position: absolute;
+  margin-left: -10rem;
+  margin-top: 13rem;
+  transform: rotate(-20deg);
+  border-top: 0.6rem solid rgb(246, 156, 13);
+  border-radius: 10%;
+  z-index: 1;
+}
+.arrow {
+  width: 0.2rem;
+  height: 4rem;
+  background-color: black;
+  position: absolute;
+  /* transform: rotate(-20deg); */
+}
+.arrow.one {
+  transform: translate(-6.8rem, 10rem) rotate(-20deg);
+}
+.arrow.two {
+  transform: translate(-5.3rem, 11.2rem) rotate(-20deg);
+}
+.arrow.three {
+  transform: translate(-4.9rem, 9.5rem) rotate(-20deg);
+}
+.backArrow {
+  width: 1.5rem;
+  height: 2.5rem;
+  background-color: rgb(197, 126, 12);
+  position: absolute;
+  clip-path: polygon(50% 75%, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+}
+.backArrow.one {
+  transform: translate(-8rem, 8rem) rotate(-25deg);
+}
+.backArrow.two {
+  transform: translate(-6.5rem, 9rem) rotate(-25deg);
+}
+.backArrow.three {
+  transform: translate(-6.1rem, 7.3rem) rotate(-25deg);
+}
+.extendedHairLeft {
+  width: 1rem;
+  height: 8rem;
+  margin-top: -6rem;
+  margin-left: 3rem;
+  position: absolute;
+  background-color: rgb(114, 24, 24);
+  border-radius: 50%;
+  /* transform: rotate(-5deg); */
+}
+.extendedHairRight {
+  width: 1rem;
+  height: 8rem;
+  margin-top: -6rem;
+  margin-left: 10.8rem;
+  position: absolute;
+  background-color: rgb(114, 24, 24);
+  border-radius: 50%;
+  transform: rotate(1deg);
+}
+.backHairLeft {
+  width: 2rem;
+  height: 3.2rem;
+  background-color: rgb(53, 6, 6);
+  position: absolute;
+  margin-left: 4.2rem;
+  margin-top: -1.8rem;
+  border-radius: 30%;
+}
+.backHairRight {
+  width: 2rem;
+  height: 3.2rem;
+  background-color: rgb(53, 6, 6);
+  position: absolute;
+  margin-left: 8.6rem;
+  margin-top: -1.8rem;
+  border-radius: 30%;
+}
+.hairDesign {
+  width: 3rem;
+  height: 0.5rem;
+  position: absolute;
+  background-color: red;
+  border-radius: 40%;
+}
+.hairDesign.one {
+  transform: translate(2.7rem, -2.2rem) rotate(90deg);
+  background-color: rgb(53, 6, 6);
+}
+.hairDesign.two {
+  transform: translate(9.1rem, -2.2rem) rotate(95deg);
+  background-color: rgb(53, 6, 6);
+}
+.hairDesign.three {
+  transform: translate(2.6rem, -0.6rem) rotate(90deg);
+  background-color: rgb(53, 6, 6);
+}
+.hairDesign.four {
+  transform: translate(9.1rem, -0.1rem) rotate(90deg);
+  background-color: rgb(53, 6, 6);
+}
+.bowPart1 {
+  width: 1.5rem;
+  height: 9rem;
+  position: absolute;
+  background-color: rgb(246, 156, 13);
+  margin-left: 11.5rem;
+  margin-top: 6.2rem;
+  transform: rotate(10deg);
+  border-radius: 20% 20% 0 0%;
+}
+.bowPart2 {
+  width: 1rem;
+  height: 8rem;
+  position: absolute;
+  background-color: burlywood;
+  margin-left: 12.5rem;
+  margin-top: 7.3rem;
+  transform: rotate(12deg);
+  border-radius: 50% 50% 0 50%;
+  /* background-color: rgb(246, 156, 13); */
+}
+/* .bowPar t3{
+    width: 2rem;
+    height:1rem;
+    position: absolute;
+    
+    background-color: rgb(246, 156, 13);
+    margin-left: 15.5rem;
+    margin-top: 6.7rem;
+    transform: rotate(-20deg);
+    border-radius: 30%;
+} */
+.bowPart3 {
+  width: 0.7rem;
+  height: 5rem;
+  position: absolute;
+  /* background-color: black; */
+  background-color: burlywood;
+  border-radius: 50% 0 50% 50%;
+  /* border: 1rem solid rgb(246, 156, 13) ; */
+  margin-left: 10.8rem;
+  margin-top: 6rem;
+  transform: rotate(15deg);
+}
+.bowSetting1 {
+  width: 1.5rem;
+  height: 1rem;
+  position: absolute;
+  /* background-color: black; */
+  background-color: burlywood;
+  /* border-radius:50% 0; */
+  margin-left: 12.8rem;
+  margin-top: 5.9rem;
+  transform: rotate(-20deg);
+}
+.bowSetting2 {
+  width: 2rem;
+  height: 0.5rem;
+  position: absolute;
+  /* background-color: black; */
+  background-color: rgb(246, 156, 13);
+  margin-left: 14.5rem;
+  margin-top: 6.69rem;
+  border-radius: 20%;
+  transform: rotate(-15deg);
+}
+.bowSetting3 {
+  width: 0.2rem;
+  height: 10rem;
+  position: absolute;
+  background-color: black;
+  /* background-color: burlywood; */
+  margin-left: 14rem;
+  margin-top: 7rem;
+  border-radius: 50%;
+  transform: rotate(7deg);
+}
+.outerDots {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8rem;
+  margin-top: -3.5rem;
+}
+.circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(114, 24, 24);
+  position: absolute;
+  border-radius: 50%;
+  animation: glow infinite 3s ease-in-out;
+}
+@keyframes glow {
+  0% {
+    background-color: orangered;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: darkred;
+  }
+  100% {
+    background-color: green;
+  }
+}
+.circle.one {
+  transform: translate(9rem, 5rem);
+}
+.circle.two {
+  transform: translate(7.6rem, 2.5rem);
+}
+.circle.three {
+  transform: translate(7rem, -0.5rem);
+}
+.circle.four {
+  transform: translate(6.8rem, -3.7rem);
+}
+.circle.five {
+  transform: translate(7.4rem, -7rem);
+}
+.circle.six {
+  transform: translate(8.4rem, -10rem);
+}
+.circle.seven {
+  transform: translate(10.5rem, -13rem);
+}
+.circle.eight {
+  transform: translate(13rem, -15.2rem);
+}
+.circle.nine {
+  transform: translate(16rem, -16.5rem);
+}
+.circle.ten {
+  transform: translate(19.5rem, -17rem);
+}
+.circle.eleven {
+  transform: translate(23rem, -17rem);
+}
+.circle.twelve {
+  transform: translate(26.6rem, -16rem);
+}
+.circle.thirteen {
+  transform: translate(29.5rem, -14rem);
+}
+.circle.fourteen {
+  transform: translate(32rem, -11.5rem);
+}
+.circle.fifteen {
+  transform: translate(33.7rem, -8.5rem);
+}
+.circle.sixteen {
+  transform: translate(34.7rem, -5.5rem);
+}
+.circle.seventeen {
+  transform: translate(34.7rem, -2rem);
+}
+.circle.eighteen {
+  transform: translate(34rem, 1.3rem);
+}
+.circle.nineteen {
+  transform: translate(32.5rem, 4.3rem);
+}
+.circle.twenty {
+  transform: translate(30.3rem, 7rem);
+}
+.circle.twentyOne {
+  transform: translate(27.5rem, 9rem);
+}
+.circle.twentyTwo {
+  transform: translate(24.5rem, 10.5rem);
+}
+.circle.twentyThree {
+  transform: translate(21.2rem, 11rem);
+}
+.circle.twentyFour {
+  transform: translate(18rem, 10.6rem);
+}
+.circle.twentyFive {
+  transform: translate(14.5rem, 9.5rem);
+}
+.circle.twentySix {
+  transform: translate(11.5rem, 7.7rem);
+}
