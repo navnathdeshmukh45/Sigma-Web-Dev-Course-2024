@@ -60,11 +60,23 @@ Extension Must be  Install  In Vs code
 
 # [Day4](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day4)
 
-1.Heading
+1.Heading 
+```
+ <h1>Heading 1</h1>
+ <h2>Heading 2</h2>
+ <h3>Heading 3</h3>
+ <h4>Heading 4</h4>
+ <h5>Heading 5</h5>
+ <h6>Heading 6</h6>
+```
 
 2.Paragraph
 
-3.Links [anchor tag]
+`<p>Paragraph</p>`
+
+3.Links [anchor tag] :Linking to a Different Page in the Same Website/Pages
+
+`<a href="/about.html">About Us</a>`
 
 # [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 Image
