@@ -1432,7 +1432,7 @@ button.addEventListener("click",()=>{
 })
 ```
 
-# List of all mouse events(https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events)
+List of all mouse events(https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events)
 
 Event bubbling
 ```
