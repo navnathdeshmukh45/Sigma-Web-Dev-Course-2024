@@ -144,11 +144,11 @@ CLS is a measure of the largest burst of layout shift scores for every unexpecte
 
 # <h1>Largest Contentful Paint (LCP)</h1>
 
-        The Largest Contentful Paint (LCP) metric reports the render time of the largest image or text block visible within the viewport, relative to when the user first navigated to the page.
+The Largest Contentful Paint (LCP) metric reports the render time of the largest image or text block visible within the viewport, relative to when the user first navigated to the page.
 
 # <h1>First Input Delay (FID)</h1>
 
-       FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
+FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
 
 # [Day7](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day7)
 
