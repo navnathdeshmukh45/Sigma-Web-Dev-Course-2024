@@ -72,11 +72,15 @@ Extension Must be  Install  In Vs code
 
 2.Paragraph
 
-`<p>Paragraph</p>`
+```
+<p>Paragraph</p>
+```
 
 3.Links [anchor tag] :Linking to a Different Page in the Same Website/Pages
 
-`<a href="/about.html">About Us</a>`
+```
+<a href="/about.html">About Us</a>
+```
 
 # [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 Image
