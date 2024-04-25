@@ -389,31 +389,51 @@ CSS Selector
     <a href="https://www.google.com">Go to Google</a>
 ``` -->
 
+
+element selector 
+
 ```
-/* element selector */
 div{
     background-color: red;
 }
-/* class selector */
+```
+
+ class selector 
+
+ ```
 .div{
     background-color:yellow;
 }
-/* id selector */
+```
+
+id selector 
+```
 #id{
     background-color: rosybrown;
 
 }
-/* child selector */
+```
+
+child selector 
+
+```
 div > p{
     color:blueviolet;
     background-color: aqua;
 }
-/* desendant selector */
+```
+
+desendant selector 
+
+```
 div article p{
     color:blueviolet;
     background-color: rgb(74, 255, 29);
 }
-/* universal selector */
+```
+
+universal selector 
+```
 *{
     margin: 0;
     padding: 0;
