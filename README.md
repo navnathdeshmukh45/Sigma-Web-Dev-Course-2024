@@ -135,12 +135,12 @@ List
 
 # <h1>What is SEO</h1>
 
-        <p>SEO stands for Search Engine Optimization. It's a set of processes that improve a website's visibility in search engines.</p>
+SEO stands for Search Engine Optimization. It's a set of processes that improve a website's visibility in search engines.
 
 # <h1>What is CLS?</h1>
 
-        Cumulative Layout Shift (CLS)
-        CLS is a measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.
+Cumulative Layout Shift (CLS)
+CLS is a measure of the largest burst of layout shift scores for every unexpected layout shift that occurs during the entire lifespan of a page.
 
 # <h1>Largest Contentful Paint (LCP)</h1>
 
