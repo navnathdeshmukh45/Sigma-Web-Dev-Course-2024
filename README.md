@@ -1,20 +1,24 @@
 # Sigma Web Dev Course 2024
 # [Day 1](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day1)
+
 ### What is Scripting language? ###
-All scripting languages are programming languages.
+All <b>scripting languages</b> are programming languages.
 The scripting language is basically a language where instructions are written for a run time environment.
 They do not require the compilation step and are rather interpreted.
 
 ### 2.Advantages of Scripting language:-
-Easy learning.
-Fast editing.
-Interactivity.
-Functionality.
+a.Easy learning.
+b.Fast editing.
+c.Interactivity.
+d.Functionality.
 
 ### 3.Why JavaScript?
 JavaScript was initially created to “make web pages alive”.
+
 JavaScript is a dynamic Computer programming language.
+
 It is lightweight and most commonly used as a part of web pages.
+
 It is an interpreted programming language with object-oriented capabilities.
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day1/client%20side.jpg)
@@ -1716,3 +1720,33 @@ Create a hacking simulator which has green background and it shows these message
 # [Day79](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day79)
 
 Catch & Error Handling
+```
+let a = prompt("Enter the First Numnber");
+let b = prompt("Enter the Second Number");
+
+let sum = parseInt(a) + parseInt(b);
+if(isNaN(a) || isNaN(b)){
+    throw SyntaxError("Sorry this is not allowed");
+}
+console.log("The sum is ",sum);
+
+function main(){
+    let x = 1;
+    try{
+        console.log("The sum is ", sum * x);
+        return true
+    }
+    catch{
+        console.log("Error aa gaya bhai")
+        return false
+    }
+    finally{
+        console.log("files are being closed and db connection is being closed")
+    }
+}
+
+let c = main() ;
+```
+
+# [Day80](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day80)
+OOP Class and Object
