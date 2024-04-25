@@ -272,7 +272,7 @@ What are Semantic Tags
 # [Day12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
 
 HTML revision
-[!alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day12/HTML.jfif)
+[text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day12/HTML.jfif)
 
 # [Day13]()
 
