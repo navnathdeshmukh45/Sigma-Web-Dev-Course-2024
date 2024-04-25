@@ -245,6 +245,8 @@ Video || Audio || Iframe
 
 # [Day11](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day11)
 
+What are Semantic Tags
+
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day11/semantic-tags.png)
 
 ```
