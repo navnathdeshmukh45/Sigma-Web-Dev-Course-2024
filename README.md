@@ -26,13 +26,13 @@ It is an interpreted programming language with object-oriented capabilities.
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day1/server%20side.jpg)
 
 # [Day 2](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day2)
-Css File link
+To link a CSS file to an HTML document
 
 ```
 <link rel="stylesheet" href="style.css">
 ```
 
-Javascript File link
+To link a JavaScript file to an HTML document
 
 ``` 
 <script src="script.js"></script>
