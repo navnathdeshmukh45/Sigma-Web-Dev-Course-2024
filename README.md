@@ -328,10 +328,10 @@ div{
 
   1. Inline CSS
 
-   `<h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1>`
+    `<h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1>`
 
   2. Internal CSS
-  
+
    ```
    <style>
    h1{
