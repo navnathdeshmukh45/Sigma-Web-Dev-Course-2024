@@ -229,6 +229,8 @@ Inline Elements (Most Commonly Used First):inline element only takes up as much 
 
 # [Day10](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day10)
 
+Video || Audio || Iframe
+
 ```
     <!-- Video -->
     <video src="video.mp4" height="255"  width="255" controls></video>
@@ -242,6 +244,8 @@ Inline Elements (Most Commonly Used First):inline element only takes up as much 
 ```
 
 # [Day11](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day11)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day11/semantic-tags.png)
 
 ```
  <header>
