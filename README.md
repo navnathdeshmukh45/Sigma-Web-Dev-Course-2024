@@ -224,7 +224,7 @@ Inline Elements (Most Commonly Used First):inline element only takes up as much 
 
 # ID and Classes in HTML
 
-1.  Class can be applied to multiple elements on a page [#]
+1.  Class can be applied to multiple elements on a page [.]
 2.  ID attribute is used to uniquely identify a single HTML element on a page [#]
 
 # [Day10](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day10)
