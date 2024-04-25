@@ -348,9 +348,8 @@ div{
 # [Day16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
 
 ```
-<h1>My Videos and Audios for the Day</h1>
+<h1>My Videos and Audios for the Day 16</h1>
  <h2>Some Videos for the Day</h2>
-
  <div>
       <video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>
   </div>
