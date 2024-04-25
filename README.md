@@ -466,7 +466,7 @@ Pseudo Selector
 ```
 
 # [Day18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
-
+<!-- 
 ```
     <div class="box box1">I am a box</div>
     <div class="box box2">I am another box</div>
@@ -497,9 +497,24 @@ Pseudo Selector
     height: 200px;
     box-sizing: border-box;
 }
+``` -->
+```
+.element {
+  /* Margin - top, right, bottom, left */
+  margin: 10px 20px 10px 20px; /* top right bottom left */
+
+  /* Padding - top, right, bottom, left */
+  padding: 15px 25px; /* top/bottom right/left */
+
+  /* Border - width style color */
+  border: 2px solid #ccc;
+}
+
 ```
 
 # [Day19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
+
+ Font Color Text properties
 
 ```
 <h1>Lets learn about colors</h1>
@@ -564,7 +579,7 @@ h1 {
 
 # [Day20](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day20)
 
-# Question
+Question
 
 ```
   <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
