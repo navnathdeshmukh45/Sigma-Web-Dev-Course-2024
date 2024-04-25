@@ -363,7 +363,7 @@ div{
 
 CSS Selector
 
-```
+<!-- ```
     <div>
     I am Div
     </div>
@@ -387,7 +387,7 @@ CSS Selector
         </article>
     </div>
     <a href="https://www.google.com">Go to Google</a>
-```
+``` -->
 
 ```
 /* element selector */
