@@ -418,27 +418,31 @@ div article p{
     margin: 0;
     padding: 0;
 }
-/* Pseudo Selector  */
-a:visited{
-    color: rgb(0, 0, 0)
-}
+```
 
-a:link {
-    color: green;
-}
+Pseudo Selector  
 
-a:active{
-    background-color: red;
-}
-
-a:hover{
-    background-color: rgb(63, 172, 13);
-}
-
-
-p:first-child{
-    background-color: aqua;
-}
+```
+  a:visited{
+      color: rgb(0, 0, 0)
+  }
+  
+  a:link {
+      color: green;
+  }
+  
+  a:active{
+      background-color: red;
+  }
+  
+  a:hover{
+      background-color: rgb(63, 172, 13);
+  }
+  
+  
+  p:first-child{
+      background-color: aqua;
+  }
 ```
 
 # [Day18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
