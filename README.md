@@ -146,9 +146,9 @@ List
 
 # [Day8](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day8)
 # Inline and Block Elements
-# Block Elements (Most Commonly Used First) :A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+ Block Elements (Most Commonly Used First) :A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
 
-# Inline Elements (Most Commonly Used First):inline element only takes up as much width as necessary.
+ Inline Elements (Most Commonly Used First):inline element only takes up as much width as necessary.
 
 # [Day9](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day9)
 
