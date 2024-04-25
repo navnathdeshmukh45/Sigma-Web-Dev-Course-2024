@@ -1,0 +1,3 @@
+Install nodejs
+NPM Install
+NPM Init-->To add new package.json file. 
