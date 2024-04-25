@@ -274,7 +274,7 @@ What are Semantic Tags
 HTML revision
 [text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day12/HTML.jfif)
 
-# [Day13]()
+# [Day13](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day13)
 
 ```
     <h1>Reserved Characters</h1>
@@ -304,10 +304,13 @@ HTML revision
 
 # [Day14](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day14)
 
-Itroduction TO Css
+Itroduction To Css
 
 CSS Stands For Cascading Style sheet
 
+Body : all the visible content that is displayed in the browser window, including text, images, links, forms, and other HTML elements
+
+Div : To create divisions or sections within a web page, which can be styled or manipulated as a single unit using CSS or JavaScript
 ```
 body{
     background-color: cornflowerblue;
@@ -321,21 +324,26 @@ div{
 
 # [Day15](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day15)
 
-        `
-        Three ways to add CSS to HTML
-        <li>Inline CSS</li>
-        <h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1>
-        <li>Internal CSS</li>
-        <style>
-        h1{
-        background-color: red;
-            color: yellow;
-        }
+   Three ways to add CSS to HTML
 
-       </style>
-       <li>External CSS</li>
+  1. Inline CSS
 
-       <link rel="stylesheet" href="style.css">
+   `<h1 style="color: yellow;background-color: red;">Three ways to add CSS to HTML</h1>`
+
+  2. Internal CSS
+  
+   ```
+   <style>
+   h1{
+   background-color: red;
+       color: yellow;
+   }
+   </style>
+   ```
+
+  3. External CSS
+
+    `<link rel="stylesheet" href="style.css">`
 
 # [Day16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
 
