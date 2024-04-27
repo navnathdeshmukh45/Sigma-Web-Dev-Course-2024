@@ -500,15 +500,18 @@ Pseudo Selector
 <!-- .element { -->
    Margin - top, right, bottom, left 
 
- ` margin: 10px 20px 10px 20px; /* top right bottom left */`
+ ``` margin: 10px 20px 10px 20px; /* top right bottom left */ 
+ ```
 
   Padding - top, right, bottom, left 
 
-  `padding: 15px 25px; /* top/bottom right/left `
+  ```padding: 15px 25px; /* top/bottom right/left 
+  ```
 
   Border - width style color 
 
- ` border: 2px solid #ccc;`
+ ``` border: 2px solid #ccc;
+ ```
 
 
 # [Day19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
