@@ -349,11 +349,15 @@ div{
 
  Videos
 
- `<video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>`
+ ```
+ <video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>
+ ```
 
  Audios
  
-`<audio src="better-day-186374.mp3" controls></audio>`
+```
+<audio src="better-day-186374.mp3" controls></audio>
+```
 
 
 
@@ -516,7 +520,7 @@ Pseudo Selector
 
  ``` 
  border: 2px solid #ccc;
- 
+
  ```
 
 
