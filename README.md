@@ -4,19 +4,19 @@
 
 ### What is Scripting language?
 
-All <b>scripting languages</b> are programming languages.
+All <b> scripting languages </b> are programming languages.
 The scripting language is basically a language where instructions are written for a run time environment.
 They do not require the compilation step and are rather interpreted.
 
 ### 2.Advantages of Scripting language:-
 
-a.Easy learning.
+a. Easy learning.
 
-b.Fast editing.
+b. Fast editing.
 
-c.Interactivity.
+c. Interactivity.
 
-d.Functionality.
+d. Functionality.
 
 ### 3.Why JavaScript?
 
@@ -48,27 +48,28 @@ To link a JavaScript file to an HTML document
 
 Extension Must be Install In Vs code
 
-1.Vscode icons
+1. Vscode icons
 
-2.Prettier
+2. Prettier
 
-3.Material Theme
+3. Material Theme
 
-4.Live Server
+4. Live Server
 
-5.Live Preview
+5. Live Preview
 
-6.Jellyfish Theme
+6. Jellyfish Theme
 
-7.React ES7
+7. React ES7
 
 # [Day3](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day3)
+HTML Page Structure.
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day3/HTML-Basic-Format.png)
 
 # [Day4](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day4)
 
-1.Heading
+1. Heading are titles or subtitles that you want to display on a webpage.
 
 ```
  <h1>Heading 1</h1>
@@ -79,7 +80,7 @@ Extension Must be Install In Vs code
  <h6>Heading 6</h6>
 ```
 
-2.Paragraph
+2. Paragraph : A paragraph always starts on a new line, and is usually a block of text.
 
 ```
 <p>Paragraph</p>
@@ -93,13 +94,13 @@ Extension Must be Install In Vs code
 
 # [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 
-Image
+Image can improve the design and the appearance of a web page.
 
 ```
 <img src="pexels-bella-white-635279.jpg" alt="pexels-bella-white-635279" width="150px" height="150px">
 ```
 
-Table
+Table allow web developers to arrange data into rows and columns.
 
 ```
 <table>
@@ -116,7 +117,7 @@ Table
 </table>
 ```
 
-List
+List allow web developers to group a set of related items in lists
 
  <!-- list -->
 
@@ -136,7 +137,7 @@ List
 
 # [Day6](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day6)
 
-# <h1>What is SEO</h1>
+# <h1> What is SEO</h1>
 
 SEO stands for Search Engine Optimization. It's a set of processes that improve a website's visibility in search engines.
 
@@ -307,7 +308,7 @@ HTML revision
 
 # [Day14](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day14)
 
-Itroduction To Css
+Introduction To CSS
 
 CSS Stands For Cascading Style sheet
 
