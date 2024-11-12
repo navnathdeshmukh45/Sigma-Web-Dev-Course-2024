@@ -11,8 +11,11 @@ They do not require the compilation step and are rather interpreted.
 ### 2.Advantages of Scripting language:-
 
 a.Easy learning.
+
 b.Fast editing.
+
 c.Interactivity.
+
 d.Functionality.
 
 ### 3.Why JavaScript?
