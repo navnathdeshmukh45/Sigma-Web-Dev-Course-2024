@@ -62,37 +62,38 @@ Extension Must be Install In Vs code
 
 7. React ES7
 
-# [Day3](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day3)
+# [Day 3](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day3)
 HTML Page Structure.
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day3/HTML-Basic-Format.png)
 
-# [Day4](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day4)
+# [Day 4](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day4)
 
 1. Heading are titles or subtitles that you want to display on a webpage.
 
 ```
- <h1>Heading 1</h1>
- <h2>Heading 2</h2>
- <h3>Heading 3</h3>
- <h4>Heading 4</h4>
- <h5>Heading 5</h5>
- <h6>Heading 6</h6>
+ <h1> Heading 1 </h1>
+ <h2> Heading 2 </h2>
+ <h3> Heading 3 </h3>
+ <h4> Heading 4 </h4>
+ <h5> Heading 5 </h5>
+ <h6> Heading 6 </h6>
+
 ```
 
 2. Paragraph : A paragraph always starts on a new line, and is usually a block of text.
 
 ```
-<p>Paragraph</p>
+<p> Paragraph </p>
 ```
 
 3.Links [anchor tag] :Linking to a Different Page in the Same Website/Pages
 
 ```
-<a href="/about.html">About Us</a>
+<a href="/about.html"> About Us </a>
 ```
 
-# [Day5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
+# [Day 5](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day5)
 
 Image can improve the design and the appearance of a web page.
 
@@ -135,7 +136,7 @@ List allow web developers to group a set of related items in lists
 </table>
 ```
 
-# [Day6](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day6)
+# [Day 6](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day6)
 
 # <h1> What is SEO</h1>
 
@@ -154,12 +155,12 @@ The Largest Contentful Paint (LCP) metric reports the render time of the largest
 
 FID measures the time from when a user first interacts with a page (that is, when they click a link, tap on a button, or use a custom, JavaScript-powered control) to the time when the browser is actually able to begin processing event handlers in response to that interaction.
 
-# [Day7](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day7)
+# [Day 7](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day7)
 # <h2>Registration form</h2>
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day7/Day7.png)
 
 
-# [Day8](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day8)
+# [Day 8](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day8)
 
 # Inline and Block Elements
 
@@ -224,14 +225,15 @@ Inline Elements (Most Commonly Used First):inline element only takes up as much 
 <acronym>: Acronym (Not supported in HTML5).
 ```
 
-# [Day9](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day9)
+# [Day 9](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day9)
 
 # ID and Classes in HTML
 
 1.  Class can be applied to multiple elements on a page [.]
+
 2.  ID attribute is used to uniquely identify a single HTML element on a page [#]
 
-# [Day10](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day10)
+# [Day 10](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day10)
 
 Video || Audio || Iframe
 
@@ -247,7 +249,7 @@ Video || Audio || Iframe
 
 ```
 
-# [Day11](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day11)
+# [Day 11](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day11)
 
 What are Semantic Tags
 
@@ -273,12 +275,12 @@ What are Semantic Tags
     </footer>
 ```
 
-# [Day12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
+# [Day 12](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day12)
 
 HTML revision
 [text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day12/HTML.jfif)
 
-# [Day13](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day13)
+# [Day 13](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day13)
 
 ```
     <h1>Reserved Characters</h1>
@@ -306,7 +308,7 @@ HTML revision
     </code></pre>
 ```
 
-# [Day14](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day14)
+# [Day 14](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day14)
 
 Introduction To CSS
 
@@ -326,7 +328,7 @@ div{
 }
 ```
 
-# [Day15](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day15)
+# [Day 15](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day15)
 
    Three ways to add CSS to HTML
 
@@ -349,7 +351,7 @@ div{
 
     `<link rel="stylesheet" href="style.css">`
 
-# [Day16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
+# [Day 16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
 
  Videos
 
@@ -365,7 +367,7 @@ div{
 
 
 
-# [Day17](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day17)
+# [Day 17](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day17)
 
 CSS Selector
 
@@ -471,7 +473,7 @@ Pseudo Selector
   }
 ```
 
-# [Day18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
+# [Day 18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
 <!-- 
 ```
     <div class="box box1">I am a box</div>
@@ -528,7 +530,7 @@ Pseudo Selector
  ```
 
 
-# [Day19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
+# [Day 19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
 
  Font Color Text properties
 
@@ -593,7 +595,7 @@ h1 {
 </style>
 ```
 
-# [Day20](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day20)
+# [Day 20](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day20)
 
 Question
 
@@ -611,7 +613,7 @@ Question
     </div>
 ```
 
-# [Day21](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day21)
+# [Day 21](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day21)
 
 # CSS Specificity
 
@@ -654,7 +656,7 @@ Question
 
 ```
 
-# [Day22](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day22)
+# [Day 22](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day22)
 
 ```
         <div class="box">
@@ -731,7 +733,7 @@ Question
     </style>
 ```
 
-# [Day23](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day23)
+# [Day 23](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day23)
 
 ```
     <div class="box box1">
@@ -762,7 +764,7 @@ Question
     </style>
 ```
 
-# [Day24](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day24)
+# [Day 24](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day24)
 
 ```
  <div class="box">
@@ -784,7 +786,7 @@ Question
     <style>
 ```
 
-# [Day25](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day25)
+# [Day 25](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day25)
 
 ```
     <nav>
@@ -807,7 +809,7 @@ Question
     </style>
 ```
 
-# [Day26](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day26)
+# [Day 26](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day26)
 
 ```
 <div id="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
@@ -828,23 +830,23 @@ Question
 </style>
 ```
 
-# [Day27](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day27)
+# [Day 27](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day27)
 
 Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html
 
-# [Day28](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day28)
+# [Day 28](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day28)
 
 Day 28 CSS BoxModel
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day28/box%20model.png)
 
-# [Day29](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day29)
+# [Day 29](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day29)
 
 # Day 29 Question
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day29/card.png)
 
-# [Day30](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day30)
+# [Day 30](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day30)
 
 # CSS variable
 
