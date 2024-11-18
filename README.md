@@ -1284,37 +1284,93 @@ console.log(c); // Outputs the absolute difference between a and b
 
 # loops
 
-```
+## 1. **`do-while` Loop**
+
+```javascript
 let i = 10;
 do {
-    console.log(i)
-    i++;
-} while (i<6);
+    console.log(i); // Outputs the current value of `i` (10)
+    i++; // Increments `i` by 1
+} while (i < 6); // Condition is false because `i` (11) is not less than 6
+```
 
+- The `do-while` loop **executes the block of code at least once**, regardless of the condition.
+- Here, the loop executes once, printing `10`, and then checks the condition (`i < 6`), which evaluates to `false`. The loop ends.
+
+---
+
+### 2. **`for` Loop**
+
+``` javascript
 for (let i = 0; i < 100; i++) {
-    console.log(a + i);
+    console.log(a + i); // Outputs the sum of `a` and `i` for each iteration
 }
+```
 
+- **Initialization**: `let i = 0` initializes `i` to 0.
+- **Condition**: `i < 100` ensures the loop runs until `i` is less than 100.
+- **Increment**: `i++` increments `i` by 1 after each iteration.
+- Inside the loop, it adds `a` to `i` and prints the result. However, **`a` must be declared before this loop**; otherwise, it will cause a `ReferenceError`.
+
+---
+
+### 3. **`for-in` Loop**
+
+```javascript
 let obj = {
     name: "Harry",
     role: "Programmer",
     company: "CodeWithHarry AI"
-}
+};
 
 for (const key in obj) {
-        console.log(key)
-}
-
-for (const c of "Harry") {
-    console.log(c)
-}
-
-let i = 0;
-while (i<60000) {
-    console.log(i)
-    i++;
+    console.log(key); // Outputs each property key of the object
 }
 ```
+
+- The `for-in` loop iterates over the **keys of an object**.
+- **Output**:
+  - `name`
+  - `role`
+  - `company`
+
+---
+
+### 4. **`for-of` Loop**
+
+```javascript
+for (const c of "Harry") {
+    console.log(c); // Outputs each character of the string "Harry"
+}
+```
+
+- The `for-of` loop iterates over **iterable objects**, such as strings, arrays, etc.
+- **Output**:
+  - `H`
+  - `a`
+  - `r`
+  - `r`
+  - `y`
+
+---
+
+### 5. **`while` Loop**
+
+```javascript
+let i = 0;
+while (i < 60000) {
+    console.log(i); // Outputs the current value of `i` (starting from 0)
+    i++; // Increments `i` by 1 after each iteration
+}
+```
+
+- **Condition**: `i < 60000` ensures the loop continues until `i` reaches 60000.
+- The loop starts at `i = 0` and prints every number up to 59999.
+- **Note**: This loop runs for 60000 iterations and can take significant time to complete. It's important to limit such loops for performance reasons.
+
+---
+
+
 
 # [Day58](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day58)
 
