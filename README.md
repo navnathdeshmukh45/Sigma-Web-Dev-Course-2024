@@ -1074,10 +1074,122 @@ object-fit: contain;
 
 # JavaScript Introduction
 
-```
-console.log("Hello Sir");
+JavaScript is the world's most popular programming language.
 
-```
+JavaScript is the programming language of the Web.
+
+JavaScript is easy to learn.
+
+## Why Study JavaScript?
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+In JavaScript, there are several ways to display output to the user or developer. These methods can be categorized based on the purpose (debugging, displaying in the browser, or in the console). Here are the most common types:
+
+---
+
+### 1. **Using the Browser's Console**
+   - For debugging or logging purposes.
+   ```javascript
+   console.log("This is a log message"); // Displays in the console
+   console.error("This is an error message"); // Displays as an error in the console
+   console.warn("This is a warning message"); // Displays as a warning in the console
+   console.info("This is an info message"); // Displays informational messages in the console
+   ```
+
+---
+
+## 2. **Displaying Output in the Webpage (DOM Manipulation)**
+
+## a. **Using `document.write()`**
+   - Writes directly to the HTML document. Commonly used for quick tests but not recommended in production as it overwrites the entire document if called after the page is loaded.
+   ```javascript
+   document.write("Hello, world!");
+   ```
+
+#### b. **Using HTML Elements (DOM Manipulation)**
+   - Updates or sets the content of elements dynamically.
+   ```javascript
+   document.getElementById("output").innerHTML = "Hello, world!"; // Updates the element's content
+   ```
+   ```html
+   <div id="output"></div>
+   <script>
+       document.getElementById("output").innerHTML = "Displayed via DOM manipulation!";
+   </script>
+   ```
+
+#### c. **Using `innerText` or `textContent`**
+   - Similar to `innerHTML`, but handles text differently.
+   ```javascript
+   document.getElementById("output").innerText = "Hello, world!";
+   ```
+
+---
+
+### 3. **Using Pop-up Dialog Boxes**
+
+#### a. **`alert()`**
+   - Displays a simple alert box with a message and an "OK" button.
+   ```javascript
+   alert("This is an alert!");
+   ```
+
+#### b. **`confirm()`**
+   - Displays a confirmation dialog with "OK" and "Cancel" buttons. Returns `true` if "OK" is clicked, and `false` otherwise.
+   ```javascript
+   let isConfirmed = confirm("Are you sure?");
+   console.log(isConfirmed); // Logs true or false based on user response
+   ```
+
+#### c. **`prompt()`**
+   - Displays a dialog box that prompts the user for input. Returns the input as a string.
+   ```javascript
+   let name = prompt("What is your name?");
+   console.log("Hello, " + name);
+   ```
+
+---
+
+### 4. **Writing to the Browser's DevTools**
+   - **Debugger Statement**
+     - Opens the browser's debugger tool when encountered.
+     ```javascript
+     debugger; // Pauses the code execution at this point
+     ```
+
+---
+
+### 5. **Using `window.print()`**
+   - Opens the print dialog box to print the current page.
+   ```javascript
+   window.print();
+   ```
+
+---
+
+### 6. **Writing Output to a File (Node.js Environment)**
+   - Not available in the browser, but in Node.js, you can write to files or streams.
+   ```javascript
+   const fs = require('fs');
+   fs.writeFileSync('output.txt', 'Hello, world!');
+   ```
+
+---
+
+### Choosing the Right Method:
+- **For debugging**: Use `console.log()`, `console.error()`, or `console.warn()`.
+- **For user interaction**: Use `alert()`, `confirm()`, or `prompt()`.
+- **For displaying on the webpage**: Use `document.write()` or DOM manipulation (`innerHTML`/`textContent`).
+- **For printing**: Use `window.print()`.
+- **For Node.js**: Use file system operations.
+
+
 
 # [Day55](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day55)
 
@@ -1144,25 +1256,28 @@ console.log(o); // Outputs updated object
 # Condition Javascript
 
 ```
+// Conditional statements based on age
 if (age == 18) {
-    console.log("You can drive");
-}
-
+    console.log("You can drive"); // Executed if age equals 18
+} 
 else if (age == 0) {
-    console.log("Are you kidding?")
-}
-
+    console.log("Are you kidding?"); // Executed if age equals 0
+} 
 else if (age == 1) {
-    console.log("Are you again kidding?")
-}
-
+    console.log("Are you again kidding?"); // Executed if age equals 1
+} 
 else {
-    console.log("You cannot drive");
+    console.log("You cannot drive"); // Default case for all other values of age
 }
 
-a = 6;
-b = 8;
-let c = a > b ? (a - b) : (b - a);
+// Ternary operator example
+let a = 6; // Variable a
+let b = 8; // Variable b
+
+// Using ternary operator to calculate the absolute difference
+let c = a > b ? (a - b) : (b - a); 
+console.log(c); // Outputs the absolute difference between a and b
+
 ```
 
 # [Day57](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day57)
