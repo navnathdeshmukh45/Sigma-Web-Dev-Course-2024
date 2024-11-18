@@ -353,7 +353,7 @@ div{
 
 # [Day 16](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day16)
 
- Videos
+ My Videos and Audios Added
 
  ```
  <video width = "230" src="pexels-ferhat-arslan-19867786 (1080p).mp4" controls></video>
@@ -370,33 +370,6 @@ div{
 # [Day 17](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day17)
 
 CSS Selector
-
-<!-- ```
-    <div>
-    I am Div
-    </div>
-    <br>
-    <div class="div">
-        I am Another div
-    </div>
-    <br>
-    <div id="id">
-        I am third Div
-    </div>
-    <br>
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-    </div>
-    <br>
-    <div>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </article>
-    </div>
-    <a href="https://www.google.com">Go to Google</a>
-``` -->
-
 
 element selector 
 
@@ -474,38 +447,22 @@ Pseudo Selector
 ```
 
 # [Day 18](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day18)
-<!-- 
-```
-    <div class="box box1">I am a box</div>
-    <div class="box box2">I am another box</div>
-```
 
-```
-*{
-    margin: 0;
-    padding: 0;
-}
+Css Box Model 
 
-.box {
-    background-color: aqua;
-}
-.box1{
-    color: rgb(0, 0, 0);
-    padding: 10px;
-    margin:35px;
-    border: 2px solid blue;
-    height: 200px;
-    box-sizing: border-box;
-}
-.box2{
-    color:red;
-    padding: 10px;
-    margin:25px;
-    border: 2px solid black;
-    height: 200px;
-    box-sizing: border-box;
-}
-``` -->
++-------------------------------+
+|          Margin               |
+|  +-------------------------+  |
+|  |      Border              | |
+|  |  +-------------------+   | |
+|  |  |    Padding        |   | |
+|  |  |  +-----------+    |   | |
+|  |  |  | Content   |    |   | |
+|  |  |  +-----------+    |   | |
+|  |  +-------------------+   | |
+|  +-------------------------+  |
++-------------------------------+
+
 
 <!-- .element { -->
    Margin - top, right, bottom, left 
@@ -532,68 +489,210 @@ Pseudo Selector
 
 # [Day 19](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day19)
 
- Font Color Text properties
+# CSS Font, Color, and Text Properties
 
-```
-<h1>Lets learn about colors</h1>
-   <p>
-       Color can be represented in:
-       <ol>
-           <li>Color Keywords</li>
-           <li>Hex Color Code</li>
-           <li>RGB</li>
-           <li>RGBA</li>
-           <li>HSL</li>
-       </ol>
-   </p>
-   <div>
+## Font Properties
 
-       <h1>Fonts</h1>
-       <h2>about Fonts</h2>
-       <p>This is a video on fonts</p>
-       <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-   </div>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
-h1 {
-   font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+1. **`font-family`**
+   - Specifies the font type.
+   - Example:
+     ```css
+     font-family: Arial, sans-serif;
+     ```
 
-p {
-   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-   font-family: 'Baloo Bhai 2', sans-serif;
-   font-size: 20px;
-   /* font-style:italic;
-   font-weight: 500;  */
+2. **`font-size`**
+   - Specifies the size of the font.
+   - Example:
+     ```css
+     font-size: 16px;
+     ```
 
-}
-h2{
-   text-align: center;
-   text-transform: uppercase;
-   text-decoration: underline;
-   text-decoration-color: blue;
-   /* text-decoration-style: dotted; */
-   text-decoration-thickness: 7px ;
-   /* text-indent: 45px; */
-}
-.lorem{
-   border: 2px solid red;
-   width: 145px;
-   word-break: break-all;
-   /* text-overflow: ellipsis;
-   overflow: hidden; */
+3. **`font-style`**
+   - Specifies the style of the font (normal, italic, oblique).
+   - Example:
+     ```css
+     font-style: italic;
+     ```
 
-}
-h1 {
-   color:darkred;
-   color: #0BEE0B;
-   color: rgb(76, 125, 59);
-   color: rgba(255, 22, 5, 0.175);
-   color: hsl(130, 61%, 44%);
-   background-color: rgb(76, 125, 59);
-}
-</style>
-```
+4. **`font-weight`**
+   - Specifies the weight or thickness of the font (normal, bold, lighter, or numeric values).
+   - Example:
+     ```css
+     font-weight: bold;
+     ```
+
+5. **`font-variant`**
+   - Specifies the use of alternate glyphs, such as small-caps.
+   - Example:
+     ```css
+     font-variant: small-caps;
+     ```
+
+6. **`line-height`**
+   - Specifies the amount of space between lines of text.
+   - Example:
+     ```css
+     line-height: 1.5;
+     ```
+
+7. **`letter-spacing`**
+   - Specifies the space between characters.
+   - Example:
+     ```css
+     letter-spacing: 2px;
+     ```
+
+8. **`word-spacing`**
+   - Specifies the space between words.
+   - Example:
+     ```css
+     word-spacing: 4px;
+     ```
+
+9. **`text-transform`**
+   - Controls the capitalization of text (uppercase, lowercase, capitalize).
+   - Example:
+     ```css
+     text-transform: uppercase;
+     ```
+
+10. **`text-decoration`**
+    - Specifies decoration on text (underline, overline, line-through, none).
+    - Example:
+      ```css
+      text-decoration: underline;
+      ```
+
+11. **`text-shadow`**
+    - Adds shadow effects to text.
+    - Example:
+      ```css
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      ```
+
+12. **`text-align`**
+    - Specifies the horizontal alignment of text (left, center, right, justify).
+    - Example:
+      ```css
+      text-align: center;
+      ```
+
+13. **`font-size-adjust`**
+    - Adjusts the font size based on the aspect ratio of the character.
+    - Example:
+      ```css
+      font-size-adjust: 0.5;
+      ```
+
+## Color Properties
+
+1. **`color`**
+   - Specifies the color of the text.
+   - Example:
+     ```css
+     color: blue;
+     ```
+
+2. **`background-color`**
+   - Specifies the background color of an element.
+   - Example:
+     ```css
+     background-color: lightgray;
+     ```
+
+3. **`opacity`**
+   - Specifies the transparency level of an element.
+   - Example:
+     ```css
+     opacity: 0.5;
+     ```
+
+4. **`border-color`**
+   - Specifies the color of an element's border.
+   - Example:
+     ```css
+     border-color: red;
+     ```
+
+5. **`box-shadow`**
+   - Adds shadow effects around an element.
+   - Example:
+     ```css
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+     ```
+
+## Text Styling Properties
+
+1. **`white-space`**
+   - Controls how whitespace inside an element is handled.
+   - Example:
+     ```css
+     white-space: nowrap;
+     ```
+
+2. **`vertical-align`**
+   - Specifies the vertical alignment of inline elements.
+   - Example:
+     ```css
+     vertical-align: middle;
+     ```
+
+3. **`direction`**
+   - Specifies the text direction (left-to-right or right-to-left).
+   - Example:
+     ```css
+     direction: rtl;
+     ```
+
+4. **`writing-mode`**
+   - Defines the direction of text flow (vertical or horizontal).
+   - Example:
+     ```css
+     writing-mode: vertical-lr;
+     ```
+
+5. **`text-indent`**
+   - Specifies the indentation of the first line of text.
+   - Example:
+     ```css
+     text-indent: 20px;
+     ```
+
+6. **`quotes`**
+   - Specifies the quotation marks to use for inline quotations.
+   - Example:
+     ```css
+     quotes: "«" "»" "“" "”";
+     ```
+
+7. **`list-style-type`**
+   - Specifies the style of list markers (e.g., bullet points, numbers).
+   - Example:
+     ```css
+     list-style-type: square;
+     ```
+
+8. **`list-style-position`**
+   - Specifies whether the list markers appear inside or outside the list.
+   - Example:
+     ```css
+     list-style-position: inside;
+     ```
+
+9. **`text-align-last`**
+   - Specifies the horizontal alignment of the last line of text in a block.
+   - Example:
+     ```css
+     text-align-last: right;
+     ```
+
+---
+
+These are the common CSS properties used to style font, text, and color. You can use them to control the appearance and positioning of text in a webpage.
+
+
+
+
 
 # [Day 20](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day20)
 
