@@ -686,9 +686,6 @@ Css Box Model
      text-align-last: right;
      ```
 
----
-
-These are the common CSS properties used to style font, text, and color. You can use them to control the appearance and positioning of text in a webpage.
 
 
 
@@ -700,6 +697,9 @@ Question
 
 ```
   <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
+
+  ANS : 
+
     <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
         <p>I am another para</p>
@@ -710,6 +710,7 @@ Question
         <p>I am another para</p>
         <p>I am also another para</p>
     </div>
+
 ```
 
 # [Day 21](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day21)
@@ -757,133 +758,14 @@ Question
 
 # [Day 22](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day22)
 
-```
-        <div class="box">
-        This is a box
-    </div>
 
-    <div class="container">
-        <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </div>
-    </div>
-
-        <!-- Expand this to see that this container will adjust its height lorem999 -->
-    </div>
-
-    <div class="mycont">
-        I am another container
-    </div>
-
-    <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html{
-        font-size: 12px;
-    }
-
-    .box {
-        box-sizing: border-box;
-        border: 2px solid black;
-        /* width: 2048px; */
-        width: 80vw;
-        height: 10vh;
-        margin: auto;
-        background-color: aquamarine;
-    }
-
-    .container {
-        box-sizing: border-box;
-        border: 2px solid black;
-        /* width: 2048px; */
-        width: 80vw;
-        /* height: 80vh; */
-        min-height: 80vh;
-        margin: 23px auto;
-        font-size: 18px;
-        background-color: aquamarine;
-    }
-    .container > div{
-        font-size: 2em;
-        border: 2px solid red;
-        width: 50%;
-    }
-
-    .container > div > div{
-        border: 2px solid blue;
-        width: 50%;
-    }
-
-    .mycont{
-        border: 2px solid black;
-        box-sizing: border-box;
-        margin: 23px auto;
-        color: rgb(0, 0, 0);
-        font-size: 22px;
-        /* width: 100vmin; */
-        width: 80vw;
-    }
-    </style>
-```
 
 # [Day 23](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day23)
 
-```
-    <div class="box box1">
-        I am a box
-    </div>
-    <div class="box">also a nice box</div>
-
-    <span>I am a good</span>
-    <span>boy</span>
-
-    <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .box {
-        border: 2px solid blue;
-        display: inline-block;
-        width: 344px;
-        padding:45px;
-        margin: 34px;
-    }
-
-    .box1{
-        display: none;
-        visibility: hidden;
-    }
-    </style>
-```
 
 # [Day 24](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day24)
 
-```
- <div class="box">
-        I am a box
-    </div>
 
-    <p class="text-element">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    <style>
-    .box{
-    border: 2px solid black;
-    padding:34px;
-    box-shadow:  5px 15px 5px #70a711;
-    }
-    .text-element {
-    text-shadow: 10px 5px 3px #e695f7
-    }
-    <style>
-```
 
 # [Day 25](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day25)
 
@@ -970,6 +852,7 @@ Create a multicolor website which can change color using CSS Variables
 ```
 float:left;
 clear:both;
+
 ```
 
 # [Day35](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day35)
@@ -1104,6 +987,7 @@ div:hover {
     transform: translateX(10vw) translateY(10vh) scale(2);
     background-color: blue;
 }
+
 ```
 
 # [Day46](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day46)
@@ -1121,6 +1005,7 @@ animation-play-state: paused;
 animation: name duration timing-function delay iteration-count direction fill-mode;
 animation: Animation 2s ease-in-out 3s 1,
            harry2 3s ease-in-out 3s 1;
+
 ```
 
 # [Day47](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day47)
@@ -1136,11 +1021,13 @@ animation: Animation 2s ease-in-out 3s 1,
 # CSS object Fit and position
 
 ```
+
 object-fit: contain;
 object-fit: fill;
 object-position: 10px 20px;
 object-position: bottom right;
 object-fit: contain;
+
 ```
 
 # [Day50](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day51)
@@ -1148,6 +1035,7 @@ object-fit: contain;
 # CSS Filters
 
 ```
+
 .element {
     filter: blur(5px);
     filter: brightness(150%);
@@ -1159,21 +1047,28 @@ object-fit: contain;
     filter: sepia(100%);
     filter: grayscale(50%) blur(2px) brightness(120%);
 }
+
 ```
 
 # [Day51](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day51)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day42/Layout.jpg)
 
+
 # [Day52](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day52)
+
 
 # Figma SoftWare Basic Level
 
 # [Day53](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day53)
 
+
 # Netflix India - Watch TV Shows Online, Watch Movies Online Clone
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day53/Target.jpg)
+
+
+
 
 # [Day54](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day54)
 
@@ -1181,6 +1076,7 @@ object-fit: contain;
 
 ```
 console.log("Hello Sir");
+
 ```
 
 # [Day55](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day55)
@@ -1188,48 +1084,59 @@ console.log("Hello Sir");
 # JavaScript Variables
 
 ```
-console.log("Hey this is tutorial 55");
+// Tutorial 55: JavaScript Basics
+console.log("Hey, this is tutorial 55");
 
-var a = 5;
-// a = a + 1
-let b = 6;
-let c = "Priya";
-let _a = "Shubham";
-// var 55a = "Rohan"; // Not Allowed
+// Variable declarations and types
+var a = 5; // Global variable, can be redeclared
+// a = a + 1;
 
-// console.log(a +  b + 8);
+let b = 6; // Block-scoped variable
+let c = " Priya "; // String type
+let _a = " Shubham "; // Valid variable name with an underscore
+
+// var 55a = " Rohan "; // Invalid: Variable names cannot start with a number
+
+// Arithmetic operations and type checking
+// console.log(a + b + 8);
 // console.log(typeof a, typeof b, typeof c);
+
+// Demonstrating block scope
 {
-    // let a = 66;
-    console.log(a)
+    // let a = 66; // Block-scoped 'a', does not affect global 'a'
+    console.log(a); // Outputs: 5 (global 'a' is used)
 }
-console.log(a)
+console.log(a); // Outputs: 5 (global 'a')
+
+// Constant declaration
 // const a1 = 6;
-// a1 = a1 + 1; // Not Allowed because a1 is constant
+// a1 = a1 + 1; // Error: Assignment to constant variable
 
+// Various data types
+let x = "Nav bhai"; // String type
+let y = 22;         // Number type
+let z = 3.55;       // Number type
+const p = true;     // Boolean type
+let q = undefined;  // Undefined type
+let r = null;       // Null type
 
-let x = "Nav bhai";
-let y = 22;
-let z = 3.55;
-const p = true;
-let q = undefined;
-let r = null;
+// Logging values and their types
+console.log(x, y, z, p, q, r); // Outputs all variable values
+console.log(typeof x, typeof y, typeof z, typeof p, typeof q, typeof r); // Logs types of variables
 
-console.log(x, y, z, p, q, r)
-console.log(typeof x, typeof y, typeof z, typeof p, typeof q, typeof r)
-
-
+// Object demonstration
 let o = {
     "name": "Nav",
     "job code": 5600,
     "is_handsome": true
-}
+};
 
-console.log(o);
-o.salary = "100crores";
-console.log(o);
-o.salary = "500crores";
-console.log(o);
+console.log(o); // Outputs the object
+o.salary = "100crores"; // Adding a new property to the object
+console.log(o); // Outputs updated object
+o.salary = "500crores"; // Updating the existing property
+console.log(o); // Outputs updated object
+
 ```
 
 # [Day56](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day56)
