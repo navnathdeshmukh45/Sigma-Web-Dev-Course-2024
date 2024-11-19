@@ -2246,44 +2246,85 @@ document.body.style.backgroundColor = "aqua";
 
 # [Day67](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day67)
 
-```
-<style>
-.box{
-    height: 45px;
-    width: 56px;
-    border: 2px solid black;
-    margin: 5px;
-    padding: 5px;
-}
-</style>
-<body>
-    <div class="container">
-        <!-- this is me  -->
-        <div class="box">Box1</div>
-        <div class="box">Box2</div>
-        <div class="box">Box3</div>
-        <div class="box">Box4</div>
-        <div class="box">Box5</div>
-    </div>
+#  how to access and manipulate **children**, **parent**, and **sibling** nodes in the DOM using JavaScript:
 
-    <table>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Navnath</td>
-          <td>20</td>
-        </tr>
-      </table>
 
+---
 <script>
-        document.body.firstElementChild
-        document.body.firstElementChild.childNodes
-        document.body.firstElementChild.children
-</script>
-```
+        // 1. Accessing Children Nodes
+        const container = document.querySelector('.container');
+        const children = container.children; // Get all child elements of the container
+        console.log('Children of container:', children);
 
+        // Accessing the first child node (Box 1)
+        const firstBox = container.firstElementChild;
+        console.log('First Box:', firstBox);
+
+        // 2. Accessing Parent Node
+        const parent = firstBox.parentElement; // Get the parent of the first box
+        console.log('Parent of first box:', parent);
+
+        // 3. Accessing Sibling Nodes
+        const nextSibling = firstBox.nextElementSibling; // Get the next sibling (Box 2)
+        const previousSibling = firstBox.previousElementSibling; // Get the previous sibling (None in this case)
+
+        console.log('Next sibling of first box:', nextSibling);
+        console.log('Previous sibling of first box:', previousSibling);
+    </script>
+</body>
+</html>
+
+---
+
+### Explanation:
+
+#### 1. **Children Nodes:**
+- We use the `children` property to access all child elements of a given element.
+  ```javascript
+  const children = container.children;
+  console.log('Children of container:', children);
+  ```
+  - This gives us an HTMLCollection of all the child elements (the `.box` divs) inside the container.
+  
+- To access a specific child, we can use properties like `firstElementChild`, `lastElementChild`, or index notation.
+  ```javascript
+  const firstBox = container.firstElementChild;
+  console.log('First Box:', firstBox);
+  ```
+  - This accesses the first child element, which is `<div class="box">Box 1</div>`.
+
+#### 2. **Parent Node:**
+- The `parentElement` property allows us to access the parent node of a given element.
+  ```javascript
+  const parent = firstBox.parentElement;
+  console.log('Parent of first box:', parent);
+  ```
+  - Here, we access the parent of `firstBox`, which is the `<div class="container">`.
+
+#### 3. **Sibling Nodes:**
+- **Next Sibling:** The `nextElementSibling` property allows us to access the next sibling element in the DOM.
+  ```javascript
+  const nextSibling = firstBox.nextElementSibling;
+  console.log('Next sibling of first box:', nextSibling);
+  ```
+  - This gets the next sibling of the `firstBox`, which is `<div class="box">Box 2</div>`.
+  
+- **Previous Sibling:** Similarly, `previousElementSibling` can be used to access the previous sibling element.
+  ```javascript
+  const previousSibling = firstBox.previousElementSibling;
+  console.log('Previous sibling of first box:', previousSibling);
+  ```
+  - Since `firstBox` is the first child in the container, it doesn’t have a previous sibling, so this will return `null`.
+
+### Output in the Console:
+
+- **Children of container:** This will log the HTMLCollection of all child elements of the `.container` div (i.e., all `.box` divs).
+- **First Box:** Logs the first `.box` element (`<div class="box">Box 1</div>`).
+- **Parent of first box:** Logs the parent container `<div class="container">`.
+- **Next sibling of first box:** Logs the next sibling `<div class="box">Box 2</div>`.
+- **Previous sibling of first box:** Logs `null` since `firstBox` has no previous sibling.
+
+T
 # [Day68](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day68)
 
 Selecting by Ids, Classes, and More
