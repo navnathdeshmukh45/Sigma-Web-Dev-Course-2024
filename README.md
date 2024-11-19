@@ -2246,11 +2246,9 @@ document.body.style.backgroundColor = "aqua";
 
 # [Day67](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day67)
 
-#  how to access and manipulate **children**, **parent**, and **sibling** nodes in the DOM using JavaScript:
-
+How to access and manipulate **children**, **parent**, and **sibling** nodes in the DOM using JavaScript:
 
 ---
-<script>
         // 1. Accessing Children Nodes
         const container = document.querySelector('.container');
         const children = container.children; // Get all child elements of the container
@@ -2270,11 +2268,8 @@ document.body.style.backgroundColor = "aqua";
 
         console.log('Next sibling of first box:', nextSibling);
         console.log('Previous sibling of first box:', previousSibling);
-    </script>
-</body>
-</html>
+   ---
 
----
 
 ### Explanation:
 
