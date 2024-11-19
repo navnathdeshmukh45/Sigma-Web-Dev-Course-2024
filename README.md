@@ -2752,7 +2752,7 @@ con1.insertAdjacentHTML(
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day73/card.png)
 
-# [Day74]()
+# [Day74](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day74)
 
 Events Event Bubbling, setinterval and setTimeout
 
@@ -2981,33 +2981,116 @@ console.log(a);
 ---
 
 
-# [Day75]()
+# [Day75](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day75)
 
-Callback Function
+###  Callback Functions 
 
-A callback function in JavaScript is a function that is passed as an argument to another function and is intended to be called at a later time.
+#### **What is a Callback Function?**
+- A callback function is a function passed as an argument to another function and is executed later.
+- This mechanism allows us to control the order of execution and handle asynchronous operations efficiently.
 
-This mechanism allows for functions to be executed asynchronously, after an operation has been completed.
+---
 
-Callback functions are commonly used in scenarios such as handling events, asynchronous operations like fetching data from a server, or executing code after a timeout.
+### **Step-by-Step Explanation of the Code**
 
-```
+
+
+```javascript
 // Function that takes a callback
 function greet(name, callback) {
     console.log("Hello, " + name + "!");
     // Call the callback function
     callback();
 }
+```
+1. **`greet` Function**:
+   - Accepts two parameters:
+     - `name` (a string).
+     - `callback` (a function to execute after the greeting).
+   - Logs a greeting message using `name`.
+   - Executes the provided `callback` function after logging the greeting.
 
+```javascript
 // Callback function definition
 function sayGoodbye() {
     console.log("Goodbye!");
 }
+```
+2. **`sayGoodbye` Function**:
+   - A simple function that logs the message `"Goodbye!"`.
 
+```javascript
 // Using the greet function with a callback
 greet("Alice", sayGoodbye);
-
 ```
+3. **Using the `greet` Function**:
+   - The `greet` function is called with:
+     - `"Alice"` as the `name`.
+     - `sayGoodbye` as the `callback`.
+   - Execution flow:
+     - Logs `"Hello, Alice!"`.
+     - Calls `sayGoodbye`, which logs `"Goodbye!"`.
+
+---
+
+### **Execution Flow**
+1. **Call `greet("Alice", sayGoodbye)`**:
+   - `"Hello, Alice!"` is logged.
+2. **Call `callback()` inside `greet`**:
+   - Executes the `sayGoodbye` function.
+   - Logs `"Goodbye!"`.
+
+**Output**:
+```
+Hello, Alice!
+Goodbye!
+```
+
+---
+
+### **Common Use Cases of Callback Functions**
+
+1. **Event Handling**:
+   ```javascript
+   document.getElementById("btn").addEventListener("click", function() {
+       console.log("Button Clicked!");
+   });
+   ```
+   - The second argument (`function`) is a callback function executed when the button is clicked.
+
+2. **Asynchronous Operations**:
+   ``` javascript
+   setTimeout(function() {
+       console.log("This message appears after 2 seconds");
+   }, 2000);
+   ```
+   - `setTimeout` takes a callback function to execute after a delay.
+
+3. **Fetching Data (e.g., with `fetch`)**:
+   ```javascript
+   fetch("https://api.example.com/data")
+       .then(function(response) {
+           return response.json();
+       })
+       .then(function(data) {
+           console.log(data);
+       });
+   ```
+   - `then` takes a callback function to handle the fetched data.
+
+---
+
+### **Advantages of Callbacks**
+1. **Asynchronous Execution**:
+   - Ensures code execution continues without waiting for long-running operations.
+2. **Reusability**:
+   - Allows passing different functions as callbacks for flexibility.
+3. **Event-Driven Programming**:
+   - Enables defining behavior for specific events or operations.
+
+---
+
+
 
 Error handling in JavaScrip
 
@@ -3028,6 +3111,31 @@ try {
     // Code to handle the error
     console.error('An error occurred:', error);
 }
+
+```
+
+```
+// Function to divide two numbers
+function divideNumbers(num1, num2) {
+    try {
+        // Check if the denominator is zero
+        if (num2 === 0) {
+            throw new Error("Cannot divide by zero!");
+        }
+        let result = num1 / num2;
+        console.log("Result:", result);
+    } catch (error) {
+        // Catch and handle the error
+        console.error("Error:", error.message);
+    }
+}
+
+// Valid division
+divideNumbers(10, 2);  // Should log: Result: 5
+
+// Division by zero
+divideNumbers(10, 0);  // Should log: Error: Cannot divide by zero!
+
 ```
 
 Error Object
