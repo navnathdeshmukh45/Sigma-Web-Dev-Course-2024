@@ -1909,7 +1909,252 @@ console.log(arr2.reduce(red));
   - **Input**: `[1, 2, 3, 4, 5, 6]`
   - **Output**: `21` (1 + 2 + 3 + 4 + 5 + 6)
 
+### **1. Adding/Removing Elements**
+
+#### **`push()`**
+- Adds one or more elements to the end of the array and returns the new length.
+```javascript
+let arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // [1, 2, 3, 4]
+```
+
+#### **`pop()`**
+- Removes the last element from the array and returns it.
+```javascript
+let arr = [1, 2, 3];
+let last = arr.pop();
+console.log(arr); // [1, 2]
+console.log(last); // 3
+```
+
+#### **`shift()`**
+- Removes the first element from the array and returns it.
+```javascript
+let arr = [1, 2, 3];
+let first = arr.shift();
+console.log(arr); // [2, 3]
+console.log(first); // 1
+```
+
+#### **`unshift()`**
+- Adds one or more elements to the beginning of the array and returns the new length.
+```javascript
+let arr = [1, 2, 3];
+arr.unshift(0);
+console.log(arr); // [0, 1, 2, 3]
+```
+
+#### **`splice()`**
+- Adds or removes elements from an array.
+```javascript
+let arr = [1, 2, 3, 4];
+arr.splice(1, 2, 'a', 'b'); // Removes 2 elements from index 1 and adds 'a', 'b'
+console.log(arr); // [1, 'a', 'b', 4]
+```
+
+#### **`slice()`**
+- Returns a shallow copy of a portion of the array.
+```javascript
+let arr = [1, 2, 3, 4];
+let newArr = arr.slice(1, 3); // Extracts from index 1 to 2 (end index is exclusive)
+console.log(newArr); // [2, 3]
+```
+
 ---
+
+### **2. Searching and Indexing**
+
+#### **`indexOf()`**
+- Returns the first index of the specified element or `-1` if not found.
+```javascript
+let arr = [1, 2, 3, 2];
+console.log(arr.indexOf(2)); // 1
+console.log(arr.indexOf(5)); // -1
+```
+
+#### **`lastIndexOf()`**
+- Returns the last index of the specified element or `-1` if not found.
+```javascript
+let arr = [1, 2, 3, 2];
+console.log(arr.lastIndexOf(2)); // 3
+```
+
+#### **`includes()`**
+- Checks if an array includes a certain element.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.includes(2)); // true
+console.log(arr.includes(5)); // false
+```
+
+#### **`find()`**
+- Returns the first element that satisfies the provided condition.
+```javascript
+let arr = [1, 2, 3, 4];
+let result = arr.find((num) => num > 2);
+console.log(result); // 3
+```
+
+#### **`findIndex()`**
+- Returns the index of the first element that satisfies the condition or `-1` if not found.
+```javascript
+let arr = [1, 2, 3, 4];
+let index = arr.findIndex((num) => num > 2);
+console.log(index); // 2
+```
+
+---
+
+### **3. Iterating Over Arrays**
+
+#### **`forEach()`**
+- Executes a provided function once for each array element.
+```javascript
+let arr = [1, 2, 3];
+arr.forEach((num) => console.log(num * 2));
+// Output: 2, 4, 6
+```
+
+#### **`map()`**
+- Creates a new array by applying a function to each element.
+```javascript
+let arr = [1, 2, 3];
+let newArr = arr.map((num) => num * 2);
+console.log(newArr); // [2, 4, 6]
+```
+
+#### **`filter()`**
+- Creates a new array with elements that satisfy the condition.
+```javascript
+let arr = [1, 2, 3, 4];
+let filteredArr = arr.filter((num) => num > 2);
+console.log(filteredArr); // [3, 4]
+```
+
+#### **`reduce()`**
+- Reduces the array to a single value by applying a function.
+```javascript
+let arr = [1, 2, 3, 4];
+let sum = arr.reduce((acc, num) => acc + num, 0);
+console.log(sum); // 10
+```
+
+#### **`reduceRight()`**
+- Same as `reduce()`, but starts from the last element.
+```javascript
+let arr = [1, 2, 3, 4];
+let product = arr.reduceRight((acc, num) => acc * num, 1);
+console.log(product); // 24
+```
+
+---
+
+### **4. Sorting and Reversing**
+
+#### **`sort()`**
+- Sorts the elements of an array.
+```javascript
+let arr = [3, 1, 4, 2];
+arr.sort((a, b) => a - b); // Ascending order
+console.log(arr); // [1, 2, 3, 4]
+```
+
+#### **`reverse()`**
+- Reverses the order of the elements in an array.
+```javascript
+let arr = [1, 2, 3];
+arr.reverse();
+console.log(arr); // [3, 2, 1]
+```
+
+---
+
+### **5. Joining and Splitting**
+
+#### **`join()`**
+- Joins all elements into a string, separated by a specified delimiter.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.join('-')); // "1-2-3"
+```
+
+#### **`toString()`**
+- Converts the array to a comma-separated string.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.toString()); // "1,2,3"
+```
+
+---
+
+### **6. Other Methods**
+
+#### **`concat()`**
+- Combines two or more arrays into a new array.
+```javascript
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let result = arr1.concat(arr2);
+console.log(result); // [1, 2, 3, 4]
+```
+
+#### **`fill()`**
+- Fills all elements with a static value.
+```javascript
+let arr = [1, 2, 3];
+arr.fill(0);
+console.log(arr); // [0, 0, 0]
+```
+
+#### **`copyWithin()`**
+- Copies part of the array to another location within the array.
+```javascript
+let arr = [1, 2, 3, 4];
+arr.copyWithin(1, 2); // Copies elements starting at index 2 to index 1
+console.log(arr); // [1, 3, 4, 4]
+```
+
+#### **`flat()`**
+- Flattens nested arrays into a single-level array.
+```javascript
+let arr = [1, [2, [3, 4]]];
+console.log(arr.flat(2)); // [1, 2, 3, 4]
+```
+
+#### **`flatMap()`**
+- Maps each element using a mapping function and flattens the result.
+```javascript
+let arr = [1, 2, 3];
+let result = arr.flatMap((x) => [x, x * 2]);
+console.log(result); // [1, 2, 2, 4, 3, 6]
+```
+
+---
+
+### **7. Checking and Transforming**
+
+#### **`isArray()`**
+- Checks if the given value is an array.
+```javascript
+console.log(Array.isArray([1, 2, 3])); // true
+console.log(Array.isArray("hello")); // false
+```
+
+#### **`some()`**
+- Checks if at least one element satisfies the condition.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.some((num) => num > 2)); // true
+```
+
+#### **`every()`**
+- Checks if all elements satisfy the condition.
+```javascript
+let arr = [1, 2, 3];
+console.log(arr.every((num) => num > 0)); // true
+```
+
 
 # [Day64](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day64)
 
