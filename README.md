@@ -3569,3 +3569,26 @@ person2.haveBirthday();  // Call the haveBirthday method to increase Bob's age b
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day81/screenshot.jpg)
 
 # [Day82](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day82)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day82/Jay%20shree%20ram.png)
+
+# [Day83](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day83)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day83/Day%2083.png)
+
+# [Day84](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day84)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day84/Day84.png)
+
+
+# [Day85](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day85)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day85/Day%2085.png)
+
+# [Day86](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day86)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day86/target.jpg)
+
+# [Day87](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day87)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day87/Day%2087%20.png)
