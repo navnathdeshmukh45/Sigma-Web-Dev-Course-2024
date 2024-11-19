@@ -3604,3 +3604,138 @@ person2.haveBirthday();  // Call the haveBirthday method to increase Bob's age b
 # [Day 90](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day90)
 
 Backend NodeJs & NPM 
+
+### **How to Install Node.js Step by Step**
+
+Node.js is a JavaScript runtime that allows you to run JavaScript on the server side. Here’s a detailed step-by-step guide to install Node.js:
+
+---
+
+### **Step 1: Download the Installer**
+1. **Go to the Official Node.js Website**:
+   - Open your browser and navigate to [https://nodejs.org/](https://nodejs.org/).
+
+2. **Choose the Correct Version**:
+   - **LTS (Long-Term Support)**: Recommended for most users for stability.
+   - **Current Version**: Includes the latest features but may not be as stable.
+   - Choose the appropriate version for your needs and your operating system (Windows, macOS, Linux).
+
+---
+
+### **Step 2: Install Node.js (Windows/Mac/Linux)**
+
+#### **For Windows:**
+1. **Run the Installer**:
+   - Double-click the downloaded `.msi` file to start the installation wizard.
+
+2. **Follow the Installation Steps**:
+   - Click **Next** to proceed.
+   - Accept the License Agreement.
+   - Choose the installation path (default path is usually fine).
+   - Select components (leave the default options selected).
+
+3. **Install Tools for Native Modules (Optional)**:
+   - During the installation, you might be prompted to install additional tools. Accept this option if needed.
+
+4. **Complete the Installation**:
+   - Click **Finish** to close the wizard.
+
+5. **Verify Installation**:
+   - Open **Command Prompt (cmd)** or **PowerShell**.
+   - Run the following commands to verify the installation:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - **Output**:
+     - `node -v` shows the Node.js version.
+     - `npm -v` shows the Node Package Manager version.
+
+---
+
+#### **For macOS:**
+1. **Run the Installer**:
+   - Double-click the downloaded `.pkg` file and follow the prompts.
+
+2. **Follow the Installation Steps**:
+   - Accept the License Agreement.
+   - Choose the installation path.
+
+3. **Verify Installation**:
+   - Open the **Terminal** and run:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - Confirm that the versions are displayed correctly.
+
+4. **Alternative Installation via Homebrew**:
+   - If you have Homebrew installed, you can install Node.js using:
+     ```bash
+     brew install node
+     ```
+
+---
+
+#### **For Linux:**
+1. **Install Using a Package Manager**:
+   - For Ubuntu/Debian:
+     ```bash
+     sudo apt update
+     sudo apt install nodejs npm
+     ```
+   - For Red Hat/CentOS:
+     ```bash
+     sudo yum install nodejs npm
+     ```
+
+2. **Install Using NodeSource Repository** (Recommended for Latest Versions):
+   - Run the following commands:
+     ```bash
+     curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+     sudo apt-get install -y nodejs
+     ```
+   - Replace `16.x` with your desired Node.js version.
+
+3. **Verify Installation**:
+   - Run:
+     ```bash
+     node -v
+     npm -v
+     ```
+
+---
+
+### **Step 3: Set Up Node.js**
+- After installation, Node.js and npm (Node Package Manager) are ready to use.
+- Test by creating a simple file `app.js`:
+  ```javascript
+  console.log("Node.js is installed successfully!");
+  ```
+- Run the file using:
+  ```bash
+  node app.js
+  ```
+  Output:
+  ```
+  Node.js is installed successfully!
+  ```
+
+---
+
+### **Step 4: Keep Node.js Updated**
+- Update using the Node Version Manager (nvm) for easier version management:
+  1. Install `nvm`:
+     ```bash
+     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+     ```
+  2. Install Node.js using `nvm`:
+     ```bash
+     nvm install node
+     ```
+  3. Switch Node.js versions easily:
+     ```bash
+     nvm use 16
+     ```
+
+---
