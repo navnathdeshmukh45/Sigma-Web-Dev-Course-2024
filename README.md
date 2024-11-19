@@ -2418,29 +2418,137 @@ Selecting by IDs, Classes, and More" refers to methods in web development, speci
 
 # [Day69](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day69)
 
-```
+step-by-step explanation of the code:
+
+---
+
+### **1. Declaration and Initialization**
+```javascript
 let a = 5;
-
-function factorial(number){
-    let arr = Array.from(Array(number).keys())
-    let c = arr.slice(1,).reduce((a, b)=> a*b)
-    return c
-}
-
-function facFor(number){
-    let fac = 1;
-    for(let index= 1;index <= number; index++){
-        fac =fac * index
-    }
-    return fac
-}
-document.write(factorial(a))
-document.write(" ",facFor(a))
 ```
+- A variable `a` is declared and assigned the value `5`.
+- This value will be used as the input to calculate the factorial of a number.
+
+---
+
+### **2. Function: `factorial(number)`**
+#### **Purpose**: Calculate the factorial of a number using array methods (`Array.from`, `slice`, and `reduce`).
+
+```javascript
+function factorial(number) {
+    let arr = Array.from(Array(number).keys());
+    let c = arr.slice(1,).reduce((a, b) => a * b);
+    return c;
+}
+```
+
+#### **Step-by-Step Breakdown**:
+1. **`Array.from(Array(number).keys())`**:
+   - Creates an array of numbers starting from `0` up to `number - 1`.
+   - For example, if `number = 5`, the array `arr` becomes: `[0, 1, 2, 3, 4]`.
+
+2. **`arr.slice(1,)`**:
+   - Removes the first element (`0`) from the array, as `0` would make the factorial `0`.
+   - The sliced array becomes: `[1, 2, 3, 4]`.
+
+3. **`reduce((a, b) => a * b)`**:
+   - Multiplies all elements in the sliced array.
+   - For `[1, 2, 3, 4]`, it computes:
+     - `1 * 2 = 2`
+     - `2 * 3 = 6`
+     - `6 * 4 = 24`
+
+4. The result (`24`) is returned as the factorial of `5`.
+
+#### **Problem in the Code**:
+- This implementation incorrectly calculates the factorial. It misses the final `number` itself (`5` in this case) because the array stops at `number - 1`.
+- Fix:
+   ```javascript
+   let arr = Array.from(Array(number + 1).keys());
+   ```
+
+---
+
+### **3. Function: `facFor(number)`**
+#### **Purpose**: Calculate the factorial of a number using a `for` loop.
+
+```javascript
+function facFor(number) {
+    let fac = 1;
+    for (let index = 1; index <= number; index++) {
+        fac = fac * index;
+    }
+    return fac;
+}
+```
+
+#### **Step-by-Step Breakdown**:
+1. **Initialization**:
+   - `fac` is initialized to `1` to hold the product of numbers.
+
+2. **`for` Loop**:
+   - Starts from `index = 1` and runs up to `number` (`5` in this case).
+   - At each step, multiplies `fac` by the current value of `index`:
+     - `fac = 1 * 1 = 1`
+     - `fac = 1 * 2 = 2`
+     - `fac = 2 * 3 = 6`
+     - `fac = 6 * 4 = 24`
+     - `fac = 24 * 5 = 120`
+
+3. The final value of `fac` (`120`) is returned as the factorial of `5`.
+
+---
+
+### **4. Writing Results to the Document**
+```javascript
+document.write(factorial(a));
+document.write(" ", facFor(a));
+```
+
+#### **Steps**:
+1. **`factorial(a)`**:
+   - Calls the `factorial` function with `a = 5`.
+   - Returns `24` (with the current code, though incorrect due to the missing fix).
+
+2. **`facFor(a)`**:
+   - Calls the `facFor` function with `a = 5`.
+   - Returns `120` (the correct factorial of `5`).
+
+3. **`document.write`**:
+   - Outputs the results to the web page.
+   - Displays: `24 120`.
+
+---
+
+### **Corrected Output After Fixing `factorial`**
+With the fixed array creation in `factorial`:
+```javascript
+let arr = Array.from(Array(number + 1).keys());
+```
+
+- Both `factorial(5)` and `facFor(5)` return `120`.
+- Final output on the web page would be: `120 120`.
+
+---
+
+### **Key Learnings**
+1. **Factorial Formula**:
+   - `n! = n * (n-1) * (n-2) * ... * 1`
+
+2. **Array-based Approach**:
+   - Flexible but requires careful handling of array boundaries.
+
+3. **For-loop Approach**:
+   - Straightforward and reliable for calculating factorials.
+
+4. **`document.write`**:
+   - Writes directly to the web page but is generally avoided in modern web development. Prefer using DOM manipulation (`innerHTML`) for better control.
 
 # [Day70](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day70)
 
 Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+Ans: 
+
 
 # [Day71](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day71)
 
