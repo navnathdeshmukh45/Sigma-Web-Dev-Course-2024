@@ -1575,44 +1575,114 @@ console.log(b);  // Output: Shivam (Original string remains unchanged because st
 
 # [Day61](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day61)
 
-```
-/* Create a faulty calculator using JavaScript
-This faulty calculator does following:
-1. It takes two numbers as input from the user
-2. It perfoms wrong operations as follows:
-+ ---> -
-* ---> +
-- ---> /
-/ ---> **
-It performs wrong operation 10% of the times
+### Faulty Calculator 
+
+---
+/* 
+Create a faulty calculator using JavaScript
+This faulty calculator does the following:
+1. Takes two numbers and an operation as input from the user.
+2. Performs wrong operations as follows:
+   + ---> -
+   * ---> +
+   - ---> /
+   / ---> **
+3. Performs wrong operation 10% of the times (randomly).
 */
 
 
-let random = Math.random()
-console.log(random)
-let a = prompt("Enter first number")
-let c = prompt("Enter operation")
-let b = prompt("Enter second number")
+### **Step 1: Generate a Random Number**
+```javascript
+let random = Math.random();
+console.log(random);
+```
+- **`Math.random()`**: Generates a random decimal number between `0` and `1`.
+- **`random`**: Stores the random number.
+- **`console.log(random)`**: Logs the random number to the console for debugging.
 
+---
+
+### **Step 2: Take Inputs from the User**
+```javascript
+let a = prompt("Enter first number");
+let c = prompt("Enter operation");
+let b = prompt("Enter second number");
+```
+- **`prompt()`**: Displays a dialog box asking the user for input.
+  - **`a`**: The first number entered by the user.
+  - **`c`**: The operation (+, -, *, /) entered by the user.
+  - **`b`**: The second number entered by the user.
+
+---
+
+### **Step 3: Define the Faulty Operations**
+```javascript
 let obj = {
     "+": "-",
     "*": "+",
     "-": "/",
     "/": "**",
-}
+};
+```
+- **`obj`**: An object mapping correct operations to their faulty counterparts.
+  - `"+": "-"` means `+` will act like subtraction.
+  - `"*": "+"` means `*` will act like addition.
+  - `"-": "/"` means `-` will act like division.
+  - `"/": "**"` means `/` will act like exponentiation (`**`).
 
+---
+
+### **Step 4: Decide if the Operation is Faulty**
+```javascript
 if (random > 0.1) {
     // Perform correct calculation
-    console.log(`The result is ${a} ${c} ${b}`)
-    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
-}
-
-else {
-    // Perform wrong calculation
-    c = obj[c]
-    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+    console.log(`The result is ${a} ${c} ${b}`);
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`);
 }
 ```
+- **`if (random > 0.1)`**: Executes the block if the random number is greater than `0.1`. This happens 90% of the time, ensuring a correct calculation.
+- **`console.log()`**: Displays the calculation for debugging.
+- **`eval()`**: Evaluates a string as JavaScript code. In this case, it calculates the result of `a c b`.
+
+---
+
+### **Step 5: Perform the Faulty Operation**
+```javascript
+else {
+    // Perform wrong calculation
+    c = obj[c];
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`);
+}
+```
+- **`else`**: Executes this block when `random <= 0.1` (10% chance).
+- **`c = obj[c]`**: Replaces the correct operation with its faulty counterpart based on the `obj` mapping.
+- **`eval()`**: Evaluates the faulty operation string, producing an incorrect result.
+
+---
+
+### Example Execution
+
+#### Input:
+```plaintext
+a = 5
+c = +
+b = 3
+```
+
+#### Possible Outputs:
+1. **Correct Calculation (90% Chance)**:
+   - Random Number: `0.8`
+   - Expression: `5 + 3`
+   - Output: `The result is 8`.
+
+2. **Faulty Calculation (10% Chance)**:
+   - Random Number: `0.05`
+   - Operation Changed: `+` → `-`
+   - Expression: `5 - 3`
+   - Output: `The result is 2`.
+
+---
+
 
 # [Day62](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day62)
 
