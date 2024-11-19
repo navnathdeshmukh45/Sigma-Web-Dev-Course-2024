@@ -1374,28 +1374,114 @@ while (i < 60000) {
 
 # [Day58](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day58)
 
-```
+
+### **What is a Function?**
+A **function** is a block of code designed to perform a particular task. You define a function using the `function` keyword or other syntax variations like arrow functions or function expressions.
+
+### **Types of Functions in JavaScript**
+
+#### 1. **Named Function**
+A named function has a specific name and can be reused multiple times.  
+Example:
+```javascript
 function nice(name) {
-    console.log("Hey " + name + " you are nice!")
-    console.log("Hey " + name + " you are good!")
-    console.log("Hey " + name + " your tshirt is nice!")
-    console.log("Hey " + name + " your course is good too!")
+    console.log("Hey " + name + " you are nice!");
 }
+nice("John");  // Output: Hey John you are nice!
+```
+
+In your code:
+```javascript
+function nice(name) {
+    console.log("Hey " + name + " you are nice!");
+    console.log("Hey " + name + " you are good!");
+    console.log("Hey " + name + " your tshirt is nice!");
+    console.log("Hey " + name + " your course is good too!");
+}
+nice("Alex");
+```
+
+---
+
+#### 2. **Function with Default Parameters**
+You can assign default values to function parameters to use when arguments are not provided during the function call.  
+Example:
+```javascript
 function sum(a, b, c = 3) {
-    // console.log(a + b)
-    console.log(a, b, c)
-    return a + b + c
+    console.log(a, b, c);  // Prints the values of a, b, and c
+    return a + b + c;
 }
 
-result1 = sum(3, 2)
-result2 = sum(7, 5)
-result3 = sum(3, 13, 1)
-console.log("The sum of these numbers is: ", result1)
-console.log("The sum of these numbers is: ", result2)
-console.log("The sum of these numbers is: ", result3)
+let result = sum(3, 2);  // c will take the default value of 3
+console.log(result);  // Output: 8
 ```
+
+In your code:
+```javascript
+result1 = sum(3, 2);           // c = 3 (default), result1 = 8
+result2 = sum(7, 5);           // c = 3 (default), result2 = 15
+result3 = sum(3, 13, 1);       // c = 1 (overrides default), result3 = 17
+```
+
+---
+
+#### 3. **Arrow Function**
+Arrow functions provide a concise syntax for writing functions. They are anonymous by default and do not bind their own `this` value (making them suitable for certain contexts like callbacks).  
+Syntax:
+```javascript
+const func1 = (x) => {
+    console.log("I am an arrow function", x);
+};
+func1(34);  // Output: I am an arrow function 34
+```
+
+In your code:
+```javascript
+const func1 = (x) => {
+    console.log("I am an arrow function", x);
+};
+func1(66);  // Output: I am an arrow function 66
+```
+
+---
+
+### **Other Types of Functions**
+
+#### 4. **Anonymous Function**
+Functions without a name, often used as arguments in other functions or assigned to variables.  
+Example:
+```javascript
+const greet = function(name) {
+    return "Hello, " + name;
+};
+console.log(greet("Mike"));  // Output: Hello, Mike
+```
+
+#### 5. **Immediately Invoked Function Expression (IIFE)**
+A function executed immediately after its definition.  
+Example:
+```javascript
+(function () {
+    console.log("I am an IIFE!");
+})();  // Output: I am an IIFE!
+```
+
+#### 6. **Callback Function**
+A function passed as an argument to another function and executed later.  
+Example:
+```javascript
+function processUserInput(callback) {
+    const name = "Jane";
+    callback(name);
+}
+processUserInput(function(name) {
+    console.log("Hello, " + name);
+});  // Output: Hello, Jane
+```
+
 
 # [Day59](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day59/HAPPY%20HOLI)
+
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day59/HAPPY%20HOLI/Holi.jpg)
 
