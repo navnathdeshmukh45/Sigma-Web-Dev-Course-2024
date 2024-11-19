@@ -3605,137 +3605,195 @@ person2.haveBirthday();  // Call the haveBirthday method to increase Bob's age b
 
 Backend NodeJs & NPM 
 
-### **How to Install Node.js Step by Step**
+### **How to Install Node.js on Windows: Step-by-Step**
 
-Node.js is a JavaScript runtime that allows you to run JavaScript on the server side. Here’s a detailed step-by-step guide to install Node.js:
+Follow these steps to install Node.js on a Windows operating system:
 
 ---
 
-### **Step 1: Download the Installer**
-1. **Go to the Official Node.js Website**:
-   - Open your browser and navigate to [https://nodejs.org/](https://nodejs.org/).
+### **Step 1: Download Node.js Installer**
+1. **Visit the Official Node.js Website**:
+   - Open your browser and go to [https://nodejs.org/](https://nodejs.org/).
 
 2. **Choose the Correct Version**:
-   - **LTS (Long-Term Support)**: Recommended for most users for stability.
-   - **Current Version**: Includes the latest features but may not be as stable.
-   - Choose the appropriate version for your needs and your operating system (Windows, macOS, Linux).
+   - **LTS (Long-Term Support)**: Stable version for most users.
+   - **Current Version**: Latest features but might not be as stable.
+   - Click on the appropriate version for your Windows system (32-bit or 64-bit).
 
 ---
 
-### **Step 2: Install Node.js (Windows/Mac/Linux)**
+### **Step 2: Run the Installer**
+1. **Locate the Downloaded File**:
+   - The installer will be a `.msi` file, usually in your "Downloads" folder.
 
-#### **For Windows:**
-1. **Run the Installer**:
-   - Double-click the downloaded `.msi` file to start the installation wizard.
+2. **Double-Click to Open**:
+   - Launch the installer by double-clicking the file.
 
-2. **Follow the Installation Steps**:
-   - Click **Next** to proceed.
-   - Accept the License Agreement.
-   - Choose the installation path (default path is usually fine).
-   - Select components (leave the default options selected).
+3. **Follow the Installation Wizard**:
+   - Click **Next** to proceed through the wizard.
+   - **License Agreement**: Accept the terms and click **Next**.
+   - **Choose Installation Path**: Use the default path or select a custom one. (Default: `C:\Program Files\nodejs\`)
+   - **Select Components**: Keep the default options checked (Node.js runtime, npm, Add to PATH, etc.).
 
-3. **Install Tools for Native Modules (Optional)**:
-   - During the installation, you might be prompted to install additional tools. Accept this option if needed.
+4. **Optional Tools**:
+   - During the installation, you'll be prompted to install additional tools like **Python** or **Visual Studio Build Tools**. Accept this if you're planning to work with native modules.
 
-4. **Complete the Installation**:
-   - Click **Finish** to close the wizard.
-
-5. **Verify Installation**:
-   - Open **Command Prompt (cmd)** or **PowerShell**.
-   - Run the following commands to verify the installation:
-     ```bash
-     node -v
-     npm -v
-     ```
-   - **Output**:
-     - `node -v` shows the Node.js version.
-     - `npm -v` shows the Node Package Manager version.
+5. **Install**:
+   - Click **Install** to begin the process.
+   - Wait for the installation to complete, then click **Finish**.
 
 ---
 
-#### **For macOS:**
-1. **Run the Installer**:
-   - Double-click the downloaded `.pkg` file and follow the prompts.
+### **Step 3: Verify Installation**
+1. **Open Command Prompt**:
+   - Press `Win + R`, type `cmd`, and hit Enter.
 
-2. **Follow the Installation Steps**:
-   - Accept the License Agreement.
-   - Choose the installation path.
-
-3. **Verify Installation**:
-   - Open the **Terminal** and run:
-     ```bash
-     node -v
-     npm -v
-     ```
-   - Confirm that the versions are displayed correctly.
-
-4. **Alternative Installation via Homebrew**:
-   - If you have Homebrew installed, you can install Node.js using:
-     ```bash
-     brew install node
-     ```
-
----
-
-#### **For Linux:**
-1. **Install Using a Package Manager**:
-   - For Ubuntu/Debian:
-     ```bash
-     sudo apt update
-     sudo apt install nodejs npm
-     ```
-   - For Red Hat/CentOS:
-     ```bash
-     sudo yum install nodejs npm
-     ```
-
-2. **Install Using NodeSource Repository** (Recommended for Latest Versions):
-   - Run the following commands:
-     ```bash
-     curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-     sudo apt-get install -y nodejs
-     ```
-   - Replace `16.x` with your desired Node.js version.
-
-3. **Verify Installation**:
+2. **Check Node.js Version**:
    - Run:
      ```bash
      node -v
+     ```
+     This should display the installed Node.js version (e.g., `v18.16.0`).
+
+3. **Check npm Version**:
+   - Run:
+     ```bash
      npm -v
      ```
+     This will display the npm version (e.g., `8.19.2`).
 
 ---
 
-### **Step 3: Set Up Node.js**
-- After installation, Node.js and npm (Node Package Manager) are ready to use.
-- Test by creating a simple file `app.js`:
-  ```javascript
-  console.log("Node.js is installed successfully!");
-  ```
-- Run the file using:
-  ```bash
-  node app.js
-  ```
-  Output:
-  ```
-  Node.js is installed successfully!
-  ```
-
----
-
-### **Step 4: Keep Node.js Updated**
-- Update using the Node Version Manager (nvm) for easier version management:
-  1. Install `nvm`:
-     ```bash
-     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+### **Step 4: Test Node.js**
+1. **Create a Test File**:
+   - Open a text editor (e.g., Notepad) and write the following code:
+     ```javascript
+     console.log("Node.js is installed successfully!");
      ```
-  2. Install Node.js using `nvm`:
+
+2. **Save the File**:
+   - Save it as `app.js` in a folder of your choice (e.g., `C:\NodeTest\app.js`).
+
+3. **Run the File**:
+   - Navigate to the folder in Command Prompt:
      ```bash
-     nvm install node
+     cd C:\NodeTest
      ```
-  3. Switch Node.js versions easily:
+   - Run the file using:
      ```bash
-     nvm use 16
+     node app.js
+     ```
+   - Output:
+     ```
+     Node.js is installed successfully!
      ```
 
 ---
+
+### **Step 5: Install and Use npm Packages**
+1. **Install a Test Package**:
+   - For example, install `nodemon` globally:
+     ```bash
+     npm install -g nodemon
+     ```
+   - Verify the installation:
+     ```bash
+     nodemon -v
+     ```
+
+2. **Start Using npm**:
+   - Install local packages for your projects as needed.
+
+---
+
+### **Step 6: Update Node.js and npm**
+1. **Update npm**:
+   - Run:
+     ```bash
+     npm install -g npm@latest
+     ```
+
+2. **Update Node.js**:
+   - Download the latest installer from [https://nodejs.org/](https://nodejs.org/) and run it to overwrite the previous version.
+
+---
+
+# **Node.js HTTP Server Example**
+
+This code demonstrates how to create a simple HTTP server using Node.js.
+
+---
+
+### **1. Load the HTTP Module**
+```javascript
+const http = require("http");
+```
+- **`http`**: A built-in Node.js module used to create HTTP servers and handle HTTP requests/responses.
+- **`require`**: Used to import the `http` module.
+
+---
+
+### **2. Define Hostname and Port**
+```javascript
+const hostname = "127.0.0.1";
+const port = 8000;
+```
+- **`hostname`**: Specifies the server's hostname. `127.0.0.1` refers to the localhost.
+- **`port`**: Specifies the port number where the server will listen for incoming requests.
+
+---
+
+### **3. Create the HTTP Server**
+```javascript
+const server = http.createServer(function (req, res) {
+  // Set the response HTTP header with HTTP status and Content type
+  res.writeHead(200, { "Content-Type": "text/plain" });
+
+  // Send the response body "Hello World"
+  res.end("Hello World\n");
+});
+```
+- **`http.createServer`**: Creates an HTTP server.
+- **Callback function `(req, res)`**:
+  - **`req`**: Represents the incoming HTTP request.
+  - **`res`**: Represents the HTTP response to be sent to the client.
+- **`res.writeHead(200, { "Content-Type": "text/plain" })`**:
+  - Sets the HTTP response status code (`200` for success).
+  - Sets the response header, specifying the content type (`text/plain` for plain text).
+- **`res.end("Hello World\n")`**:
+  - Ends the response and sends the body content (`"Hello World\n"`) to the client.
+
+---
+
+### **4. Start the Server**
+```javascript
+server.listen(port, hostname, function () {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+```
+- **`server.listen(port, hostname)`**:
+  - Makes the server listen for incoming requests on the specified hostname and port.
+- **Callback function**:
+  - Logs a message to the console when the server starts running.
+  - Example output:
+    ```
+    Server running at http://127.0.0.1:8000/
+    ```
+
+---
+
+## **How to Run the Server**
+1. Save the code in a file named `server.js`.
+2. Open a terminal and navigate to the file's directory.
+3. Run the following command:
+   ```bash
+   node server.js
+   ```
+4. Open a browser and visit the URL `http://127.0.0.1:8000/`.
+5. The browser will display:
+   ```
+   Hello World
+   ```
+
+---
+
