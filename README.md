@@ -2547,64 +2547,202 @@ let arr = Array.from(Array(number + 1).keys());
 # [Day70](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day70)
 
 Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
+
 Ans: 
+
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day70/Screenshot%202024-11-19%20124257.png)
 
 # [Day71](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day71)
 
 Inserting and Removing Elements
 
-```
+Here’s a step-by-step explanation of the provided code:
+
+---
+
+### **1. HTML and CSS**
+```html
 <style>
-.red{
+.red {
     color: red;
 }
 </style>
 <body>
     <div class="container red bg-green">
-        <div class="box" style="display: flex;" data-createdby="Programmer_navnath" data-conceptby="Shalini" >Hey I am a box</div>
+        <div class="box" style="display: flex;" data-createdby="Programmer_navnath" data-conceptby="Shalini">
+            Hey I am a box
+        </div>
         <div class="box">Hey I am a box</div>
-<script>
-document.querySelector(".box")
-document.querySelector(".container").innerHTML
-document.querySelector(".container").outerHTML
-document.querySelector(".container").tagName
-document.querySelector(".container").nodeName
-document.querySelector(".container").textContent
-document.querySelector(".conatiner").innerHTML = " Hey I am good Best person for you "
-document.querySelector(".conatiner").hasAttribute("style")
-document.querySelector(".conatiner").getAttribute("style")
-document.querySelector(".conatiner").setAttribute("style","display:inline")
-document.querySelector(".conatiner").attributes
-document.querySelector(".conatiner").removeAttribute("style")
-document.designMode = "on" // To Change the page
-document.querySelector(".box").dataset
-document.querySelector(".box").remove()
-document.querySelector(".box").classList
-document.querySelector(".box").className
-document.querySelector(".container").classList.add("Prog")
-document.querySelector(".container").classList.remove("Prog")
-document.querySelector(".container").classList.toggle("Prog")
-
-let div = document.createElement("div");
-div.innerHTML = "I have been inserted <b>by harry</b>"
-div.setAttribute("class", "created");
-document.querySelector(".container").before(div);
-
-let cont = document.querySelector(".container")
-cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
-
-let con = document.querySelector(".container")
-con.insertAdjacentHTML("afterend","<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
-
-let cont1 = document.querySelector(".container")
-cont1.insertAdjacentHTML("beforebegin","<b> I am under the water. </b>")
-
-let con1 = document.querySelector(".container")
-con1.insertAdjacentHTML("beforeend","<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
-</script>
+    </div>
 </body>
 ```
+
+#### Explanation:
+1. **CSS Class `.red`**:
+   - Adds a red color style to elements with the `red` class.
+   - The `container` div inherits this class, making its text red.
+
+2. **HTML Structure**:
+   - Contains a `div` with `class="container red bg-green"`.
+   - Inside this container:
+     - The first `div` with `class="box"` has inline styles and custom `data-*` attributes.
+     - The second `div` is a plain `box`.
+
+---
+
+### **2. JavaScript: Query Selectors**
+#### Example Queries:
+```javascript
+document.querySelector(".box");
+```
+- Returns the first element with the `box` class.
+
+```javascript
+document.querySelector(".container").innerHTML;
+```
+- Retrieves the **HTML content** of the `container`.
+
+```javascript
+document.querySelector(".container").outerHTML;
+```
+- Retrieves the **HTML structure** of the `container`, including the container itself.
+
+```javascript
+document.querySelector(".container").tagName;
+document.querySelector(".container").nodeName;
+```
+- Both return the tag name of the container, which is `DIV`.
+
+```javascript
+document.querySelector(".container").textContent;
+```
+- Retrieves the **text-only content** of the container (without HTML tags).
+
+---
+
+### **3. Updating and Manipulating Attributes**
+```javascript
+document.querySelector(".container").innerHTML = "Hey I am good Best person for you";
+```
+- Replaces the entire content of the container with the given text.
+
+```javascript
+document.querySelector(".container").hasAttribute("style");
+```
+- Checks if the container has a `style` attribute. Returns `true` or `false`.
+
+```javascript
+document.querySelector(".container").getAttribute("style");
+```
+- Retrieves the value of the `style` attribute.
+
+```javascript
+document.querySelector(".container").setAttribute("style", "display:inline");
+```
+- Sets a new value for the `style` attribute.
+
+```javascript
+document.querySelector(".container").attributes;
+```
+- Returns all attributes of the container as a NamedNodeMap.
+
+```javascript
+document.querySelector(".container").removeAttribute("style");
+```
+- Removes the `style` attribute from the container.
+
+---
+
+### **4. Editing the Page Dynamically**
+```javascript
+document.designMode = "on";
+```
+- Enables direct editing of the webpage in the browser. The page becomes editable.
+
+---
+
+### **5. Accessing and Removing Elements**
+```javascript
+document.querySelector(".box").dataset;
+```
+- Retrieves the `data-*` attributes of the first `box` element as a dataset object:
+  - `{ createdby: "Programmer_navnath", conceptby: "Shalini" }`
+
+```javascript
+document.querySelector(".box").remove();
+```
+- Removes the first `box` element from the DOM.
+
+---
+
+### **6. Managing Classes**
+```javascript
+document.querySelector(".box").classList;
+```
+- Returns a list of classes for the first `box`.
+
+```javascript
+document.querySelector(".box").className;
+```
+- Returns the class names as a string.
+
+```javascript
+document.querySelector(".container").classList.add("Prog");
+document.querySelector(".container").classList.remove("Prog");
+document.querySelector(".container").classList.toggle("Prog");
+```
+- `add("Prog")`: Adds the class `Prog` to the container.
+- `remove("Prog")`: Removes the class `Prog` from the container.
+- `toggle("Prog")`: Adds the class if it's missing, removes it if present.
+
+---
+
+### **7. Creating and Inserting Elements**
+#### **Example 1: Create a new `div`**
+```javascript
+let div = document.createElement("div");
+div.innerHTML = "I have been inserted <b>by harry</b>";
+div.setAttribute("class", "created");
+document.querySelector(".container").before(div);
+```
+1. Creates a new `div` element.
+2. Adds HTML content: `"I have been inserted <b>by harry</b>"`.
+3. Assigns the class `created` to it.
+4. Inserts the new `div` **before** the container.
+
+---
+
+#### **Example 2: Use `insertAdjacentHTML`**
+```javascript
+let cont = document.querySelector(".container");
+cont.insertAdjacentHTML(
+    "beforebegin",
+    "<b> I am under the water. Please help me here too much raining.... iuuuuooooo</b>"
+);
+```
+- Inserts the given HTML **before** the container.
+
+```javascript
+let con = document.querySelector(".container");
+con.insertAdjacentHTML(
+    "afterend",
+    "<b> I am under the water. Please help me here too much raining.... iuuuuooooo</b>"
+);
+```
+- Inserts the given HTML **after** the container.
+
+```javascript
+let con1 = document.querySelector(".container");
+con1.insertAdjacentHTML(
+    "beforeend",
+    "<b> I am under the water. Please help me here too much raining.... iuuuuooooo</b>"
+);
+```
+- Inserts the given HTML as the **last child** of the container.
+
+---
+
+
 
 # [Day72](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day72)
 
