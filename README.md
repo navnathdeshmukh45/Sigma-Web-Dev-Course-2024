@@ -2756,14 +2756,30 @@ con1.insertAdjacentHTML(
 
 Events Event Bubbling, setinterval and setTimeout
 
-```
- <div class="container">
-        <div class="box">Hey I am Box</div>
-    </div>
-    <button id="btn">Change content</button>
+
+**Event Handling**
+
+This code demonstrates **Event Handling** in JavaScript, specifically the **`addEventListener` method** to listen for click events on a button element. 
+
+---
+
+### **HTML Structure**
+
+```html
+<div class="container">
+    <div class="box">Hey I am Box</div>
+</div>
+<button id="btn">Change content</button>
 ```
 
-```
+1. **`<div class="container">`**: This is a container div holding another child div with the class `box`. The text inside the `.box` is "Hey I am Box".
+2. **`<button id="btn">`**: A button element with an ID `btn` that will trigger the event when clicked.
+
+---
+
+### **JavaScript Code**
+
+```javascript
 let button = document.getElementById("btn")
 button.addEventListener("click",()=>{
     // alert("I was clicked")
@@ -2771,72 +2787,199 @@ button.addEventListener("click",()=>{
 })
 ```
 
+---
+
+### ** Explanation**
+
+1. **Accessing the Button Element**:
+   ```javascript
+   let button = document.getElementById("btn");
+   ```
+   - The `document.getElementById` method is used to select the button with the ID `btn` and store it in the variable `button`.
+
+2. **Adding an Event Listener**:
+   ```javascript
+   button.addEventListener("click", () => {
+       // Code to execute on click
+   });
+   ```
+   - **`addEventListener`** listens for the `"click"` event on the button.
+   - The second parameter is a **callback function** that gets executed when the button is clicked.
+
+3. **Changing Content of the Box**:
+   ```javascript
+   document.querySelector(".box").innerHTML = "<b>Yayy you were clicked</b> Enjoy your click!";
+   ```
+   - **`document.querySelector(".box")`**: Selects the first element with the class `box`.
+   - **`innerHTML`**: Updates the HTML content of the selected `.box` div.
+   - The text in the `.box` div changes from "Hey I am Box" to:
+     ```
+     Yayy you were clicked Enjoy your click!
+     ```
+   - The `<b>` tag makes "Yayy you were clicked" bold.
+
+---
+
+### **What Happens When You Click the Button?**
+
+1. The browser detects the **click event** on the button with ID `btn`.
+2. The **event listener** executes the callback function.
+3. The function changes the content of the `.box` div to the new text.
+
+---
+
+### **Concepts Demonstrated**
+1. **Event Handling**:
+   - Using **`addEventListener`** to listen for a click event.
+2. **DOM Manipulation**:
+   - Accessing and modifying elements using **`document.querySelector`**.
+   - Updating content dynamically with **`innerHTML`**.
+
+---
+
+### **How It Works in Action**
+
+When the button is clicked, the text in the `.box` div dynamically changes to reflect the event, showing that the button was clicked and the content updated programmatically.
+
 # [List of all mouse events](https://developer.mozilla.org/en-US/docs/Web/API/Element#mouse_events)
 
 Event bubbling
 
+**Event Bubbling** and also showcases the usage of **`setTimeout`** and **random colors** applied to DOM elements. 
+
+---
+
+###  Explanation**
+
+#### HTML Structure:
+```html
+<div class="container">
+    <section class="childContainer">
+        <div class="child">
+            I am a child
+        </div>
+    </section>
+</div>
 ```
- <style>
-        .child {
-            background-color: aliceblue;
-            border: 2px solid black;
-            padding: 14px;
-            margin: 14px;
-            cursor: pointer;
-        }
+1. **`.container`**:
+   - A parent container with a yellow background.
+2. **`.childContainer`**:
+   - A child section inside `.container`, styled with a beige background.
+3. **`.child`**:
+   - A smaller child div inside `.childContainer` styled with an AliceBlue background and a message "I am a child".
 
-        .childContainer {
-            background-color: beige;
-            padding: 14px;
-            margin: 14px;
-        }
-
-        .container {
-            background-color: rgb(227, 227, 28);
-            padding: 14px;
-            margin: 14px;
-        }
-    </style>
-<body>
-     <div class="container">
-        <section class="childContainer">
-            <div class="child">
-                I am a child
-            </div>
-        </section>
-    </div>
-    <script>
-        document.querySelector(".child").addEventListener("click", (e) => {
-            e.stopPropagation()
-            alert("Child Was clicked")
-        })
-
-        document.querySelector(".childContainer").addEventListener("click", (e) => {
-            e.stopPropagation()
-            alert("childContainer Was clicked")
-        })
-
-        document.querySelector(".container").addEventListener("click", (e) => {
-            alert("container Was clicked")
-        })
-
-        function getRandomColor() {
-            let val1 = Math.ceil(0 + Math.random() * 255);
-            let val2 = Math.ceil(0 + Math.random() * 255);
-            let val3 = Math.ceil(0 + Math.random() * 255);
-            return `rgb(${val1}, ${val2}, ${val3})`
-        }
-        // let a = setInterval(() => {
-        //     document.querySelector(".childContainer").style.background = getRandomColor();
-        // }, 1000);
-        // console.log(a)
-        let a = setTimeout(() => {
-            document.querySelector(".childContainer").style.background = getRandomColor();
-        }, 5000);
-        console.log(a)
-    </script>
-</body>
+#### CSS Styles:
+```css
+.child {
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 14px;
+    margin: 14px;
+    cursor: pointer;
+}
+.childContainer {
+    background-color: beige;
+    padding: 14px;
+    margin: 14px;
+}
+.container {
+    background-color: rgb(227, 227, 28);
+    padding: 14px;
+    margin: 14px;
+}
 ```
+- Defines the styles for `.child`, `.childContainer`, and `.container` with unique backgrounds and borders.
+
+---
+
+### **JavaScript Explanation**
+
+#### 1. **Event Bubbling:**
+
+**Event Listeners:**
+```javascript
+document.querySelector(".child").addEventListener("click", (e) => {
+    e.stopPropagation();
+    alert("Child Was clicked");
+});
+
+document.querySelector(".childContainer").addEventListener("click", (e) => {
+    e.stopPropagation();
+    alert("childContainer Was clicked");
+});
+
+document.querySelector(".container").addEventListener("click", (e) => {
+    alert("container Was clicked");
+});
+```
+
+##### **Key Concepts:**
+- **Event Bubbling**:
+  - When an event occurs on a child element, it "bubbles up" through its parent elements in the DOM tree.
+  - For example, clicking `.child` triggers events on `.child`, `.childContainer`, and `.container`.
+
+##### **Usage of `stopPropagation`:**
+- The **`e.stopPropagation()`** method stops the event from bubbling up to parent elements.
+- Without it:
+  - Clicking on `.child` would trigger alerts for all three levels (`Child`, `childContainer`, `container`).
+- With `stopPropagation()`:
+  - Only the intended element's event fires.
+
+**Execution:**
+1. Clicking `.child` shows:
+   - Alert: **"Child Was clicked"** (and stops here).
+2. Clicking `.childContainer` (but outside `.child`) shows:
+   - Alert: **"childContainer Was clicked"**.
+3. Clicking `.container` (but outside `.childContainer`) shows:
+   - Alert: **"container Was clicked"**.
+
+---
+
+#### 2. **Dynamic Background Color Change with `setTimeout`:**
+
+**Code Snippet:**
+```javascript
+function getRandomColor() {
+    let val1 = Math.ceil(0 + Math.random() * 255);
+    let val2 = Math.ceil(0 + Math.random() * 255);
+    let val3 = Math.ceil(0 + Math.random() * 255);
+    return `rgb(${val1}, ${val2}, ${val3})`;
+}
+
+let a = setTimeout(() => {
+    document.querySelector(".childContainer").style.background = getRandomColor();
+}, 5000);
+console.log(a);
+```
+
+##### **Key Concepts:**
+1. **`getRandomColor` Function:**
+   - Generates a random RGB color by picking random values between 0 and 255 for Red, Green, and Blue components.
+   - Example output: `"rgb(120, 200, 50)"`.
+
+2. **`setTimeout` Function:**
+   - Waits for **5000 milliseconds (5 seconds)** before executing the callback.
+   - After 5 seconds, the background color of `.childContainer` changes to a random color.
+
+3. **`console.log(a)`:**
+   - Logs the timer ID returned by `setTimeout`, useful for debugging or clearing the timeout if needed.
+
+---
+
+### **Overall Flow of the Code**
+
+1. **Initial Page Load:**
+   - Displays a nested structure of elements with three different background colors (`aliceblue`, `beige`, `yellow`).
+
+2. **Event Bubbling Behavior:**
+   - Clicking any of the elements triggers their respective event handlers.
+   - **`stopPropagation`** ensures only the clicked element's event fires.
+
+3. **Dynamic Background Change:**
+   - After 5 seconds, the background of `.childContainer` changes to a randomly generated color.
+
+---
+
 
 # [Day75]()
 
