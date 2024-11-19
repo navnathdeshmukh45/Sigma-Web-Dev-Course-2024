@@ -2548,7 +2548,7 @@ let arr = Array.from(Array(number + 1).keys());
 
 Given 5 boxes, Assign a random color and a random background to each box using DOM concepts
 Ans: 
-
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day70/Screenshot%202024-11-19%20124257.png)
 
 # [Day71](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day71)
 
