@@ -2160,35 +2160,78 @@ console.log(arr.every((num) => num > 0)); // true
 
 # [Day65](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day65)
 
-Calculate the Factorial
+calculates the factorial of a number using two methods (using `reduce()` and a `for` loop):
 
-```
+---
+
+### **1. Prompting the User for Input**
+
+```javascript
 let num = prompt("Enter the number: ")
-        num = Number.parseInt(num)
-
-//  Using reduce method
-        if(num < 0){
-            console.log("factorial is not defined for negative number !!")
-        }
-        let arr =[]
-        for(let i = 1; i <= num; i++){
-            arr.push(i)
-        }
-        let a = arr.reduce((a, b)=>{
-            return a * b;
-        })
-        console.log("Using reduce method: " + a)
-
-        //  Using for loop
-        if(num < 0){
-            console.log("factorial is not defined for negative number !!")
-        }
-        let fact = 1
-        for(let i1 = 1; i1 <= num; i1++){
-             fact = fact * i1
-        }
-        console.log("Using for loop: " + fact)
+num = Number.parseInt(num)
 ```
+
+- `let num = prompt("Enter the number: ")`: The `prompt()` function is used to ask the user to enter a number. This input is returned as a string.
+- `num = Number.parseInt(num)`: The `parseInt()` method is used to convert the string input into an integer. This ensures that the `num` variable is treated as an integer for subsequent calculations.
+
+---
+
+### **2. Checking for Negative Input**
+
+```javascript
+if(num < 0){
+    console.log("factorial is not defined for negative number !!")
+}
+```
+
+- `if(num < 0)`: This condition checks if the input number is less than 0. If the number is negative, the factorial is not defined.
+- `console.log("factorial is not defined for negative number !!")`: If the number is negative, a message is logged in the console saying that the factorial is not defined for negative numbers.
+
+---
+
+### **3. Using the `reduce()` Method to Calculate Factorial**
+
+```javascript
+let arr =[]
+for(let i = 1; i <= num; i++){
+    arr.push(i)
+}
+let a = arr.reduce((a, b)=>{
+    return a * b;
+})
+console.log("Using reduce method: " + a)
+```
+
+- `let arr = []`: Initializes an empty array called `arr` to hold the sequence of numbers from 1 to `num`.
+- `for(let i = 1; i <= num; i++)`: A `for` loop runs from `i = 1` to `i <= num` (inclusive). It generates an array of numbers from 1 to the entered number.
+- `arr.push(i)`: In each iteration of the loop, the number `i` is added to the array `arr`.
+- `let a = arr.reduce((a, b)=>{ return a * b; })`: The `reduce()` method is used to multiply all the elements in the array `arr`. `a` is the accumulator (which stores the running product), and `b` is the current value in the array. For each element, `a * b` is calculated and stored in `a`, resulting in the factorial of the number.
+- `console.log("Using reduce method: " + a)`: The result of the factorial calculation is displayed using `console.log()`.
+
+---
+
+### **4. Using a `for` Loop to Calculate Factorial**
+
+```javascript
+if(num < 0){
+    console.log("factorial is not defined for negative number !!")
+}
+let fact = 1
+for(let i1 = 1; i1 <= num; i1++){
+    fact = fact * i1
+}
+console.log("Using for loop: " + fact)
+```
+
+- `if(num < 0){ console.log("factorial is not defined for negative number !!") }`: Checks again if the number is negative and prints a message that the factorial is not defined for negative numbers. This is a redundant check since it's already checked earlier, but it's repeated for clarity in this part of the code.
+- `let fact = 1`: Initializes a variable `fact` to 1. This will hold the running product for the factorial calculation.
+- `for(let i1 = 1; i1 <= num; i1++)`: A `for` loop runs from `i1 = 1` to `i1 <= num` (inclusive). It multiplies each number in the range from 1 to `num` to calculate the factorial.
+- `fact = fact * i1`: In each iteration, the current value of `i1` is multiplied with the current value of `fact`, and the result is assigned back to `fact`.
+- `console.log("Using for loop: " + fact)`: The result of the factorial calculation is displayed using `console.log()`.
+
+---
+
+This code calculates the factorial of a number using two methods, both displaying the results to the user.
 
 # [Day66](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day66)
 
