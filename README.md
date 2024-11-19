@@ -3567,3 +3567,5 @@ person2.haveBirthday();  // Call the haveBirthday method to increase Bob's age b
 # [Day81](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day81)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day81/screenshot.jpg)
+
+# [Day82](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day82)
