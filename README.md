@@ -3453,4 +3453,115 @@ let c = main();
 
 # [Day80](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day80)
 
-OOP Class and Object
+### **OOP (Object-Oriented Programming) - Class and Object**
+
+In Object-Oriented Programming (OOP), **classes** are blueprints for creating objects (instances), while **objects** are instances of these classes. A class defines properties (attributes) and behaviors (methods) that an object can have.
+
+### **Key Concepts:**
+- **Class**: A blueprint or template for creating objects. It defines properties and methods.
+- **Object**: An instance of a class that contains data and functions (methods) related to that data.
+
+### **Step-by-Step Example:**
+
+```javascript
+// Step 1: Define a class
+class Person {
+    // Constructor method to initialize object properties
+    constructor(name, age) {
+        this.name = name;  // Property to store the name
+        this.age = age;    // Property to store the age
+    }
+
+    // Method to display person's details
+    greet() {
+        console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+    }
+
+    // Method to update the person's age
+    haveBirthday() {
+        this.age += 1;  // Increment age by 1
+        console.log(`${this.name} is now ${this.age} years old!`);
+    }
+}
+
+// Step 2: Create objects (instances) from the class
+
+let person1 = new Person('Alice', 30);  // Create an object with name 'Alice' and age 30
+let person2 = new Person('Bob', 25);    // Create an object with name 'Bob' and age 25
+
+// Step 3: Access object properties and methods
+
+person1.greet();   // Call the greet method on person1
+person2.greet();   // Call the greet method on person2
+
+person1.haveBirthday();  // Call the haveBirthday method to increase Alice's age by 1
+person2.haveBirthday();  // Call the haveBirthday method to increase Bob's age by 1
+```
+
+### **Explanation Step-by-Step:**
+
+1. **Define the Class (`Person`)**:
+   ```javascript
+   class Person {
+       constructor(name, age) {
+           this.name = name;
+           this.age = age;
+       }
+   ```
+   - **`class Person {}`**: Defines a class named `Person`.
+   - **Constructor**: The `constructor()` method is a special function used to initialize the object. It's called when a new instance of the class is created.
+     - `this.name = name`: The `name` property is initialized with the value passed to the constructor.
+     - `this.age = age`: Similarly, the `age` property is initialized.
+
+2. **Define Methods (`greet()` and `haveBirthday()`)**:
+   ```javascript
+   greet() {
+       console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+   }
+
+   haveBirthday() {
+       this.age += 1;
+       console.log(`${this.name} is now ${this.age} years old!`);
+   }
+   ```
+   - **`greet()`**: This method logs a greeting message with the object's `name` and `age` properties.
+   - **`haveBirthday()`**: This method increments the `age` property by 1 and logs a message announcing the birthday.
+
+3. **Create Objects (Instances of the Class)**:
+   ```javascript
+   let person1 = new Person('Alice', 30);
+   let person2 = new Person('Bob', 25);
+   ```
+   - `new Person('Alice', 30)` creates an object `person1` with `name = 'Alice'` and `age = 30`.
+   - `new Person('Bob', 25)` creates an object `person2` with `name = 'Bob'` and `age = 25`.
+
+4. **Access Object Properties and Methods**:
+   ```javascript
+   person1.greet();
+   person2.greet();
+   ```
+   - **`person1.greet()`**: Calls the `greet()` method on `person1`, which outputs:
+     ```
+     Hello, my name is Alice and I am 30 years old.
+     ```
+   - **`person2.greet()`**: Calls the `greet()` method on `person2`, which outputs:
+     ```
+     Hello, my name is Bob and I am 25 years old.
+     ```
+
+5. **Modify Object Properties Using Methods**:
+   ```javascript
+   person1.haveBirthday();
+   person2.haveBirthday();
+   ```
+   - **`person1.haveBirthday()`**: Increases `person1`'s age by 1 and outputs:
+     ```
+     Alice is now 31 years old!
+     ```
+   - **`person2.haveBirthday()`**: Increases `person2`'s age by 1 and outputs:
+     ```
+     Bob is now 26 years old!
+     ```
+
+---
+# [Day81](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day81)
