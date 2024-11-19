@@ -3223,7 +3223,7 @@ Promises are used to handle asynchronous operations in JavaScript. -->
 
 ```
 
-# [Day76]()
+# [Day76](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day75)
 
 Async/Await
 
@@ -3307,35 +3307,149 @@ Create a hacking simulator which has green background and it shows these message
 
 # [Day79](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day79)
 
-Catch & Error Handling
 
-```
-let a = prompt("Enter the First Numnber");
+**Error Handling** using `try...catch...finally` in JavaScript. It also includes a basic check for non-numeric input and throws an error if the user inputs anything that's not a number.
+
+#### **Code Breakdown:**
+
+```javascript
+let a = prompt("Enter the First Number");
 let b = prompt("Enter the Second Number");
 
 let sum = parseInt(a) + parseInt(b);
-if(isNaN(a) || isNaN(b)){
-    throw SyntaxError("Sorry this is not allowed");
+if (isNaN(a) || isNaN(b)) {
+    throw new SyntaxError("Sorry this is not allowed");
 }
-console.log("The sum is ",sum);
+console.log("The sum is ", sum);
 
-function main(){
+function main() {
     let x = 1;
-    try{
+    try {
         console.log("The sum is ", sum * x);
-        return true
+        return true;
     }
-    catch{
-        console.log("Error aa gaya bhai")
-        return false
+    catch {
+        console.log("Error aa gaya bhai");
+        return false;
     }
-    finally{
-        console.log("files are being closed and db connection is being closed")
+    finally {
+        console.log("Files are being closed and DB connection is being closed");
     }
 }
 
-let c = main() ;
+let c = main();
 ```
+
+---
+1. **User Input via `prompt()`**:
+   ```javascript
+   let a = prompt("Enter the First Number");
+   let b = prompt("Enter the Second Number");
+   ```
+   - `prompt()` is used to take input from the user. It displays a dialog box where the user can type a value.
+   - The input is received as a **string**, even if the user types a number.
+
+2. **Calculating the Sum**:
+   ```javascript
+   let sum = parseInt(a) + parseInt(b);
+   ```
+   - `parseInt()` is used to convert the user input (`a` and `b`) from strings to integers. 
+   - The `sum` is calculated by adding these two numbers.
+   
+3. **Check if Input is Valid (Error Handling)**:
+   ```javascript
+   if (isNaN(a) || isNaN(b)) {
+       throw new SyntaxError("Sorry this is not allowed");
+   }
+   ```
+   - `isNaN()` is used to check if the value entered by the user is **not a number**. If either `a` or `b` is not a valid number, an error is thrown using `throw`.
+   - If the error is thrown, the execution of the script will stop, and the error message `"Sorry this is not allowed"` will be displayed.
+
+4. **Logging the Sum**:
+   ```javascript
+   console.log("The sum is ", sum);
+   ```
+   - If no error occurs, the sum of the two numbers is logged to the console.
+
+5. **Defining the `main` Function**:
+   ```javascript
+   function main() {
+       let x = 1;
+       try {
+           console.log("The sum is ", sum * x);
+           return true;
+       }
+       catch {
+           console.log("Error aa gaya bhai");
+           return false;
+       }
+       finally {
+           console.log("Files are being closed and DB connection is being closed");
+       }
+   }
+   ```
+   - The `main()` function contains a `try...catch...finally` block.
+   
+   - **In the `try` block**:
+     ```javascript
+     console.log("The sum is ", sum * x);
+     ```
+     - The code inside the `try` block attempts to log the result of multiplying `sum` (the sum of two numbers from earlier) by `x` (which is 1).
+     - The multiplication does not cause an error because `sum` is a number, so it is logged successfully.
+
+     - `return true;` indicates that if the `try` block executes successfully, the function will return `true`.
+
+   - **In the `catch` block**:
+     ```javascript
+     console.log("Error aa gaya bhai");
+     return false;
+     ```
+     - If there is an error inside the `try` block (e.g., if `sum` is not defined), the code jumps to the `catch` block.
+     - In this case, the `catch` block will log `"Error aa gaya bhai"` and return `false`.
+
+   - **In the `finally` block**:
+     ```javascript
+     console.log("Files are being closed and DB connection is being closed");
+     ```
+     - The `finally` block will always execute regardless of whether an error occurred or not. It typically contains cleanup code, such as closing files or database connections.
+     - In this case, it simply logs `"Files are being closed and DB connection is being closed"` to the console.
+
+6. **Calling the `main` Function**:
+   ```javascript
+   let c = main();
+   ```
+   - The `main()` function is called, and the result is stored in the variable `c`.
+   - Based on the value of `sum`, the `try` block will execute, logging the sum multiplied by `x`, and then the `finally` block will execute.
+
+---
+
+### **Possible Outputs**:
+
+- If the user inputs valid numbers for both `a` and `b`:
+   - The sum is calculated and logged.
+   - The `main()` function runs, logs the sum (multiplied by 1), and always prints the message in the `finally` block.
+   
+   **Example**:
+   - Input: `a = 10`, `b = 20`
+   - Output:
+     ```
+     The sum is  30
+     The sum is  30
+     Files are being closed and DB connection is being closed
+     ```
+
+- If the user enters an invalid input (e.g., a string or a letter instead of a number):
+   - The error is thrown and caught before reaching the rest of the code.
+   - The error message `"Sorry this is not allowed"` is displayed, and the execution stops.
+
+   **Example**:
+   - Input: `a = "apple"`, `b = 20`
+   - Output:
+     ```
+     Uncaught SyntaxError: Sorry this is not allowed
+     ```
+---
+
 
 # [Day80](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day80)
 
