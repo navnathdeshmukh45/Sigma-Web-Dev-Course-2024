@@ -4622,22 +4622,229 @@ app.listen(PORT, () => {
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day96/Day%2096.png)
 
-# [Day 97](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+# [Day 97](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day97)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day97/Day%2097.png)
 
-# [Day 98](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+# [Day 98](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day98)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day98/Day%2098.png)
 
-# [Day 99](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+# [Day 99](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day99)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day99/Day%2099.png)
 
-# [Day 100](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+# [Day 100](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day100)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day100/Day%20100.png)
 
-# [Day 101](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+# [Day 101](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day101)
 
 ![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day101/Day%20101.png)
+
+# [Day 102](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day102)
+
+## **Using EJS with Express:**
+
+### **What is EJS?**
+EJS (Embedded JavaScript) is a simple templating engine for creating dynamic HTML content using JavaScript. It allows embedding JavaScript code directly into HTML templates.
+
+---
+
+### **Step-by-Step Guide**
+
+#### **1. Install Node.js and Initialize Project**
+1. Ensure Node.js is installed on your system.  
+   To check, run:
+   ```bash
+   node -v
+   npm -v
+   ```
+
+2. Create a new project directory:
+   ```bash
+   mkdir ejs-express-app
+   cd ejs-express-app
+   ```
+
+3. Initialize the project:
+   ```bash
+   npm init -y
+   ```
+
+---
+
+#### **2. Install Required Packages**
+Install Express and EJS:
+```bash
+npm install express ejs
+```
+
+---
+
+#### **3. Set Up the Project Structure**
+Create the following structure:
+```
+ejs-express-app/
+├── views/            # Contains EJS templates
+│   ├── index.ejs
+│   └── about.ejs
+├── public/           # Contains static files (e.g., CSS, JS)
+│   └── style.css
+├── server.js         # Main server file
+├── package.json
+```
+
+---
+
+#### **4. Configure Express to Use EJS**
+Modify the `server.js` file:
+```javascript
+const express = require('express');
+const app = express();
+const path = require('path');
+
+// Set EJS as the templating engine
+app.set('view engine', 'ejs');
+
+// Set the directory for views
+app.set('views', path.join(__dirname, 'views'));
+
+// Serve static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route for the home page
+app.get('/', (req, res) => {
+    const data = { title: 'Home Page', message: 'Welcome to EJS with Express!' };
+    res.render('index', data);
+});
+
+// Route for the about page
+app.get('/about', (req, res) => {
+    const data = { title: 'About Page', message: 'Learn more about us here.' };
+    res.render('about', data);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+});
+```
+
+---
+
+#### **5. Create EJS Templates**
+Create EJS files in the `views` directory:
+
+1. **`index.ejs`**:
+   ```l
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title><%= title %></title>
+       <link rel="stylesheet" href="/style.css">
+   </head>
+   <body>
+       <h1><%= message %></h1>
+       <a href="/about">Go to About Page</a>
+   </body>
+   </html>
+   ```
+
+2. **`about.ejs`**:
+   ```
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title><%= title %></title>
+       <link rel="stylesheet" href="/style.css">
+   </head>
+   <body>
+       <h1><%= message %></h1>
+       <a href="/">Go to Home Page</a>
+   </body>
+   </html>
+   ```
+
+---
+
+#### **6. Add a Static File**
+Create a CSS file in the `public` directory:
+
+**`style.css`**:
+```css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover {
+    text-decoration: underline;
+}
+```
+
+---
+
+#### **7. Run the Server**
+Start the server:
+```bash
+node server.js
+```
+
+Or use **Nodemon** (if installed):
+```bash
+nodemon server.js
+```
+
+---
+
+#### **8. Test the Application**
+1. Open your browser and navigate to [http://localhost:3000/](http://localhost:3000/).
+   - You should see the home page with the message: **"Welcome to EJS with Express!"**
+2. Click the "Go to About Page" link.
+   - You should see the about page with the message: **"Learn more about us here."**
+
+# [Day 103](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day103)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day103/day%20103.png)
+
+# [Day 104](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day104)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day104/Screenshot%202024-05-11%20005451.png)
+
+# [Day 105](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day105)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day105/Screenshot%202024-05-11%20005603.png)
+
+# [Day 106](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day106)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day106/Screenshot%202024-05-13%20121029.png)
+
+# [Day 107](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day107)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day107/Type%20Test%20App/Screenshot%202024-05-13%20120959.png)
+
+# [Day 108](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day108)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day108/Apple%20vision%20image.png)
+
+
+# [Day 109](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day109)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day109/spotify.png)
+
+# [Day 110](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day110)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day110/Screenshot%202024-05-16%20194056.png)
+
+# [Day 111](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day111)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day111/screenshot.jpg)
+
+# [Day 112](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day112)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day112/Screenshot%202024-05-16%20194442.png)
