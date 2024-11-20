@@ -4407,4 +4407,237 @@ app.listen(PORT, () => {
    - **Home Page:** Displays `Welcome to the Home Page`.
    - **About Page:** Displays `About Page`.
 
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day94/Response%20Methods.png)
+
 # [Day 95](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day95)
+
+
+## **Middleware in Express.js**
+
+### **What is Middleware?**
+Middleware in Express.js refers to functions that execute during the lifecycle of a request to the server. These functions have access to the request (`req`) and response (`res`) objects and can either end the request-response cycle or pass control to the next middleware using `next()`.
+
+---
+
+### **Types of Middleware**
+1. **Built-in Middleware**: Provided by Express.js (e.g., `express.json()`).
+2. **Application-level Middleware**: Defined at the application level.
+3. **Router-level Middleware**: Attached to specific routes or routers.
+4. **Error-handling Middleware**: Handles errors in the application.
+5. **Third-party Middleware**: Middleware libraries like `morgan`, `cors`, etc.
+
+---
+
+## **Examples**
+
+### **1. Application-Level Middleware**
+
+**Description**: Middleware that applies to every route in the application.
+
+```javascript
+const express = require('express');
+const app = express();
+
+// Application-level middleware
+app.use((req, res, next) => {
+    console.log(`Request Method: ${req.method}, Request URL: ${req.url}`);
+    next(); // Pass control to the next middleware or route handler
+});
+
+app.get('/', (req, res) => {
+    res.send('Hello, this is the Home Page!');
+});
+
+app.get('/about', (req, res) => {
+    res.send('Welcome to the About Page!');
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Navigate to `http://localhost:3000/` or `http://localhost:3000/about`.
+2. Check the console for the middleware log.
+
+**Console Output:**
+```
+Request Method: GET, Request URL: /
+Request Method: GET, Request URL: /about
+```
+
+---
+
+### **2. Router-Level Middleware**
+
+**Description**: Middleware attached to specific routes or routers.
+
+```javascript
+const express = require('express');
+const app = express();
+const router = express.Router();
+
+// Middleware for the '/users' router
+router.use((req, res, next) => {
+    console.log('Router Middleware: Accessing Users Route');
+    next();
+});
+
+// Routes
+router.get('/', (req, res) => {
+    res.send('User Home Page');
+});
+
+router.get('/profile', (req, res) => {
+    res.send('User Profile Page');
+});
+
+// Mount the router
+app.use('/users', router);
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Navigate to `http://localhost:3000/users` or `http://localhost:3000/users/profile`.
+2. Check the console for the middleware log.
+
+**Console Output:**
+```
+Router Middleware: Accessing Users Route
+```
+
+---
+
+### **3. Built-in Middleware**
+
+**Description**: Using built-in middleware like `express.json()` to handle JSON payloads.
+
+```javascript
+const express = require('express');
+const app = express();
+
+// Built-in middleware
+app.use(express.json());
+
+app.post('/data', (req, res) => {
+    const data = req.body;
+    res.send(`Received data: ${JSON.stringify(data)}`);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Use **Postman** or any API testing tool.
+2. Send a `POST` request to `http://localhost:3000/data` with the following JSON body:
+   ```json
+   {
+       "name": "Alice",
+       "age": 30
+   }
+   ```
+3. **Response:** `Received data: {"name":"Alice","age":30}`
+
+---
+
+### **4. Error-Handling Middleware**
+
+**Description**: Middleware designed to catch and handle errors.
+
+```javascript
+const express = require('express');
+const app = express();
+
+// Route that throws an error
+app.get('/error', (req, res, next) => {
+    const err = new Error('Something went wrong!');
+    next(err); // Pass the error to the error-handling middleware
+});
+
+// Error-handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.message);
+    res.status(500).send('Internal Server Error: ' + err.message);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Navigate to `http://localhost:3000/error`.
+2. **Response:** `Internal Server Error: Something went wrong!`
+
+**Console Output:**
+```
+Something went wrong!
+```
+
+---
+
+### **5. Third-Party Middleware**
+
+**Description**: Using third-party middleware like `morgan` for logging.
+
+```javascript
+const express = require('express');
+const morgan = require('morgan');
+const app = express();
+
+// Use morgan middleware
+app.use(morgan('dev'));
+
+app.get('/', (req, res) => {
+    res.send('Hello with Morgan Logging!');
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Navigate to `http://localhost:3000/`.
+2. **Console Output:**
+   ```
+   GET / 200 12 - 3.287 ms
+   ```
+
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day95/middleware.png)
+
+# [Day 96](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day96/Day%2096.png)
+
+# [Day 97](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day97/Day%2097.png)
+
+# [Day 98](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day98/Day%2098.png)
+
+# [Day 99](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day99/Day%2099.png)
+
+# [Day 100](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day100/Day%20100.png)
+
+# [Day 101](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day96)
+
+![alt text](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/blob/main/Day101/Day%20101.png)
