@@ -3797,3 +3797,614 @@ server.listen(port, hostname, function () {
 
 ---
 
+# [Day 91](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day91)
+
+CommonJS and ECMAScript ES6 modules are two widely used module systems in JavaScript. They serve the same purpose—managing dependencies and organizing code—but have significant differences in syntax, behavior, and usage.
+
+---
+
+### **1. CommonJS Modules**
+- **Usage:** Primarily used in Node.js.
+- **Syntax:** `require()` for importing and `module.exports` or `exports` for exporting.
+- **Behavior:** Modules are loaded synchronously, which is suitable for server-side environments.
+- **Dynamic Loading:** CommonJS supports dynamic imports because it uses `require()` as a function.
+
+---
+
+### **2. ECMAScript ES6 Modules**
+- **Usage:** Standardized in JavaScript and used in browsers and modern Node.js.
+- **Syntax:** `import` for importing and `export` for exporting.
+- **Behavior:** Modules are loaded asynchronously, making them suitable for browsers.
+- **Static Loading:** ES6 modules are statically analyzed, meaning the import and export statements are resolved at compile time, enabling better optimizations.
+
+---
+
+### **Example:**
+
+#### **CommonJS Example**
+
+```javascript
+// math.js
+const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+
+module.exports = { add, multiply };
+
+// main.js
+const math = require('./math'); // Importing CommonJS module
+console.log(math.add(5, 3)); // Output: 8
+console.log(math.multiply(5, 3)); // Output: 15
+```
+
+---
+
+#### **ES6 Modules Example**
+
+```javascript
+// math.js
+export const add = (a, b) => a + b;
+export const multiply = (a, b) => a * b;
+
+// main.js
+import { add, multiply } from './math.js'; // Importing ES6 module
+console.log(add(5, 3)); // Output: 8
+console.log(multiply(5, 3)); // Output: 15
+```
+
+---
+### **When to Use**
+- **CommonJS:** Suitable for Node.js applications or legacy projects.
+- **ES6 Modules:** Ideal for modern web development and newer projects where compatibility with tools and browsers is needed. 
+
+Below is a proper structure for a `README.md` file that documents the setup and usage of a project involving the specified npm packages:
+
+---
+
+# **Node.js Project Setup**
+
+## **Introduction**
+This is a Node.js project that utilizes the following packages:
+- **Express:** For building web applications and APIs.
+- **jsonwebtoken:** For generating and verifying JSON Web Tokens (JWTs) for authentication.
+- **dotenv:** For managing environment variables securely.
+- **nodemon:** A development utility that automatically restarts the server upon file changes.
+
+---
+
+## **Setup Instructions**
+
+### **1. Initialize the Project**
+```bash
+npm init -y
+```
+This creates a `package.json` file with default settings.
+
+---
+
+### **2. Install Dependencies**
+
+#### **Required Dependencies**
+Run the following commands to install the necessary packages:
+```bash
+npm install express jsonwebtoken dotenv
+```
+
+#### **Development Dependencies**
+Install **nodemon** globally for development purposes:
+```bash
+npm install -g nodemon
+```
+
+---
+
+## **Project Structure**
+Organize your project with the following directory structure:
+
+```
+project/
+├── node_modules/          # Installed dependencies
+├── .env                   # Environment variables
+├── package.json           # Project metadata and dependencies
+├── package-lock.json      # Dependency tree
+├── server.js              # Entry point of the application
+├── routes/                # API route handlers
+│   └── userRoutes.js      # Example route file
+├── controllers/           # Business logic for routes
+│   └── userController.js  # Example controller file
+├── middlewares/           # Middleware files
+│   └── authMiddleware.js  # Example middleware for JWT
+└── config/                # Configuration files
+    └── dbConfig.js        # Example database configuration
+```
+
+---
+
+## **Using the Application**
+
+### **1. Set Up Environment Variables**
+Create a `.env` file in the root directory and add the following:
+```env
+PORT=3000
+JWT_SECRET=your_secret_key
+```
+
+### **2. Start the Server**
+#### **Using Node.js**
+```bash
+node server.js
+```
+
+#### **Using Nodemon**
+```bash
+nodemon server.js
+```
+
+---
+
+## **Example Code Snippets**
+
+### **1. Basic Express Server**
+```javascript
+const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+```
+
+### **2. JWT Authentication Middleware**
+```javascript
+const jwt = require('jsonwebtoken');
+
+const authMiddleware = (req, res, next) => {
+    const token = req.headers['authorization'];
+    if (!token) return res.status(401).send('Access Denied');
+
+    try {
+        const verified = jwt.verify(token, process.env.JWT_SECRET);
+        req.user = verified;
+        next();
+    } catch (err) {
+        res.status(400).send('Invalid Token');
+    }
+};
+
+module.exports = authMiddleware;
+```
+
+---
+
+## **Available Scripts**
+
+### **Run the Application**
+```bash
+node server.js
+```
+
+### **Run with Nodemon**
+```bash
+nodemon server.js
+```
+
+---
+
+
+
+--- 
+
+# [Day 92](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day92)
+
+
+
+# **Node.js File System (`fs`) and Path (`path`) Modules Example**
+
+## **Introduction**
+This example demonstrates the usage of:
+- **`fs` Module**: To perform file operations such as creating, reading, and deleting files.
+- **`path` Module**: To handle and manipulate file paths in a platform-independent way.
+
+---
+
+## **Objective**
+1. Create a file named `example.txt` and write content to it.
+2. Read and display the content of the file.
+3. Delete the file after reading its content.
+
+---
+
+## **Project Setup**
+
+### **1. Prerequisites**
+Ensure you have Node.js installed on your system. You can verify by running:
+```bash
+node -v
+```
+
+---
+
+### **2. File Structure**
+```
+project/
+├── example.js   # Script demonstrating fs and path modules
+└── README.md    # Documentation
+```
+
+---
+
+## **Example Code**
+
+### **`example.js`**
+```javascript
+const fs = require('fs');
+const path = require('path');
+
+// Step 1: Define file path using `path` module
+const filePath = path.join(__dirname, 'example.txt');
+
+// Step 2: Create and write to the file
+fs.writeFile(filePath, 'Hello, this is a test file!', (err) => {
+    if (err) {
+        console.error('Error writing to file:', err);
+        return;
+    }
+    console.log('File created and content written.');
+
+    // Step 3: Read the content of the file
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            return;
+        }
+        console.log('File content:', data);
+
+        // Step 4: Delete the file
+        fs.unlink(filePath, (err) => {
+            if (err) {
+                console.error('Error deleting file:', err);
+                return;
+            }
+            console.log('File deleted successfully.');
+        });
+    });
+});
+```
+
+---
+
+## **Steps to Run**
+
+1. **Navigate to the Project Directory**
+   Open a terminal and navigate to the folder containing `example.js`.
+
+2. **Run the Script**
+   Execute the following command to run the file:
+   ```bash
+   node example.js
+   ```
+
+3. **Output**
+   You will see the following output if the script executes successfully:
+   ```
+   File created and content written.
+   File content: Hello, this is a test file!
+   File deleted successfully.
+   ```
+
+---
+
+##  Concepts**
+
+### **1. `fs` Module**
+- **`fs.writeFile`**: Creates and writes to a file asynchronously.
+- **`fs.readFile`**: Reads content from a file asynchronously.
+- **`fs.unlink`**: Deletes a file asynchronously.
+
+### **2. `path` Module**
+- **`path.join`**: Joins multiple segments of a file path in a platform-independent way.
+
+---
+
+# [Day 93](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day93)
+
+# **Express **
+
+## **1. Why Should We Use Express?**
+
+Express.js is a lightweight and flexible Node.js framework that simplifies building web applications and APIs. Key advantages include:
+
+- **Minimal Setup**: Provides a simple interface to handle HTTP requests and responses.
+- **Routing**: Easy to define and manage application routes.
+- **Middleware**: Supports middleware functions to handle custom logic.
+- **Performance**: Lightweight and fast, designed for high performance.
+- **Community Support**: A large community and vast ecosystem of plugins.
+
+---
+
+## **2. Why Nodemon?**
+
+Nodemon is a development utility for Node.js applications that automatically restarts the server whenever file changes are detected. Key benefits include:
+
+- **Automatic Restarts**: Saves time by eliminating the need to manually restart the server.
+- **Development Convenience**: Detects file changes and updates the application instantly.
+- **Lightweight**: Simple to install and use with minimal configuration.
+
+---
+
+## **3. Installing ExpressJS**
+
+### **Steps to Install Express.js**
+
+1. **Initialize a Node.js Project**:
+   ```bash
+   npm init -y
+   ```
+
+2. **Install Express.js**:
+   ```bash
+   npm install express
+   ```
+
+3. **Install Nodemon for Development (Optional)**:
+   ```bash
+   npm install -g nodemon
+   ```
+
+4. **Example Code (server.js)**:
+   ```javascript
+   const express = require('express');
+   const app = express();
+
+   app.get('/', (req, res) => {
+       res.send('Hello, Express!');
+   });
+
+   const PORT = 3000;
+   app.listen(PORT, () => {
+       console.log(`Server is running on http://localhost:${PORT}`);
+   });
+   ```
+
+5. **Run the Server**:
+   ```bash
+   node server.js
+   ```
+   Or using **Nodemon**:
+   ```bash
+   nodemon server.js
+   ```
+
+---
+
+## **4. Request Parameters and Queries**
+
+Express.js allows handling **parameters** and **query strings** in HTTP requests.
+
+### **Route Parameters**
+Used for capturing dynamic values in the URL.
+
+#### Example:
+```javascript
+app.get('/users/:id', (req, res) => {
+    const userId = req.params.id;
+    res.send(`User ID: ${userId}`);
+});
+```
+**URL:** `http://localhost:3000/users/123`  
+**Response:** `User ID: 123`
+
+---
+
+### **Query Parameters**
+Used for handling key-value pairs in the URL after `?`.
+
+#### Example:
+```javascript
+app.get('/search', (req, res) => {
+    const query = req.query.q;
+    res.send(`Search Query: ${query}`);
+});
+```
+**URL:** `http://localhost:3000/search?q=express`  
+**Response:** `Search Query: express`
+
+---
+
+## **5. Serving Static Files**
+
+Express.js provides a simple way to serve static files such as images, CSS, and JavaScript.
+
+### **Steps to Serve Static Files**
+
+1. **Organize Static Files**:
+   ```
+   project/
+   ├── public/
+   │   ├── images/
+   │   ├── css/
+   │   └── js/
+   └── server.js
+   ```
+
+2. **Code Example (server.js)**:
+   ```javascript
+   const express = require('express');
+   const app = express();
+
+   // Serve static files from the 'public' directory
+   app.use(express.static('public'));
+
+   app.get('/', (req, res) => {
+       res.send('Welcome to Express Static File Example');
+   });
+
+   const PORT = 3000;
+   app.listen(PORT, () => {
+       console.log(`Server is running on http://localhost:${PORT}`);
+   });
+   ```
+
+3. **Access Static Files**:
+   Place files in the `public` directory, and they will be accessible via the browser.  
+   Example:
+   - **File Path:** `public/images/logo.png`  
+   - **URL:** `http://localhost:3000/images/logo.png`
+
+---
+
+# [Day 94](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day94)
+
+## **1. Handling POST & Other Requests**
+
+### **Description**
+Express allows handling different HTTP request methods, including `POST`, `PUT`, `DELETE`, and more, in addition to `GET`.
+
+### **Example: Handling POST Requests**
+```javascript
+const express = require('express');
+const app = express();
+
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+app.post('/submit', (req, res) => {
+    const { name, age } = req.body;
+    res.send(`Received data: Name - ${name}, Age - ${age}`);
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test POST Request**:
+1. Use **Postman** or any API testing tool.
+2. Send a `POST` request to `http://localhost:3000/submit` with the following JSON body:
+   ```json
+   {
+       "name": "John",
+       "age": 25
+   }
+   ```
+3. **Response:** `Received data: Name - John, Age - 25`
+
+---
+
+## **2. Chaining of Requests**
+
+### **Description**
+Express allows chaining middleware and route handlers for cleaner and modular code. Middleware functions execute sequentially.
+
+### **Example: Request Chaining**
+```javascript
+const express = require('express');
+const app = express();
+
+// Middleware 1
+app.use((req, res, next) => {
+    console.log(`Request URL: ${req.url}`);
+    next(); // Proceed to the next middleware or route handler
+});
+
+// Middleware 2
+app.use((req, res, next) => {
+    console.log(`Request Method: ${req.method}`);
+    next();
+});
+
+// Route Handler
+app.get('/chain', (req, res) => {
+    res.send('Chained middleware executed successfully!');
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+#### **Steps to Test:**
+1. Open a browser or Postman and navigate to `http://localhost:3000/chain`.
+2. **Console Output:**
+   ```
+   Request URL: /chain
+   Request Method: GET
+   ```
+3. **Response:** `Chained middleware executed successfully!`
+
+---
+
+## **3. Serving HTML Files**
+
+### **Description**
+Express provides the `res.sendFile()` method to serve HTML files.
+
+### **Example: Serving HTML Files**
+```javascript
+const express = require('express');
+const path = require('path');
+const app = express();
+
+// Serve HTML file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Serve another HTML file for a specific route
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'about.html'));
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+```
+
+### **Steps to Test:**
+1. **Create HTML Files:**
+   - `index.html`:
+     ``` 
+     <!DOCTYPE html>
+     <html>
+     <head>
+         <title>Home</title>
+     </head>
+     <body>
+         <h1>Welcome to the Home Page</h1>
+     </body>
+     </html>
+     ```
+
+   - `about.html`:
+
+     ```
+     <!DOCTYPE html>
+     <html>
+     <head>
+         <title>About</title>
+     </head>
+     <body>
+         <h1>About Page</h1>
+     </body>
+     </html>
+     ```
+
+2. **Run the Server:** Start the server and navigate to the following URLs:
+   - **Home Page:** [http://localhost:3000/](http://localhost:3000/)
+   - **About Page:** [http://localhost:3000/about](http://localhost:3000/about)
+
+3. **Response:**
+   - **Home Page:** Displays `Welcome to the Home Page`.
+   - **About Page:** Displays `About Page`.
+
+# [Day 95](https://github.com/navnathdeshmukh45/Sigma-Web-Dev-Course-2024/tree/main/Day95)
